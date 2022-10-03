@@ -1,0 +1,41 @@
+{
+  "name": "sectionui",
+  "private": false,
+  "version": "0.0.5",
+  "main": "./dist/sectionui.umd.js",
+  "module": "./dist/sectionui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/sectionui.es.js",
+      "require": "./dist/sectionui.umd.js"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "dev": "vite --port 8888 --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^9.2.0",
+    "vue": "^3.2.39",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^6.0.3",
+    "@mdit-vue/plugin-headers": "^0.11.1",
+    "@types/node": "^18.8.0",
+    "@vitejs/plugin-vue": "^2.3.4",
+    "markdown-it-link-attributes": "^4.0.1",
+    "typescript": "^4.8.2",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-vue-components": "^0.22.7",
+    "vite": "^3.1.4",
+    "vite-plugin-md": "^0.20.4",
+    "vite-plugin-windicss": "^1.8.8",
+    "windicss": "^3.5.6"
+  }
+}

@@ -1,0 +1,36 @@
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+.prose a {
+  overflow-wrap: break-word;
+}
+
+.prose pre:not(.shiki) {
+  padding: 0;
+}
+
+.prose .shiki {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+html.dark .shiki-light,
+html:not(.dark) .shiki-dark {
+  display: none;
+}
+
+html.dark .shiki-dark,
+html:not(.dark) .shiki-light {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+html.dark .shiki-dark {
+  background: none !important;
+}
+
+html:not(.dark) .shiki-light {
+  background: #fdf6e3 !important;
+}
