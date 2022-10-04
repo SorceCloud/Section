@@ -1,7 +1,6 @@
 import type { MarkdownItHeader } from '@mdit-vue/plugin-headers'
 import type { Frontmatter } from 'vite-plugin-md'
 
-
 export declare interface SiteConfig {
   title: string
   author: string
@@ -10,15 +9,12 @@ export declare interface SiteConfig {
   headerNavigationItems: NavItem[]
   socialNetworks: Record<string, string>
 }
-
 export declare interface NavItem {
   title: string
   href: string
   icon?: string
   disableRouterLink?: boolean
 }
-
-
 export declare interface BreadcrumbItem {
   text: string
   path?: string
