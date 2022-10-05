@@ -5,7 +5,7 @@ import vueWindi from "vue-windi/plugin";
 export default defineConfig({
   darkMode: 'class',
   plugins: [require('windicss/plugin/typography'), require('windicss/forms'), sectionThemes, vueWindi],
-  sectionTheme: {
+  sectionThemes: {
     themes: [
       'blue',
       'teal',
