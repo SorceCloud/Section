@@ -1,7 +1,7 @@
 const baseTheme = [
   // light colors
   'neutral', // required
-  'neutral-focus',// 亮度相较于上着降低10
+  'neutral-focus',
   'neutral-content',
   'primary', // required
   'primary-focus',

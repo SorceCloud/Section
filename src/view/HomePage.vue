@@ -4,7 +4,7 @@
     Section UI
   </h1>
   <p class="m-0 mt-10 text-lg opacity-75 leading-6 font-medium">
-    Component library for vue 3 using Windi CSS, most components are using daisyUI styles.
+    Component library for VUE 3 using Windi CSS, most components are using daisyUI styles.
   </p>
   <div class="mt-10 flex space-x-4 ">
     <Button size="md" tag="a">Get Started</Button>

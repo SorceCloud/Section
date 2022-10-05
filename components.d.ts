@@ -30,6 +30,7 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     Search: typeof import('./src/section/Search.vue')['default']
     SectionContainer: typeof import('./src/section/SectionContainer.vue')['default']
+    Sidebar: typeof import('./src/section/layout/Sidebar.vue')['default']
     SocialIcon: typeof import('./src/section/SocialIcon.vue')['default']
     Tag: typeof import('./src/section/Tag.vue')['default']
     Technology: typeof import('./src/section/Technology.vue')['default']

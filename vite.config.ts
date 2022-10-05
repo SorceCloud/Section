@@ -1,4 +1,4 @@
-import { dirname, resolve } from 'node:path'
+import path, { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'vite'
 import VuePlugin from '@vitejs/plugin-vue'
@@ -72,7 +72,15 @@ export default defineConfig(({ mode }) => {
         compositionOnly: true,
         include: [resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**')],
       }),
-      WindiCSS()
+      WindiCSS(
+        {
+          scan: {
+            dirs: ['.'], // all files in the cwd
+            fileExtensions: ['vue', 'js', 'ts'], // also enabled scanning for js/ts
+          },
+          config: path.resolve(__dirname, 'windi.config.ts'),
+        }
+      )
     ],
   }
 })

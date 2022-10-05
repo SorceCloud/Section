@@ -1,11 +1,10 @@
 import { defineConfig } from 'windicss/helpers'
-import sectionThemes from './src/plugin/theme'
-import vueWindi from "vue-windi/plugin";
+import SectionTheme from './src/plugin/theme'
 
 export default defineConfig({
   darkMode: 'class',
-  plugins: [require('windicss/plugin/typography'), require('windicss/forms'), sectionThemes, vueWindi],
-  sectionThemes: {
+  plugins: [SectionTheme],
+  SectionThemes: {
     themes: [
       'blue',
       'teal',

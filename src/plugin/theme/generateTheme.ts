@@ -1,62 +1,18 @@
-import { brighten, hexToRgb, mostReadable } from './functions'
-import { baseTheme, colorNames, customThemes } from './themes'
-import fs from 'fs'
-import path from 'path'
-
-const defaultConfigNames = [
-  'windi.config.js',
-  'windi.config.ts',
-  'windicss.config.js',
-  'windicss.config.ts',
-]
-
-const getConfigPath = () => {
-  let configPath = null
-  let configFilePath: string | undefined
-
-  for (const name of defaultConfigNames) {
-    configPath = path.resolve(process.cwd(), name)
-    if (fs.existsSync(configPath)) {
-      configFilePath = configPath
-      break
-    }
-  }
-  if (!configFilePath)
-    throw new Error('windi.config file not found')
-
-  return configFilePath
-}
-
-/**
- * Get section user configuration in `windi.config`
- *
- * @returns
- */
-async function getConfig() {
-  const themePath = getConfigPath()
-  const config = await import(themePath)
-  return config.default.sectionTheme
-}
-
-/**
- * Check if given string is keyof given object
- *
- * @param key
- * @param obj
- */
-function isObjKey<T>(key: PropertyKey, obj: T): key is keyof T {
-  return key in obj
-}
-
+import { brighten, hexToRgb, mostReadable } from '../../style/functions'
+import { baseTheme, colorNames, themes } from '../../style/theme'
+import { getConfig, isObjKey } from './getconfig'
 
 type Themes = string[] | string
 
 interface SectionConfig {
   themes: Themes
 }
+
 interface Theme { [key: string]: string }
+
 interface GeneratedTheme { [key: string]: { [key: string]: string } }
-const defaultTheme = 'sectionTheme'
+
+const defaultTheme = 'blue'
 
 /**
    * check if given key include in theme default color names
@@ -88,17 +44,18 @@ const overrideTheme = (themes: Themes, setTheme: Theme) => {
   }
   return setTheme
 }
+
 // generate missing colors from theme
 const generateMissingColors = (setTheme: Theme) => {
   const difference = colorNames.filter(name => !Object.keys(setTheme).includes(name))
   for (const key in difference) {
     const difName = difference[key]
-    if (difName.includes('focus')) {//如果`-focus`的属性未定义，则亮度在其前缀颜色的基础上降低10
+    if (difName.includes('focus')) {
       const index = Object.keys(setTheme).find(name => name.includes(difName.replace('-focus', '')))
       const color = setTheme[index as keyof typeof setTheme]
       setTheme[difName] = brighten(color, -10)
     }
-    if (difName.includes('content')) {//如果`-content`的属性未定义，则亮度在其前缀颜色的基础上进行色相调整，最大可能性保证可读性的颜色对比，亦可将所有尾缀为content的颜色都标注为#ffffff
+    if (difName.includes('content')) {
       const index = Object.keys(setTheme).find(name => name.includes(difName.replace('-content', '')))
       const color = setTheme[index as keyof typeof setTheme]
       setTheme[difName] = mostReadable(color)
@@ -118,20 +75,20 @@ const generateMissingColors = (setTheme: Theme) => {
 }
 
 // generate theme with rgb colors and separate light from dark
-const darkTheme = (theme: Theme) => {
-  const darkTheme: GeneratedTheme = { light: {}, dark: {} }
+const generateTheme = (theme: Theme) => {
+  const generatedTheme: GeneratedTheme = { light: {}, dark: {} }
   const themeColor = Object.assign({}, theme)
   for (const key in themeColor) {
     if (keyIncludeDefault(key))
       themeColor[key] = hexToRgb(theme[key])
     // separate light colors  from dark
     if (key.includes('dark'))
-      darkTheme.dark[`--${key.replace('dark-', '')}`] = themeColor[key]
+      generatedTheme.dark[`--${key.replace('dark-', '')}`] = themeColor[key]
     else
-      darkTheme.light[`--${key}`] = themeColor[key]
+      generatedTheme.light[`--${key}`] = themeColor[key]
   }
 
-  return darkTheme
+  return generatedTheme
 }
 
 /**
@@ -147,7 +104,11 @@ async function getTheme() {
   // include other themes
   const generatedOthers: { [key: string]: { [key: string]: string } } = {}
 
-  // if sectionTheme config is set in `windi.config`
+  //  if no section config defined in `windi.config` then defaultTheme is set
+  if (sectionConfig === undefined || sectionConfig.themes === undefined)
+    setTheme = themes[defaultTheme]
+
+  // if section config is set in `windi.config`
   if (Object.keys(setTheme).length === 0) {
     let definedTheme: string | null = null
     // get first theme defined
@@ -159,11 +120,11 @@ async function getTheme() {
           otherThemes.push(theme)
       }
     }
-    // check if defined theme is keyof `customThemes`
-    if (!isObjKey(definedTheme as string, customThemes))
+    // check if defined theme is keyof `themes`
+    if (!isObjKey(definedTheme as string, themes))
       definedTheme = defaultTheme
 
-    setTheme = customThemes[definedTheme as keyof typeof customThemes]
+    setTheme = themes[definedTheme as keyof typeof themes]
   }
 
   // replace theme vars for defined theme vars if they exist
@@ -171,17 +132,17 @@ async function getTheme() {
     setTheme = overrideTheme(sectionConfig.themes, setTheme)
 
   setTheme = generateMissingColors(setTheme)
-  generatedTheme = darkTheme(setTheme)
+  generatedTheme = generateTheme(setTheme)
 
   for (const theme of otherThemes) {
     const tempTheme: { [key: string]: { [key: string]: string } } = {}
-    // check if other theme is present in sectionTheme themes
-    if (isObjKey(theme, customThemes)) {
-      tempTheme[theme] = generateMissingColors(customThemes[theme])
+    // check if other theme is present in Section themes
+    if (isObjKey(theme, themes)) {
+      tempTheme[theme] = generateMissingColors(themes[theme])
 
       let tempGenerated: GeneratedTheme = {}
 
-      tempGenerated = darkTheme(tempTheme[theme])
+      tempGenerated = generateTheme(tempTheme[theme])
       generatedOthers[`.theme-${theme}`] = tempGenerated.light
       generatedOthers[`.dark.theme-${theme}`] = tempGenerated.dark
     }

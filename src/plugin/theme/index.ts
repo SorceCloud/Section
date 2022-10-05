@@ -1,12 +1,19 @@
 import plugin from 'windicss/plugin'
-import configColors from './config'
+import base from '../../style/base'
+import configColors from '../../style/config'
+import utilities from '../../style/utilitie'
 import { getTheme } from './generateTheme'
 
-const sectionThemes = plugin(
-  async ({ addBase }) => {
+const SectionTheme = plugin(
+  async ({ addUtilities, addBase }) => {
+    addBase(base)
     addBase(await getTheme())
+    addUtilities(utilities)
   },
   {
+    preflight: {
+      safelist: 'button a ul li input',
+    },
     theme: {
       extend: {
         colors: () => ({
@@ -17,4 +24,4 @@ const sectionThemes = plugin(
   },
 )
 
-export default sectionThemes
+export default SectionTheme

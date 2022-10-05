@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import zhCN from './zh-CN'
+import route from './route'
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: [...zhCN]
+  routes: [...route]
 })
 export default router
