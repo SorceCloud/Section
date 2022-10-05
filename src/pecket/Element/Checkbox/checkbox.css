@@ -1,0 +1,120 @@
+.checkbox {
+  --chkfg: var(--primary-content);
+  --chkbg: var(--primary);
+  @apply h-6 w-6 cursor-pointer appearance-none border border-base-gray-500 border-opacity-20 rounded-$rounded-btn;
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--chkbg));
+    outline-offset: 2px;
+  }
+
+  &:checked,
+  &[checked="true"] {
+    animation: checkmark var(--animation-input, 0.2s) ease-in-out;
+    background-image:
+      linear-gradient(-45deg, transparent 65%, rgb(var(--chkbg)) 65.99%),
+      linear-gradient(45deg, transparent 75%, rgb(var(--chkbg)) 75.99%),
+      linear-gradient(-45deg, rgb(var(--chkbg)) 40%, transparent 40.99%),
+      linear-gradient(45deg,
+        rgb(var(--chkbg)) 30%,
+        rgb(var(--chkfg)) 30.99%,
+        rgb(var(--chkfg)) 40%,
+        transparent 40.99%),
+      linear-gradient(-45deg,
+        rgb(var(--chkfg)) 50%,
+        rgb(var(--chkbg)) 50.99%);
+  }
+
+  &.checkbox-primary {
+    --chkbg: var(--primary);
+    --chkfg: var(--primary-content);
+    @apply border-primary hover: border-primary;
+
+    &:focus-visible {
+      outline: 2px solid rgb(var(--chkbg));
+    }
+
+    &:checked,
+    &[checked="true"] {
+      @apply border-primary bg-primary text-primary;
+    }
+  }
+
+  &.checkbox-secondary {
+    --chkbg: var(--secondary);
+    --chkfg: var(--secondary-content);
+    @apply border-secondary hover: border-secondary;
+
+    &:focus-visible {
+      outline: 2px solid rgb(var(--chkbg));
+    }
+
+    &:checked,
+    &[checked="true"] {
+      @apply border-secondary bg-secondary text-secondary;
+    }
+  }
+
+  &.checkbox-success {
+    --chkbg: var(--success);
+    --chkfg: var(--success-content);
+    @apply border-success hover: border-success;
+
+    &:focus-visible {
+      outline: 2px solid rgb(var(--chkbg));
+    }
+
+    &:checked,
+    &[checked="true"] {
+      @apply border-success bg-success text-success;
+    }
+  }
+
+  &.checkbox-warning {
+    --chkbg: var(--warning);
+    --chkfg: var(--warning-content);
+    @apply border-warning hover: border-warning;
+
+    &:focus-visible {
+      outline: 2px solid rgb(var(--chkbg));
+    }
+
+    &:checked,
+    &[checked="true"] {
+      @apply border-warning bg-warning text-warning;
+    }
+  }
+
+  &.checkbox-danger {
+    --chkbg: var(--danger);
+    --chkfg: var(--danger-content);
+    @apply border-danger hover: border-danger;
+
+    &:focus-visible {
+      outline: 2px solid rgb(var(--chkbg));
+    }
+
+    &:checked,
+    &[checked="true"] {
+      @apply border-danger bg-danger text-danger;
+    }
+  }
+
+  &:disabled {
+    @apply cursor-not-allowed border-white/0 bg-base-gray-400 opacity-20;
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    background-position-y: 5px;
+  }
+
+  50% {
+    background-position-y: -2px;
+  }
+
+  100% {
+    background-position-y: 0;
+  }
+}

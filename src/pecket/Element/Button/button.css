@@ -1,0 +1,402 @@
+.btn:not(.btn-clean) {
+  @apply font-semibold rounded-$rounded-btn inline-flex items-center justify-center select-none transition duration-200 transform active: (animate-none hover:scale-95 focus:scale-95) outline-offset-2;
+  /* animation does not take effect in @apply and is not being scanned/extracted */
+  animation: btnpop 0.25s ease-out;
+
+  &.btn-primary {
+    &:focus-visible {
+      @apply outline-primary;
+    }
+
+    &.btn-default {
+      @apply bg-primary text-primary-content hover: bg-primary-focus shadosm;
+
+      &.btn-active {
+        @apply bg-primary-focus;
+      }
+    }
+
+    &.btn-outline {
+      @apply text-primary hover: (bg-primary text-primary-content) border-2 border-primary;
+
+      &.btn-active {
+        @apply bg-primary text-primary-content;
+      }
+    }
+
+    &.btn-transparent {
+      @apply text-primary hover: (bg-primary/10);
+
+      &.btn-active {
+        @apply bg-primary/10;
+      }
+    }
+
+    &.btn-link {
+      @apply text-primary hover: underline;
+
+      &.btn-active {
+        @apply underline;
+      }
+    }
+  }
+
+  &.btn-secondary {
+    &:focus-visible {
+      @apply outline-secondary;
+    }
+
+    &.btn-default {
+      @apply bg-secondary text-secondary-content hover: bg-secondary-focus shadosm;
+
+      &.btn-active {
+        @apply bg-secondary-focus;
+      }
+    }
+
+    &.btn-outline {
+      @apply text-secondary hover: (bg-secondary text-secondary-content) border-2 border-secondary;
+
+      &.btn-active {
+        @apply bg-secondary text-secondary-content;
+      }
+    }
+
+    &.btn-transparent {
+      @apply text-secondary hover: (bg-secondary/10);
+
+      &.btn-active {
+        @apply bg-secondary/10;
+      }
+    }
+
+    &.btn-link {
+      @apply text-secondary hover: underline;
+
+      &.btn-active {
+        @apply underline;
+      }
+    }
+  }
+
+  &.btn-success {
+    &:focus-visible {
+      @apply outline-success;
+    }
+
+    &.btn-default {
+      @apply bg-success text-success-content hover: bg-success-focus shadosm;
+
+      &.btn-active {
+        @apply bg-success-focus;
+      }
+    }
+
+    &.btn-outline {
+      @apply text-success hover: (bg-success text-success-content) border-2 border-success;
+
+      &.btn-active {
+        @apply bg-success text-success-content;
+      }
+    }
+
+    &.btn-transparent {
+      @apply text-success hover: (bg-success/10);
+
+      &.btn-active {
+        @apply bg-success/10;
+      }
+    }
+
+    &.btn-link {
+      @apply text-success hover: underline;
+
+      &.btn-active {
+        @apply underline;
+      }
+    }
+  }
+
+  &.btn-danger {
+    &:focus-visible {
+      @apply outline-danger;
+    }
+
+    &.btn-default {
+      @apply bg-danger text-danger-content hover: bg-danger-focus shadosm;
+
+      &.btn-active {
+        @apply bg-danger-focus;
+      }
+    }
+
+    &.btn-outline {
+      @apply text-danger hover: (bg-danger text-danger-content) border-2 border-danger;
+
+      &.btn-active {
+        @apply bg-danger text-danger-content;
+      }
+    }
+
+    &.btn-transparent {
+      @apply text-danger hover: (bg-danger/10);
+
+      &.btn-active {
+        @apply bg-danger/10;
+      }
+    }
+
+    &.btn-link {
+      @apply text-danger hover: underline;
+
+      &.btn-active {
+        @apply underline;
+      }
+    }
+  }
+
+  &.btn-warning {
+    &:focus-visible {
+      @apply outline-warning;
+    }
+
+    &.btn-default {
+      @apply bg-warning text-warning-content hover: bg-warning-focus shadosm;
+
+      &.btn-active {
+        @apply bg-warning-focus;
+      }
+    }
+
+    &.btn-outline {
+      @apply text-warning hover: (bg-warning text-warning-content) border-2 border-warning;
+
+      &.btn-active {
+        @apply bg-warning text-warning-content;
+      }
+    }
+
+    &.btn-transparent {
+      @apply text-warning hover: (bg-warning/10);
+
+      &.btn-active {
+        @apply bg-warning/10;
+      }
+    }
+
+    &.btn-link {
+      @apply text-warning hover: underline;
+
+      &.btn-active {
+        @apply underline;
+      }
+    }
+  }
+
+  &.btn-disabled {
+    @apply cursor-not-allowed pointer-events-none !bg-opacity-70 border-opacity-50 text-opacity-80;
+  }
+
+  &.btn-loading {
+    @apply pointer-events-none;
+  }
+
+  &.btn-pills {
+    @apply rounded-full;
+  }
+
+  &.btn-xs {
+    @apply h-8 px-2 text-xs;
+
+    &.btn-circle {
+      @apply rounded-full w-8 !p-0;
+    }
+
+    .icon-loading {
+      @apply h-3 w-3 mr-1;
+    }
+  }
+
+  &.btn-sm {
+    @apply h-10 px-3 text-sm;
+
+    &.btn-circle {
+      @apply rounded-full w-10 !p-0;
+    }
+
+    .icon-loading {
+      @apply h-4 w-4 mr-2;
+    }
+  }
+
+  &.btn-md {
+    @apply h-12 px-4 text-sm;
+
+    &.btn-circle {
+      @apply rounded-full w-12 !p-0;
+    }
+
+    .icon-loading {
+      @apply h-5 w-5 -ml-1 mr-2;
+    }
+  }
+
+  &.btn-lg {
+    @apply h-14 px-5 text-base;
+
+    &.btn-circle {
+      @apply rounded-full w-14 !p-0;
+    }
+
+    .icon-loading {
+      @apply h-6 w-6 -ml-1 mr-3;
+    }
+  }
+
+  &.btn-xl {
+    @apply h-16 px-6 text-xl;
+
+    &.btn-circle {
+      @apply rounded-full w-16 !p-0;
+    }
+
+    .icon-loading {
+      @apply h-7 w-7 -ml-1 mr-3;
+    }
+  }
+
+  .icon-loading {
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+
+  .icon-circle {
+    @apply opacity-25;
+  }
+
+  .icon-path {
+    @apply opacity-75;
+  }
+
+  //responsive sm:()
+  &.btn-sm-xs {
+    @apply sm: btn-xs;
+  }
+
+  &.btn-sm-sm {
+    @apply sm: btn-sm;
+  }
+
+  &.btn-sm-md {
+    @apply sm: btn-md;
+  }
+
+  &.btn-sm-lg {
+    @apply sm: btn-lg;
+  }
+
+  &.btn-sm-xl {
+    @apply sm: btn-xl;
+  }
+
+  //responsive md:()
+  &.btn-md-xs {
+    @apply md: btn-xs;
+  }
+
+  &.btn-md-sm {
+    @apply md: btn-sm;
+  }
+
+  &.btn-md-md {
+    @apply md: btn-md;
+  }
+
+  &.btn-md-lg {
+    @apply md: btn-lg;
+  }
+
+  &.btn-md-xl {
+    @apply md: btn-xl;
+  }
+
+  //responsive lg:()
+  &.btn-lg-xs {
+    @apply lg: btn-xs;
+  }
+
+  &.btn-lg-sm {
+    @apply lg: btn-sm;
+  }
+
+  &.btn-lg-md {
+    @apply lg: btn-md;
+  }
+
+  &.btn-lg-lg {
+    @apply lg: btn-lg;
+  }
+
+  &.btn-lg-xl {
+    @apply lg: btn-xl;
+  }
+
+  //responsive xl:()
+  &.btn-xl-xs {
+    @apply xl: btn-xs;
+  }
+
+  &.btn-xl-sm {
+    @apply xl: btn-sm;
+  }
+
+  &.btn-xl-md {
+    @apply xl: btn-md;
+  }
+
+  &.btn-xl-lg {
+    @apply xl: btn-lg;
+  }
+
+  &.btn-xl-xl {
+    @apply xl: btn-xl;
+  }
+}
+
+@keyframes btnpop {
+  0% {
+    transform: scale(0.95);
+  }
+
+  40% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

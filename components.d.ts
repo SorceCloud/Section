@@ -2,15 +2,15 @@
 // We suggest you to commit this file into source control
 // Read more: https://github.com/vuejs/core/pull/3399
 import '@vue/runtime-core'
-export { }
+
+export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Header: typeof import('./src/section/layout/Header.vue')['default']
-    Footer: typeof import('./src/section/Footer.vue')['default']
-
     Category: typeof import('./src/section/Category.vue')['default']
     Date: typeof import('./src/section/Date.vue')['default']
+    Footer: typeof import('./src/section/layout/Footer.vue')['default']
+    Header: typeof import('./src/section/layout/Header.vue')['default']
     Link: typeof import('./src/section/Link.vue')['default']
     LocaleSwitcher: typeof import('./src/section/LocaleSwitcher.vue')['default']
     Logo: typeof import('./src/section/Logo.vue')['default']
