@@ -16,7 +16,6 @@ const props = defineProps({
 const hasHeadings = computed(() => props.toc.length > 0)
 
 const tocCssClass = ref('')
-const tocAnchor = ref(null)
 const tocContent = ref(null)
 // const handleScroll = () => {
 //   // const e: HTMLElement = tocContent?.value
@@ -41,11 +40,8 @@ const tocContent = ref(null)
 //   }
 // })
 </script>
-
 <template>
-  <!-- Ported from Nextra Docs Theme with customizations -->
   <div class="site-toc order-last hidden flex-shrink-0 px-4 text-sm xl:block">
-    <div ref="tocAnchor" class="h-0 m-0 p-0" />
     <div ref="tocContent" class="max-h-[calc(100vh-4rem-env(safe-area-inset-bottom))] overflow-y-auto"
       :class="tocCssClass">
       <ul v-if="hasHeadings">

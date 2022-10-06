@@ -2,7 +2,7 @@
 import { defineComponent } from 'vue'
 import './menu.css'
 export default defineComponent({
-  name: 'WMenu',
+  name: 'Menu',
   props: {
     // Menu compact if set true or responsive
     compact: {
@@ -48,31 +48,25 @@ export default defineComponent({
 </script>
 
 <template>
-  <ul
-    class="w-menu" :class="[
-      compact
-        ? typeof compact === 'string'
-          ? `w-compact-${compact}`
-          : 'w-compact'
-        : '',
-      horizontal
-        ? typeof horizontal === 'string'
-          ? `w-horizontal-${horizontal}`
-          : 'w-horizontal'
-        : '',
-      {
-        'w-rounded': rounded,
-        'w-padding': padding,
-        'w-hover-border': hoverBorder,
-      },
-    ]"
-  >
+  <ul class="w-menu" :class="[
+    compact
+      ? typeof compact === 'string'
+        ? `w-compact-${compact}`
+        : 'w-compact'
+      : '',
+    horizontal
+      ? typeof horizontal === 'string'
+        ? `w-horizontal-${horizontal}`
+        : 'w-horizontal'
+      : '',
+    {
+      'w-rounded': rounded,
+      'w-padding': padding,
+      'w-hover-border': hoverBorder,
+    },
+  ]">
     <template v-if="slots.default">
-      <li
-        v-for="(slot, key) in slots.default()"
-        :key="key"
-        class="w-menu-item"
-      >
+      <li v-for="(slot, key) in slots.default()" :key="key" class="w-menu-item">
         <component :is="slot" v-if="slots.default" />
       </li>
     </template>
