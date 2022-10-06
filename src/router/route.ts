@@ -51,6 +51,24 @@ const route = [
           }
         ]
       },
+      {
+        path: '/section/',
+        redirect: '/section/dropdown',
+        component: () => import('../pecket/Section/Dropdown/dropdown.md'),
+        meta: { title: 'Section' },
+        children: [
+          {
+            path: '/section/dropdown',
+            component: () => import('../pecket/Section/Dropdown/dropdown.md'),
+            meta: { title: 'Dropdown' },
+          },
+          {
+            path: '/section/menu',
+            component: () => import('../pecket/Section/Dropdown/dropdown.md'),
+            meta: { title: 'Menu' },
+          }
+        ]
+      },
     ]
   }
 ]

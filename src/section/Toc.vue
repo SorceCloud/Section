@@ -18,28 +18,28 @@ const hasHeadings = computed(() => props.toc.length > 0)
 const tocCssClass = ref('')
 const tocAnchor = ref(null)
 const tocContent = ref(null)
-const handleScroll = () => {
-  const e: HTMLElement = tocContent?.value
-  const offsetTop = tocAnchor?.value?.offsetTop - 24
-  if (typeof window !== 'undefined' && window.scrollY > offsetTop) {
-    e.classList.add('fixed')
-    e.style.top = '1.5rem'
-  }
-  else {
-    e.classList.remove('fixed')
-    e.style.top = ''
-  }
-}
+// const handleScroll = () => {
+//   // const e: HTMLElement = tocContent?.value
+//   // const offsetTop = tocAnchor?.value?.offsetTop - 24
+//   if (typeof window !== 'undefined' && window.scrollY > offsetTop) {
+//     e.classList.add('fixed')
+//     e.style.top = '1.5rem'
+//   }
+//   else {
+//     e.classList.remove('fixed')
+//     e.style.top = ''
+//   }
+// }
 
-if (typeof window !== 'undefined') {
-  window.addEventListener('scroll', handleScroll)
-}
+// if (typeof window !== 'undefined') {
+//   window.addEventListener('scroll', handleScroll)
+// }
 
-onUnmounted(() => {
-  if (typeof window !== 'undefined') {
-    window.removeEventListener('scroll', handleScroll)
-  }
-})
+// onUnmounted(() => {
+//   if (typeof window !== 'undefined') {
+//     window.removeEventListener('scroll', handleScroll)
+//   }
+// })
 </script>
 
 <template>
@@ -50,7 +50,7 @@ onUnmounted(() => {
       :class="tocCssClass">
       <ul v-if="hasHeadings">
         <p class="mb-4 font-semibold tracking-tight">
-          table_of_contents
+          Table Of Content
         </p>
         <TocItem v-for="heading in toc" :key="heading.slug" v-bind="heading" />
       </ul>
