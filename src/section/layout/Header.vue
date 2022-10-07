@@ -8,10 +8,6 @@
         </a>
       </div>
       <div class="flex">
-        <Button tag="a" :href="`https://github.com`" target="_blank" variant="transparent" color="secondary"
-          class="fill-base-text">
-          <i class="fa-brands fa-github fa-xl"></i>
-        </Button>
         <ThemeSelect />
         <Button variant="transparent" color="secondary" @click="setDark" class="fill-base-text">
           <span v-show="!isDark"><i class="fa-light fa-sun-bright fa-xl"></i></span>
@@ -19,6 +15,10 @@
         </Button>
         <Button variant="transparent" color="secondary" class="fill-base-text">
           <i class="fa-light fa-language fa-xl"></i>
+        </Button>
+        <Button tag="a" :href="`https://github.com`" target="_blank" variant="transparent" color="secondary"
+          class="fill-base-text">
+          <i class="fa-brands fa-github fa-xl"></i>
         </Button>
       </div>
     </div>

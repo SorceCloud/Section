@@ -14,31 +14,31 @@ Blue, teal, rose, violet and orange.
 
 <br />
 
-<WMenu horizontal compact  class="border rounded-$rounded-btn  w-auto !bg-base-200 shadow-0">
-<WButton menu-item @click="changeTheme('theme-default')"
+<Menu horizontal compact  class="border rounded-$rounded-btn  w-auto !bg-base-200 shadow-0">
+<Button menu-item @click="changeTheme('theme-default')"
 ><span class="theme-blue rounded-[0.5rem] bg-blue-700 h-7 w-7 md:(h-10 w-10)"></span>
-</WButton>
-<WButton menu-item @click="changeTheme('theme-teal')"
+</Button>
+<Button menu-item @click="changeTheme('theme-teal')"
 ><span
     class="theme-teal rounded-$rounded-btn bg-teal-700 h-7 w-7 md:(h-10 w-10)"
 ></span>
-</WButton>
-<WButton menu-item @click="changeTheme('theme-rose')"
+</Button>
+<Button menu-item @click="changeTheme('theme-rose')"
 ><span
     class="theme-rose rounded-$rounded-btn bg-rose-700 h-7 w-7 md:(h-10 w-10)"
 ></span>
-</WButton>
-<WButton menu-item @click="changeTheme('theme-violet')"
+</Button>
+<Button menu-item @click="changeTheme('theme-violet')"
 ><span
     class="theme-violet rounded-$rounded-btn bg-violet-700 h-7 w-7 md:(h-10 w-10)"
 ></span>
-</WButton>
-<WButton menu-item @click="changeTheme('theme-orange')"
+</Button>
+<Button menu-item @click="changeTheme('theme-orange')"
 ><span
     class="theme-orange rounded-$rounded-btn bg-orange-700 h-7 w-7 md:(h-10 w-10)"
 ></span>
-</WButton> 
-</WMenu>
+</Button> 
+</Menu>
 
 <br /> <br />
 

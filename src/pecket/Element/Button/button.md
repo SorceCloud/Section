@@ -10,98 +10,94 @@ import demoLink from "./demo/Link.vue"
 import demoCircle from "./demo/Circle.vue"
 import demoRouter from "./demo/Router.vue"
 import demoResponsive from "./demo/Responsive.vue"
-import ButtonVue from './Button.vue'
+import Button from './Button.vue'
 
 </script>
-
 
 # Button component
 
 <br />
 Button component with multiple styles, colors and sizes.
 
----
-Basic usage
----
+## Basic usage
 
 ```js
 import { WButton } from "vue-windi"
 ```
+## Basic
 
----
-Basic
----
+<Button></Button>
 
 <demoBasic/>
 
 <!-- <<< ./docs/demo/button/Basic.vue#snippet -->
 
----
-Colors
----
+## Colors
 
 <demoColors/>
 
 <<< ./docs/demo/button/Colors.vue#snippet
 
----
-Outline
----
+## Outline
+
 <demoOutline/>
 
 <<< ./docs/demo/button/Outline.vue#snippet
 
----
-Transparent
----
+
+## Transparent
+
 <demoTransparent/>
 
 <<< ./docs/demo/button/Transparent.vue#snippet
 
----
-Pills
----
+## Pills
+
 <demoPills/>
 
 <<< ./docs/demo/button/Pills.vue#snippet
 
----
-Sizes
----
+
+## Sizes
+
 <demoSize/>
 
 <<< ./docs/demo/button/Size.vue#snippet
 
----
-Responsive 
----
+
+## Responsive 
+
 <demoResponsive/>
 
 <<< ./docs/demo/button/Responsive.vue#snippet
 
 
 
----
-Link
----
+
+## Link
+
 <demoLink/>
 
 <<< ./docs/demo/button/Link.vue#snippet
 
----
-Circle
----
+
+## Circle
+
 <demoCircle/>
 
 <<< ./docs/demo/button/Circle.vue#snippet
 
----
-Tag 
----
+
+## Tag 
+
 <demoRouter/>
 
 <<< ./docs/demo/button/Router.vue#snippet
 
+## Table
 
+|表格|表格|表格|表格|
+|---|---|---|---|
+|表格|表格|表格|表格|
 
 

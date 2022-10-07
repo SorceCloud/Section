@@ -11,7 +11,7 @@ Import with composition API
 
 ```vue
 <script setup>
-import { WButton } from "vue-windi";
+import { Button } from "section";
 </script>
 
 ```

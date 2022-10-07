@@ -7,4 +7,4 @@ import './asset/icon.js'
 import './style/markdown/markdown-light.css'
 
 
-createApp(App).use(Router).use(Section).use(Section).mount('#app')
+createApp(App).use(Router).use(Section).mount('#app')

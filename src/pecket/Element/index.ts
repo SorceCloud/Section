@@ -9,9 +9,8 @@ const install = (app: App) => {
   app.component('Toggle', Toggle);//切换开关
   app.component('Checkbox', Checkbox);//复选框
 }
-const index = install
 
 export { Button } //按需引用
 export { Toggle } //按需引用
 export { Checkbox } //按需引用
-export default index //全局引用
+export default install //全局引用

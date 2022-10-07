@@ -1,9 +1,8 @@
 import { App } from 'vue';
-import element from './Element/'
+import Element from './Element/'
 
 const install = (app: App) => {
-  app.component('element', element);//元素
+  app.component('Element', Element);//元素
 }
-const index = install
-export { element } //按需引入
-export default index //全局引用
+export { Element } //按需引入
+export default install //全局引用

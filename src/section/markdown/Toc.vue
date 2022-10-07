@@ -18,6 +18,8 @@ const hasHeadings = computed(() => props.toc.length > 0)
 
 const tocCssClass = ref('')
 const tocContent = ref(null)
+console.log(props.toc);
+
 // const handleScroll = () => {
 //   // const e: HTMLElement = tocContent?.value
 //   // const offsetTop = tocAnchor?.value?.offsetTop - 24

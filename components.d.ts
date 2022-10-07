@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Basic: typeof import('./src/pecket/Element/Button/demo/Basic.vue')['default']
     Footer: typeof import('./src/section/layout/Footer.vue')['default']
     Header: typeof import('./src/section/layout/Header.vue')['default']
     HeaderLink: typeof import('./src/section/HeaderLink.vue')['default']
