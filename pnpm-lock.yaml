@@ -6,6 +6,7 @@ specifiers:
   '@types/node': ^18.8.0
   '@vitejs/plugin-vue': ^2.3.4
   '@vueuse/core': ^9.2.0
+  '@yankeeinlondon/meta-builder': ^1.0.6
   markdown-it-link-attributes: ^4.0.1
   markdown-it-shiki: ^0.5.1
   typescript: ^4.8.2
@@ -32,6 +33,7 @@ devDependencies:
   '@mdit-vue/plugin-headers': 0.11.1
   '@types/node': 18.8.0
   '@vitejs/plugin-vue': 2.3.4_vite@3.1.4+vue@3.2.39
+  '@yankeeinlondon/meta-builder': 1.0.6_lv4j7mgxnr635pynu2wqjlzfpu
   markdown-it-link-attributes: 4.0.1
   markdown-it-shiki: 0.5.1
   typescript: 4.8.2
@@ -519,6 +521,32 @@ packages:
       - stylus
       - supports-color
       - terser
+    dev: true
+
+  /@yankeeinlondon/meta-builder/1.0.6_lv4j7mgxnr635pynu2wqjlzfpu:
+    resolution: {integrity: sha512-MGsJ37kKpXX231JPAfTxFQhcv13ZwcG4OxDfEZSgoDX3/h2UjW0xBbJgHntRs3KInIlr5MZAR1xX7TmWFRLd+Q==}
+    peerDependencies:
+      '@rollup/pluginutils': ^4.2.1
+      inferred-types: ^0.22.0
+    dependencies:
+      '@rollup/pluginutils': 4.2.1
+      '@yankeeinlondon/builder-api': 0.4.1_k3hrojci642c7437ufdk5wgkwm
+      inferred-types: 0.22.0
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - c8
+      - fp-ts
+      - happy-dom
+      - jsdom
+      - less
+      - markdown-it
+      - sass
+      - stylus
+      - supports-color
+      - terser
+      - vite-plugin-md
     dev: true
 
   /acorn-jsx/5.3.2_acorn@7.4.1:

@@ -1,5 +1,5 @@
 .w-menu {
-  @apply bg-base-100 w-56 select-none;
+  @apply w-56 select-none;
 
   &.w-rounded {
     @apply rounded-$rounded-box;
@@ -186,7 +186,7 @@
 
   .menu-title {
     //  @apply font-semibold !text-sm text-gray-400/70 leading-normal !py-4;
-    @apply py-1 !text-xs font-bold text-gray-600 text-opacity-70 dark: text-opacity-100;
+    @apply py-1 !text-xl font-bold text-gray-700 text-opacity-70 dark: text-opacity-100;
 
   }
 }

@@ -1,6 +1,6 @@
 <script setup>
 
-import demoBasic from "./demo/Basic.vue"
+import demoBasic from './demo/Basic.vue'
 import demoColors from "./demo/Colors.vue"
 import demoOutline from "./demo/Outline.vue"
 import demoTransparent from "./demo/Transparent.vue"
@@ -10,6 +10,7 @@ import demoLink from "./demo/Link.vue"
 import demoCircle from "./demo/Circle.vue"
 import demoRouter from "./demo/Router.vue"
 import demoResponsive from "./demo/Responsive.vue"
+import ButtonVue from './Button.vue'
 
 </script>
 
@@ -33,7 +34,7 @@ Basic
 
 <demoBasic/>
 
-<<< ./docs/demo/button/Basic.vue#snippet
+<!-- <<< ./docs/demo/button/Basic.vue#snippet -->
 
 ---
 Colors

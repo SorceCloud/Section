@@ -69,6 +69,42 @@ const route = [
           }
         ]
       },
+      {
+        path: '/section/',
+        redirect: '/section/dropdown',
+        component: () => import('../pecket/Section/Dropdown/dropdown.md'),
+        meta: { title: 'Pattern' },
+        children: [
+          {
+            path: '/section/dropdown',
+            component: () => import('../pecket/Section/Dropdown/dropdown.md'),
+            meta: { title: 'Form' },
+          },
+          {
+            path: '/section/menu',
+            component: () => import('../pecket/Section/Dropdown/dropdown.md'),
+            meta: { title: 'Drawer' },
+          }
+        ]
+      },
+      {
+        path: '/section/',
+        redirect: '/section/dropdown',
+        component: () => import('../pecket/Section/Dropdown/dropdown.md'),
+        meta: { title: 'Template' },
+        children: [
+          {
+            path: '/section/dropdown',
+            component: () => import('../pecket/Section/Dropdown/dropdown.md'),
+            meta: { title: 'Blog' },
+          },
+          {
+            path: '/section/menu',
+            component: () => import('../pecket/Section/Dropdown/dropdown.md'),
+            meta: { title: 'Document' },
+          }
+        ]
+      },
     ]
   }
 ]

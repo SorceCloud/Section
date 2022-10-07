@@ -30,6 +30,7 @@
     "@mdit-vue/plugin-headers": "^0.11.1",
     "@types/node": "^18.8.0",
     "@vitejs/plugin-vue": "^2.3.4",
+    "@yankeeinlondon/meta-builder": "^1.0.6",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-shiki": "^0.5.1",
     "typescript": "^4.8.2",

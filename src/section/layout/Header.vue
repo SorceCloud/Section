@@ -8,25 +8,24 @@
         </a>
       </div>
       <div class="flex">
-        <a href="/"
-          class="inline-flex items-center p-5 text-gray-700 transition-colors duration-200 transform md:text-2xl hover:text-blue-500">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="/"
-          class="inline-flex items-center p-5 text-gray-700 transition-colors duration-200 transform md:text-2xl hover:text-blue-500">
-          <i class="fa-light fa-swatchbook fa-sm"></i>
-        </a>
-        <a href="/"
-          class="inline-flex items-center p-5 text-gray-700 transition-colors duration-200 transform md:text-2xl hover:text-blue-500">
-          <i class="fa-light fa-sun-bright fa-sm"></i>
-        </a>
-        <a href="/"
-          class="inline-flex items-center p-5 text-gray-700 transition-colors duration-200 transform md:text-2xl hover:text-blue-500">
-          <i class="fa-light fa-language fa-sm"></i>
-        </a>
+        <Button tag="a" :href="`https://github.com`" target="_blank" variant="transparent" color="secondary"
+          class="fill-base-text">
+          <i class="fa-brands fa-github fa-xl"></i>
+        </Button>
+        <ThemeSelect />
+        <Button variant="transparent" color="secondary" @click="setDark" class="fill-base-text">
+          <span v-show="!isDark"><i class="fa-light fa-sun-bright fa-xl"></i></span>
+          <span v-show="isDark"><i class="fa-light fa-moon-stars fa-xl"></i></span>
+        </Button>
+        <Button variant="transparent" color="secondary" class="fill-base-text">
+          <i class="fa-light fa-language fa-xl"></i>
+        </Button>
       </div>
     </div>
   </nav>
 </template>
 <script setup lang="ts">
+import Button from '../../pecket/Element/Button/Button.vue'
+import { useDark } from '../../store/dark'
+const { isDark, setDark } = useDark();
 </script>

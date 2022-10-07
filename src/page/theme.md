@@ -1,12 +1,3 @@
-<script setup>
-import { useTheme } from "/.vitepress/theme/composables/theme"
-import { WMenu, WButton } from "vue-windi"
-
-const { changeTheme } = useTheme()
-
-
-</script>
-
 # Themes
 
 <br />

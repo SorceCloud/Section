@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import type { MarkdownItHeader } from '@mdit-vue/types'
-
+import Menu from '~/pecket/Section/Menu/Menu.vue';
+import Button from '~/pecket/Element/Button/Button.vue';
 const props = defineProps({
   /**
    * Table of contents
@@ -48,7 +49,11 @@ const tocContent = ref(null)
         <p class="mb-4 font-semibold tracking-tight">
           Table Of Content
         </p>
-        <TocItem v-for="heading in toc" :key="heading.slug" v-bind="heading" />
+        <Menu v-for="heading in toc" :key="heading.slug" hover-border compacthover-border class="shadow-0 w-auto">
+          <Button tag="a" :href="`#${heading.slug}`" menu-item>{{
+          heading.title
+          }}</Button>
+        </Menu>
       </ul>
     </div>
   </div>

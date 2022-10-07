@@ -8,15 +8,17 @@ defineProps({
     default: () => { },
   },
 })
+
 </script>
 
 <template>
   <article class="flex flex-row p-10 w-full">
-    <div>
+    <div class="w-4/5">
       <slot></slot>
     </div>
     <div v-if="(frontmatter as MdFrontmatter).toc?.length > 0" class="hidden xl:block xl:row-span-3">
-      <Toc :toc="(frontmatter as MdFrontmatter).toc" />
+      <Toc :toc="(frontmatter as MdFrontmatter).toc"
+        class="max-h-[calc(100vh-4rem-env(safe-area-inset-bottom))] overflow-y-auto fixed" />
     </div>
   </article>
 </template>

@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { useClickOutside } from '../../composables/useClickOutside'
+import { useClickOutside } from '~/store/useClickOutside'
 import './dropdown.css'
 export default defineComponent({
   name: 'Dropdown',

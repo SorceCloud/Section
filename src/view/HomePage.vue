@@ -7,8 +7,8 @@
     Component library for VUE 3 using Windi CSS, most components are using daisyUI styles.
   </p>
   <div class="mt-10 flex space-x-4 ">
-    <Button size="md" tag="a">Get Started</Button>
-    <Button variant="outline" size="md" tag="a">Components</Button>
+    <router-link :to="{path:'/section/started'}"> <Button size="md">Get Started</Button></router-link>
+    <router-link :to="{path:'/section/button'}"><Button variant="outline" size="md">Components</Button></router-link>
   </div>
 </template>
 <script setup lang="ts">
