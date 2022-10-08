@@ -4,7 +4,7 @@ import Router from './router'
 import 'virtual:windi.css'
 import 'virtual:windi-devtools';
 import './asset/icon.js'
-import './style/markdown/markdown-light.css'
+import './style/markdown/markdown.css'
 
 
 createApp(App).use(Router).use(Section).mount('#app')
