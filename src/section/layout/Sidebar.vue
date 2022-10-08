@@ -8,8 +8,8 @@
           <Menu v-if="menu.children && menu.children.length>1" v-for="parent in menu.children" padding
             class="w-full pt-0">
             <span class="menu-title">{{parent.meta.title}}</span>
-            <Button menu-item variant="transparent" v-for="child in parent.children" tag="a"
-              :href="child.path">{{child.meta.title}}
+            <Button menu-item variant="transparent" v-for="child in parent.children" tag="RouterLink"
+              :to="child.path">{{child.meta.title}}
             </Button>
           </Menu>
         </template>
