@@ -5,9 +5,9 @@ import Toggle from './Toggle/Toggle.vue'
 
 
 const install = (app: App) => {
-  app.component('Button', Button);//按钮
-  app.component('Toggle', Toggle);//切换开关
-  app.component('Checkbox', Checkbox);//复选框
+  app.component('btn', Button);//按钮
+  app.component('tgl', Toggle);//切换开关
+  app.component('ckb', Checkbox);//复选框
 }
 
 export { Button } //按需引用

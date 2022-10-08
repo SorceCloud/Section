@@ -7,10 +7,9 @@
     Component library for VUE 3 using Windi CSS, most components are using daisyUI styles.
   </p>
   <div class="mt-10 flex space-x-4 ">
-    <Button tag="RouterLink" to="/section/started" size="md">Get Started</Button>
-    <Button tag="RouterLink" to="/section/button" variant="outline" size="md">Components</Button>
+    <btn tag="RouterLink" to="/section/started" size="md">Get Started</btn>
+    <btn tag="RouterLink" to="/section/button" variant="outline" size="md">Components</btn>
   </div>
 </template>
 <script setup lang="ts">
-import Button from '../pecket/Element/Button/Button.vue'
 </script>

@@ -1,123 +1,66 @@
-<script lang="ts">
-import { type PropType, computed, defineComponent, ref } from 'vue';
+<script lang="ts" setup>
+import { type PropType, computed, ref } from 'vue';
 import './button.css'
-export default defineComponent({
-  props: {
-    tag: {
-      type: String,
-      default: 'button',
-      required: false,
+const props = defineProps({
+  tag: { type: String, default: 'button', required: false, },
+  color: {
+    type: String, default: 'primary',
+    validator: (value: string) => {
+      return ['primary', 'secondary', 'success', 'danger', 'warning'].includes(value)
     },
-    color: {
-      type: String,
-      default: 'primary',
-      validator: (value: string) => {
-        return ['primary', 'secondary', 'success', 'danger', 'warning'].includes(value)
-      },
-    },
-    type: {
-      type: String as PropType<'button' | 'submit' | 'reset'>,
-      default: 'button',
-      require: false,
-      validator: (value: string) => {
-        return ['button', 'submit', 'reset'].includes(value)
-      }
-    },
-    loading: {
-      type: Boolean,
-      default: false,
-      required: false,
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-      required: false,
-    },
-    size: {
-      type: String,
-      default: 'md',
-      required: false,
-      validator: (value: string) => {
-        return ['xs', 'sm', 'md', 'lg', 'xl'].includes(value)
-      },
-    },
-    variant: {
-      type: String,
-      default: 'default',
-      required: false,
-      validator: (value: string) => {
-        return ['default', 'outline', 'transparent', 'link'].includes(value)
-      }
-    },
-    pills: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    circle: {
-      type: Boolean,
-      default: false,
-      required: false,
-    },
-    active: {
-      type: Boolean,
-      default: false,
-      required: false,
-    },
-    // remove all styles from button
-    clean: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    menuItem: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    // responsive sm
-    sm: {
-      type: String,
-      required: false,
-    },
-    // responsive md
-    md: {
-      type: String,
-      required: false,
-    },
-    // responsive lg
-    lg: {
-      type: String,
-      required: false,
-    },
-    // responsive xl
-    xl: {
-      type: String,
-      required: false
+  },
+  type: {
+    type: String as PropType<'button' | 'submit' | 'reset'>, default: 'button', require: false,
+    validator: (value: string) => {
+      return ['button', 'submit', 'reset'].includes(value)
     }
   },
-  setup(props) {
-    const computedType = computed(() => {
-      if (props.tag === 'input' || props.tag === 'button')
-        return props.type
-      return null
-    })
-    const responsive = computed(() => {
-      const rp = ref('btn-')
-      if (props.sm)
-        rp.value = `${rp.value}sm-${props.sm}`
-      else if (props.md)
-        rp.value = `${rp.value}md-${props.md}`
-      else if (props.lg)
-        rp.value = `${rp.value}md-${props.lg}`
-      else if (props.xl)
-        rp.value = `${rp.value}md-${props.xl}`
-      else return null
-
-      return rp.value
-    })
-    return { computedType, responsive }
-  }
+  loading: { type: Boolean, default: false, required: false, },
+  disabled: { type: Boolean, default: false, required: false, },
+  size: {
+    type: String, default: 'md', required: false,
+    validator: (value: string) => {
+      return ['xs', 'sm', 'md', 'lg', 'xl'].includes(value)
+    },
+  },
+  variant: {
+    type: String, default: 'default', required: false,
+    validator: (value: string) => {
+      return ['default', 'outline', 'transparent', 'link'].includes(value)
+    }
+  },
+  pills: { type: Boolean, default: false, required: false },
+  circle: { type: Boolean, default: false, required: false },
+  active: { type: Boolean, default: false, required: false },
+  // remove all styles from button
+  clean: { type: Boolean, default: false, required: false },
+  menuItem: { type: Boolean, default: false, required: false },
+  // responsive sm
+  sm: { type: String, required: false },
+  // responsive md
+  md: { type: String, required: false },
+  // responsive lg
+  lg: { type: String, required: false },
+  // responsive xl
+  xl: { type: String, required: false }
+})
+const computedType = computed(() => {
+  if (props.tag === 'input' || props.tag === 'button')
+    return props.type
+  return null
+})
+const responsive = computed(() => {
+  const rp = ref('btn-')
+  if (props.sm)
+    rp.value = `${rp.value}sm-${props.sm}`
+  else if (props.md)
+    rp.value = `${rp.value}md-${props.md}`
+  else if (props.lg)
+    rp.value = `${rp.value}md-${props.lg}`
+  else if (props.xl)
+    rp.value = `${rp.value}md-${props.xl}`
+  else return null
+  return rp.value
 })
 </script>
 <template>
