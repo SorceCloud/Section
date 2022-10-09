@@ -25,8 +25,14 @@ Button component with multiple styles, colors and sizes.
 import { WButton } from "vue-windi"
 ```
 ## Basic
-
-<Button></Button>
+<div class="flex flex-wrap items-center gap-3">
+  <btn>Primary</btn>
+  <btn loading>Loading</btn>
+  <btn disabled>Disabled</btn>
+  <btn pills>Primary pills</btn>
+  <btn variant="outline">Outline</btn>
+  <btn variant="link">Link</btn>
+</div>
 
 <demoBasic/>
 
@@ -96,8 +102,8 @@ import { WButton } from "vue-windi"
 
 ## Table
 
-|表格|表格|表格|表格|
-|---|---|---|---|
-|表格|表格|表格|表格|
+| 表格 | 表格 | 表格 | 表格 |
+| ---- | ---- | ---- | ---- |
+| 表格 | 表格 | 表格 | 表格 |
 
 

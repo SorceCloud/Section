@@ -26,6 +26,7 @@
 </template>
 <script setup lang="ts">
 import Button from '../../pecket/Element/Button/Button.vue'
+import ThemeSelect from '../ThemeSelect.vue'
 import { useDark } from '../../store/dark'
 const { isDark, setDark } = useDark();
 </script>
