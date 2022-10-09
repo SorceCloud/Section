@@ -11,7 +11,7 @@ Import with composition API
 
 ```vue
 <script setup>
-import { Button } from "section";
+import btn from "section";
 </script>
 
 ```
@@ -23,11 +23,11 @@ import with options API
 
 ```vue
 <script>
-import { WButton } from "vue-windi";
+import btn from "sectionui";
 
 export default {
     components: {
-        WButton
+        btn
     }
 }
 </script>

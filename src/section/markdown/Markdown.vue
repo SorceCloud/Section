@@ -14,7 +14,7 @@ defineProps({
 
 <template>
   <article class="flex flex-row p-10 w-full">
-    <div class="w-4/5">
+    <div class="w-3/4">
       <slot></slot>
     </div>
     <div v-if="(frontmatter as MdFrontmatter).toc?.length > 0" class="hidden xl:block xl:row-span-3">

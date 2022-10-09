@@ -7,9 +7,11 @@
     Component library for VUE 3 using Windi CSS, most components are using daisyUI styles.
   </p>
   <div class="mt-10 flex space-x-4 ">
-    <btn tag="RouterLink" to="/section/started" size="md">Get Started</btn>
-    <btn tag="RouterLink" to="/section/button" variant="outline" size="md">Components</btn>
+    <btn tag="RouterLink" to="/section/started" size="md">{{ t("home.started") }}</btn>
+    <btn tag="RouterLink" to="/section/button" variant="outline" size="md">{{ t("home.components") }}</btn>
   </div>
 </template>
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n();
 </script>

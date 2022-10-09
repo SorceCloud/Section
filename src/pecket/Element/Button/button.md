@@ -1,28 +1,13 @@
-<script setup>
-
-import demoBasic from './demo/Basic.vue'
-import demoColors from "./demo/Colors.vue"
-import demoOutline from "./demo/Outline.vue"
-import demoTransparent from "./demo/Transparent.vue"
-import demoPills from "./demo/Pills.vue"
-import demoSize from "./demo/Size.vue"
-import demoLink from "./demo/Link.vue"
-import demoCircle from "./demo/Circle.vue"
-import demoRouter from "./demo/Router.vue"
-import demoResponsive from "./demo/Responsive.vue"
-import Button from './Button.vue'
-
-</script>
-
 # Button component
 
 <br />
+
 Button component with multiple styles, colors and sizes.
 
 ## Basic usage
 
-```js
-import { WButton } from "vue-windi"
+```ts
+import btn from "sectionui"
 ```
 ## Basic
 <div class="flex flex-wrap items-center gap-3">
@@ -34,73 +19,201 @@ import { WButton } from "vue-windi"
   <btn variant="link">Link</btn>
 </div>
 
-<demoBasic/>
-
-<!-- <<< ./docs/demo/button/Basic.vue#snippet -->
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <btn>Primary</btn>
+  <btn loading>Loading</btn>
+  <btn disabled>Disabled</btn>
+  <btn pills>Primary pills</btn>
+  <btn variant="outline">Outline</btn>
+  <btn variant="link">Link</btn>
+</div>
+```
 
 ## Colors
 
-<demoColors/>
+<div class="flex flex-wrap items-center gap-3">
+  <btn color="primary">Primary </btn>
+  <btn color="secondary">Secondary </btn>
+  <btn color="success">Success </btn>
+  <btn color="danger">Danger </btn>
+  <btn color="warning">Warning </btn>
+</div>
 
-<<< ./docs/demo/button/Colors.vue#snippet
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <btn>Primary</btn>
+  <btn loading>Loading</btn>
+  <btn disabled>Disabled</btn>
+  <btn pills>Primary pills</btn>
+  <btn variant="outline">Outline</btn>
+  <btn variant="link">Link</btn>
+</div>
+```
 
 ## Outline
 
-<demoOutline/>
+<div class="flex flex-wrap items-center gap-3">
+  <btn color="primary" variant="outline">Primary </btn>
+  <btn color="secondary" variant="outline">Secondary </btn>
+  <btn color="success" variant="outline">Success </btn>
+  <btn color="danger" variant="outline">Danger </btn>
+  <btn color="warning" variant="outline">Warning </btn>
+</div>
 
-<<< ./docs/demo/button/Outline.vue#snippet
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <btn color="primary" variant="outline">Primary </btn>
+  <btn color="secondary" variant="outline">Secondary </btn>
+  <btn color="success" variant="outline">Success </btn>
+  <btn color="danger" variant="outline">Danger </btn>
+  <btn color="warning" variant="outline">Warning </btn>
+</div>
+```
 
 
 ## Transparent
 
-<demoTransparent/>
+<div class="flex flex-wrap items-center gap-3">
+  <btn color="primary" variant="transparent">Primary </btn>
+  <btn color="secondary" variant="transparent">Secondary </btn>
+  <btn color="success" variant="transparent">Success </btn>
+  <btn color="danger" variant="transparent">Danger </btn>
+  <btn color="warning" variant="transparent">Warning </btn>
+</div>
 
-<<< ./docs/demo/button/Transparent.vue#snippet
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <btn color="primary" variant="transparent">Primary </btn>
+  <btn color="secondary" variant="transparent">Secondary </btn>
+  <btn color="success" variant="transparent">Success </btn>
+  <btn color="danger" variant="transparent">Danger </btn>
+  <btn color="warning" variant="transparent">Warning </btn>
+</div>
+```
 
 ## Pills
 
-<demoPills/>
+<div class="flex flex-wrap items-center gap-3">
+  <btn color="primary" pills>Primary </btn>
+  <btn color="secondary" pills>Secondary </btn>
+  <btn color="success" pills>Success </btn>
+  <btn color="danger" pills>Danger </btn>
+  <btn color="warning" pills>Warning </btn>
+</div>
 
-<<< ./docs/demo/button/Pills.vue#snippet
-
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <btn color="primary" pills>Primary </btn>
+  <btn color="secondary" pills>Secondary </btn>
+  <btn color="success" pills>Success </btn>
+  <btn color="danger" pills>Danger </btn>
+  <btn color="warning" pills>Warning </btn>
+</div>
+```
 
 ## Sizes
 
-<demoSize/>
+<div class="flex flex-wrap items-center gap-8">
+  <btn size="xs">Extra-small </btn>
+  <btn size="sm">Small </btn>
+  <btn>normal </btn>
+  <btn size="lg">Large </btn>
+  <btn size="xl">Extra-large </btn>
+</div>
 
-<<< ./docs/demo/button/Size.vue#snippet
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <btn size="xs">Extra-small </btn>
+  <btn size="sm">Small </btn>
+  <btn>normal </btn>
+  <btn size="lg">Large </btn>
+  <btn size="xl">Extra-large </btn>
+</div>
+```
 
 
 ## Responsive 
 
-<demoResponsive/>
-
-<<< ./docs/demo/button/Responsive.vue#snippet
+<div class="flex flex-wrap items-center gap-3">
+  <btn size="sm" md="lg">Default(sm) md(lg)</btn>
+  <btn size="lg" md="xs">Default(lg) md(xs)</btn>
+</div>
 
 
 
 
 ## Link
 
-<demoLink/>
+<div class="flex flex-wrap items-center gap-3">
+  <btn color="primary" variant="link">Primary </btn>
+  <btn color="secondary" variant="link">Secondary </btn>
+  <btn color="success" variant="link">Success </btn>
+  <btn color="danger" variant="link">Danger </btn>
+  <btn color="warning" variant="link">Warning </btn>
+</div>
 
-<<< ./docs/demo/button/Link.vue#snippet
-
-
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <btn color="primary" variant="link">Primary </btn>
+  <btn color="secondary" variant="link">Secondary </btn>
+  <btn color="success" variant="link">Success </btn>
+  <btn color="danger" variant="link">Danger </btn>
+  <btn color="warning" variant="link">Warning </btn>
+</div>
+```
 ## Circle
 
-<demoCircle/>
+<div class="flex flex-wrap items-center gap-3">
+  <btn circle>
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C374 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 15 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+      </path>
+    </svg>
+  </btn>
+  <btn circle variant="outline">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+      </path>
+    </svg>
+  </btn>
+</div>
 
-<<< ./docs/demo/button/Circle.vue#snippet
-
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <btn circle>
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C374 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 15 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+      </path>
+    </svg>
+  </btn>
+  <btn circle variant="outline">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+      </path>
+    </svg>
+  </btn>
+</div>
+```
 
 ## Tag 
+<div class="flex flex-wrap items-center gap-3">
+  <btn tag="a" href="/" variant="link" >Home </btn>
+  <btn tag="RouterLink" to="/components/button">Secondary </btn>
+</div>
 
-<demoRouter/>
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <btn tag="a" href="/" variant="link" >Home </btn>
+  <btn tag="RouterLink" to="/components/button">Secondary </btn>
+</div>
+```
 
-<<< ./docs/demo/button/Router.vue#snippet
-
-## Table
+## API
 
 | 表格 | 表格 | 表格 | 表格 |
 | ---- | ---- | ---- | ---- |

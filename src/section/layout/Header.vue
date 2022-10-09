@@ -13,9 +13,7 @@
           <span v-show="!isDark"><i class="fa-light fa-sun-bright fa-xl"></i></span>
           <span v-show="isDark"><i class="fa-light fa-moon-stars fa-xl"></i></span>
         </Button>
-        <Button variant="transparent" color="secondary" class="fill-base-text">
-          <i class="fa-light fa-language fa-xl"></i>
-        </Button>
+        <LanguageSelect />
         <Button tag="a" :href="`https://github.com`" target="_blank" variant="transparent" color="secondary"
           class="fill-base-text">
           <i class="fa-brands fa-github fa-xl"></i>
@@ -28,5 +26,6 @@
 import Button from '../../pecket/Element/Button/Button.vue'
 import ThemeSelect from '../ThemeSelect.vue'
 import { useDark } from '../../store/dark'
+import LanguageSelect from '../LanguageSelect.vue';
 const { isDark, setDark } = useDark();
 </script>

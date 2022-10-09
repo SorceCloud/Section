@@ -1,29 +1,27 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
+import { PropType } from 'vue'
 import { computed, ref } from 'vue'
 import type { MarkdownItHeader } from '@mdit-vue/types'
 import Menu from '~/pecket/Section/Menu/Menu.vue';
 import Button from '~/pecket/Element/Button/Button.vue';
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n();
+
 const props = defineProps({
-  /**
-   * Table of contents
-   *
-   * @type { MarkdownItHeader[] }
-   */
   toc: {
     type: Array as PropType<MarkdownItHeader[]>,
     default: () => [],
   },
 })
-const hasHeadings = computed(() => props.toc.length > 0)
 
+const hasHeadings = computed(() => props.toc.length > 0)
 const tocCssClass = ref('')
-const tocContent = ref(null)
-console.log(props.toc);
+// const tocAnchor = ref(null)
+// const tocContent = ref(null)
 
 // const handleScroll = () => {
-//   // const e: HTMLElement = tocContent?.value
-//   // const offsetTop = tocAnchor?.value?.offsetTop - 24
+//   const e: HTMLElement = tocContent?.value
+//   const offsetTop = tocAnchor?.value?.offsetTop - 24
 //   if (typeof window !== 'undefined' && window.scrollY > offsetTop) {
 //     e.classList.add('fixed')
 //     e.style.top = '1.5rem'
@@ -50,7 +48,7 @@ console.log(props.toc);
       :class="tocCssClass">
       <ul v-if="hasHeadings">
         <p class="mb-4 font-semibold tracking-tight">
-          Table Of Content
+          {{t("home.tableOfContent")}}
         </p>
         <Menu v-for="heading in toc" :key="heading.slug" hover-border compacthover-border class="shadow-0 w-auto">
           <Button tag="a" :href="`#${heading.slug}`" menu-item>{{

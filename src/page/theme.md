@@ -14,31 +14,6 @@ Blue, teal, rose, violet and orange.
 
 <br />
 
-<Menu horizontal compact  class="border rounded-$rounded-btn  w-auto !bg-base-200 shadow-0">
-<Button menu-item @click="changeTheme('theme-default')"
-><span class="theme-blue rounded-[0.5rem] bg-blue-700 h-7 w-7 md:(h-10 w-10)"></span>
-</Button>
-<Button menu-item @click="changeTheme('theme-teal')"
-><span
-    class="theme-teal rounded-$rounded-btn bg-teal-700 h-7 w-7 md:(h-10 w-10)"
-></span>
-</Button>
-<Button menu-item @click="changeTheme('theme-rose')"
-><span
-    class="theme-rose rounded-$rounded-btn bg-rose-700 h-7 w-7 md:(h-10 w-10)"
-></span>
-</Button>
-<Button menu-item @click="changeTheme('theme-violet')"
-><span
-    class="theme-violet rounded-$rounded-btn bg-violet-700 h-7 w-7 md:(h-10 w-10)"
-></span>
-</Button>
-<Button menu-item @click="changeTheme('theme-orange')"
-><span
-    class="theme-orange rounded-$rounded-btn bg-orange-700 h-7 w-7 md:(h-10 w-10)"
-></span>
-</Button> 
-</Menu>
 
 <br /> <br />
 
@@ -46,13 +21,13 @@ Blue, teal, rose, violet and orange.
 
 To import themes you need to add the code bellow in <code>windi.config.js</code> file.
 
-```js
-import vueWindi from "./src/plugin";
+```ts
+import sectionTheme from "./src/plugin";
 
 export default {
-  plugins: [vueWindi],
+  plugins: [sectionTheme],
 
-  vueWindi: {
+  sectionThemes: {
     themes: ["blue", "teal", "rose", "violet", "orange"],
   },
 };
@@ -66,13 +41,13 @@ When there are no themes imported, VueWindi will use the default theme (blue).
 
 To customize an existing theme, you can pass an object to vueWindi.themes and replace existing variables.
 
-```js
-import  vueWindi  from "./src/plugin";
+```ts
+import  sectionTheme  from "./src/plugin";
 
 export default {
-  plugins: [vueWindi],
+  plugins: [sectionTheme],
 
-  vueWindi: {
+  sectionThemes: {
      {
         "primary-100": "#2563eb",
         "primary-200": "#1d4ed8",
@@ -84,7 +59,7 @@ export default {
 
 ```
 
-## VueWindi CSS variables
+## Section UI  CSS variables
 
 ```js
     "primary-100": "#2563eb",

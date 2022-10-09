@@ -1,42 +1,22 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import './checkbox.css'
-export default defineComponent({
-  name: 'Checkbox',
-  props: {
-    checked: {
-      type: Boolean,
-      default: false,
-      required: false,
-    },
-    color: {
-      type: String,
-      default: 'primary',
-      validator: (value: string) => {
-        return [
-          'primary',
-          'secondary',
-          'success',
-          'danger',
-          'warning',
-        ].includes(value)
-      },
-    },
-    size: {
-      type: String,
-      default: 'md',
-      required: false,
-      validator: (value: string) => {
-        return ['xs', 'sm', 'md', 'lg', 'xl'].includes(value)
-      },
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-      required: false,
-    },
+const props = defineProps({
+  checked: { type: Boolean, default: false, required: false },
+  color: {
+    type: String, default: 'primary',
+    validator: (value: string) => {
+      return ['primary', 'secondary', 'success', 'danger', 'warning'].includes(value)
+    }
   },
-
+  size: {
+    type: String, default: 'md', required: false,
+    validator: (value: string) => {
+      return ['xs', 'sm', 'md', 'lg', 'xl'].includes(value)
+    }
+  },
+  disabled: {
+    type: Boolean, default: false, required: false
+  }
 })
 </script>
 

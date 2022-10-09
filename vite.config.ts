@@ -83,7 +83,7 @@ export default defineConfig(({ mode }) => {
       VueI18n({
         runtimeOnly: true,
         compositionOnly: true,
-        include: [resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**')],
+        include: [resolve(dirname(fileURLToPath(import.meta.url)), './src/locale/**')],
       }),
       WindiCSS(
         {

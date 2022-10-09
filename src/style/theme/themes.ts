@@ -69,14 +69,17 @@ export default {
     'danger-content': '#ffffff',
     'warning': '#a16207',
     'warning-content': '#ffffff',
+    'base-100': '#fcfcfc',
+    'base-200': '#fafafa',
+    'base-300': '#f8f9fa',
     'dark-base-100': '#181818',
     'dark-base-200': '#151414',
     'dark-base-300': '#0f0f0f',
     'base-content': '#1f2937',
     'dark-base-content': '#f3f4f6',
-    'rounded-box': '0.7rem',
-    'rounded-btn': '0.25rem',
-    'rounded-badge': '0.45rem',
+    'rounded-box': '1rem',
+    'rounded-btn': '0.5rem',
+    'rounded-badge': '1.9rem'
   },
 
   violet: {
@@ -93,6 +96,9 @@ export default {
     'danger-content': '#ffffff',
     'warning': '#a16207',
     'warning-content': '#ffffff',
+    'base-100': '#fcfcfc',
+    'base-200': '#fafafa',
+    'base-300': '#f8f9fa',
     'dark-base-100': '#181818',
     'dark-base-200': '#151414',
     'dark-base-300': '#0f0f0f',
@@ -100,7 +106,7 @@ export default {
     'dark-base-content': '#f3f4f6',
     'rounded-box': '1rem',
     'rounded-btn': '0.5rem',
-    'rounded-badge': '1.9rem',
+    'rounded-badge': '1.9rem'
   },
   orange: {
     'neutral': '#3d4451',
@@ -126,7 +132,7 @@ export default {
     'dark-base-content': '#f3f4f6',
     'rounded-box': '1rem',
     'rounded-btn': '0.5rem',
-    'rounded-badge': '1.9rem',
+    'rounded-badge': '1.9rem'
   },
 
 }

@@ -7,12 +7,10 @@ const route = [
   {
     path: '/section',
     component: () => import('../view/section.vue'),
-    redirect: '/section/started',
     meta: { title: 'Section' },
     children: [
       {
         path: '/section/',
-        redirect: '/section/started',
         component: () => import('../page/started.md'),
         meta: { title: 'Introduce' },
         children: [

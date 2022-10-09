@@ -7,11 +7,8 @@
 ## Installation
 
 ```js
-npm i vue-windi
+npm i sectionui
 ```
-
-<br />
-Then add VueWindi to your <code>windi.config.js</code> files:
 
 ## Configuration
 
@@ -25,9 +22,9 @@ export default {
 ```
 
 <br />
-Import VueWindi CSS to <code>main.js</code> above the windiCSS import
+Import Section UI CSS to <code>main.js</code> above the windiCSS import
 
 ```js
-import "vue-windi/css";
+import "sectionui/css";
 import "virtual:windi.css";
 ```
