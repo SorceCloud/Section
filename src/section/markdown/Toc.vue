@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
+import { computed, ref } from 'vue'
 import type { MarkdownItHeader } from '@mdit-vue/types'
 import Menu from '~/pecket/Section/Menu/Menu.vue';
 import Button from '~/pecket/Element/Button/Button.vue';

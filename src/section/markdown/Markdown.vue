@@ -2,6 +2,7 @@
 import type { PropType } from 'vue'
 import { MdFrontmatter, } from '~/types'
 import type { PostFrontmatter } from '~/types'
+import Toc from './Toc.vue'
 defineProps({
   frontmatter: {
     type: Object as PropType<PostFrontmatter>,
