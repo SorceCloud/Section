@@ -47,21 +47,21 @@ watch(text, () => {
 </script>
 
 <template>
-  <div class="w-form-control">
-    <label v-if="label" class="w-label" @click="setFocus">
-      <span class="w-label-text">{{ label }}</span>
+  <div class="form-control">
+    <label v-if="label" class="label" @click="setFocus">
+      <span class="label-text">{{ label }}</span>
     </label>
 
     <input ref="inputText" v-model="text" :name="name" :placeholder="placeholder" :type="type" :disabled="disabled"
-      class="w-input" :class="[
+      class="input" :class="[
         {
-          'w-input-bordered': bordered,
-          'w-input-ghost': ghost,
-          'w-input-error': isError,
+          'input-bordered': bordered,
+          'input-ghost': ghost,
+          'input-error': isError,
         },
-        `w-input-${size}`,
-        `w-input-${color}`,
+        `input-${size}`,
+        `input-${color}`,
       ]">
-    <div v-if="isError" class="w-validation-text" v-text="error" />
+    <div v-if="isError" class="validation-text" v-text="error" />
   </div>
 </template>

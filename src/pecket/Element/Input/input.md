@@ -1,103 +1,116 @@
-<script setup>
-
-import demoBasic from "./demo/input/Basic.vue"
-import demoNoBorder from "./demo/input/NoBorder.vue"
-import demoGhost from "./demo/input/Ghost.vue"
-import demoSizes from "./demo/input/Sizes.vue"
-import demoColors from "./demo/input/Colors.vue"
-import demoLabel from "./demo/input/Label.vue"
-import demoValidation from "./demo/input/Validation.vue"
-import demoDisabled from "./demo/input/Disabled.vue"
-
-</script>
-
 # Input component
 
+## Basic usage
 
----
-Basic usage
----
-
-```js
-import { WInput } from "vue-windi"
+```ts
+import { ipt } from "sectionui"
 ```
 
----
-Basic
----
+## Basic
 
+<div class="flex flex-wrap items-center gap-3">
+  <ipt placeholder="Type here..." />
+</div>
 
-<demoBasic/>
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <ipt placeholder="Type here..." />
+</div>
+```
 
-<<< ./docs/demo/input/Basic.vue#snippet
+## No Border
 
----
-No Border
----
+<div class="flex flex-wrap items-center gap-3 bg-base-gray-200/30 pl-2 py-3 rounded-$rounded-btn">
+  <ipt :bordered="false" placeholder="No Border..." />
+</div>
 
+```ts
+<div class="flex flex-wrap items-center gap-3 bg-base-gray-200/30 pl-2 py-3 rounded-$rounded-btn">
+  <ipt :bordered="false" placeholder="No Border..." />
+</div>
+```
 
-<demoNoBorder/>
+## Ghost
 
-<<< ./docs/demo/input/NoBorder.vue#snippet
+<div class="flex flex-wrap items-center gap-3 bg-base-gray-200/20 pl-2 py-3 rounded-$rounded-btn">
+  <ipt :bordered="false" ghost placeholder="Ghost..." />
+</div>
 
----
-Ghost
----
+```ts
+<div class="flex flex-wrap items-center gap-3 bg-base-gray-200/20 pl-2 py-3 rounded-$rounded-btn">
+  <ipt :bordered="false" ghost placeholder="Ghost..." />
+</div>
+```
 
+## Sizes
 
-<demoGhost/>
+<div class="flex flex-wrap gap-2 items-center">
+  <ipt size="xs" placeholder="Type here..." />
+  <ipt size="sm" placeholder="Type here..." />
+  <ipt size="md" placeholder="Type here..." />
+  <ipt size="lg" placeholder="Type here..." />
+</div>
 
-<<< ./docs/demo/input/Ghost.vue#snippet
+```ts
+<div class="flex flex-wrap gap-2 items-center">
+  <ipt size="xs" placeholder="Type here..." />
+  <ipt size="sm" placeholder="Type here..." />
+  <ipt size="md" placeholder="Type here..." />
+  <ipt size="lg" placeholder="Type here..." />
+</div>
+```
+## Colors
 
----
-Sizes
----
+<div class="flex flex-wrap items-center gap-3">
+  <ipt color="primary" placeholder="Type here..." />
+  <ipt color="secondary" placeholder="Type here..." />
+  <ipt color="success" placeholder="Type here..." />
+  <ipt color="warning" placeholder="Type here..." />
+  <ipt color="danger" placeholder="Type here..." />
+</div>
 
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <ipt color="primary" placeholder="Type here..." />
+  <ipt color="secondary" placeholder="Type here..." />
+  <ipt color="success" placeholder="Type here..." />
+  <ipt color="warning" placeholder="Type here..." />
+  <ipt color="danger" placeholder="Type here..." />
+</div>
+```
 
-<demoSizes/>
+## Label
 
-<<< ./docs/demo/input/Sizes.vue#snippet
+<div class="flex flex-wrap items-center gap-3">
+  <ipt label="Your name" placeholder="With label here..."/>
+</div>
 
----
-Colors
----
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <ipt label="Your name" placeholder="With label here..."/>
+</div>
+```
+## Ghost
 
+<div class="flex flex-wrap items-center gap-3 bg-base-gray-200/20 pl-2 py-3 rounded-$rounded-btn">
+    <ipt :bordered="false" ghost placeholder="Ghost..." />
+</div>
 
-<demoColors/>
+```ts
+<div class="flex flex-wrap items-center gap-3 bg-base-gray-200/20 pl-2 py-3 rounded-$rounded-btn">
+    <ipt :bordered="false" ghost placeholder="Ghost..." />
+</div>
+```
+## Disabled
 
-<<< ./docs/demo/input/Colors.vue#snippet
+<div class="flex flex-wrap items-center gap-3">
+  <ipt disabled label="Disabled" placeholder="Type here..." />
+  <ipt disabled label="Disabled" value="disabled with text" />
+</div>
 
----
-Label
----
-
-
-<demoLabel/>
-
-<<< ./docs/demo/input/Label.vue#snippet
-
----
-Ghost
----
-
-
-<demoValidation/>
-
-<<< ./docs/demo/input/Validation.vue#snippet
-
----
-Disabled
----
-
-
-<demoDisabled/>
-
-<<< ./docs/demo/input/Disabled.vue#snippet
-
-
-
-
-
-
-
-
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <ipt disabled label="Disabled" placeholder="Type here..." />
+  <ipt disabled label="Disabled" value="disabled with text" />
+</div>
+```

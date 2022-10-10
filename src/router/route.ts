@@ -11,7 +11,6 @@ const route = [
     children: [
       {
         path: '/section/',
-        component: () => import('../page/started.md'),
         meta: { title: 'Introduce' },
         children: [
           {
@@ -33,8 +32,6 @@ const route = [
       },
       {
         path: '/section/',
-        redirect: '/section/button',
-        component: () => import('../pecket/Element/Button/button.md'),
         meta: { title: 'Element' },
         children: [
           {
@@ -46,13 +43,16 @@ const route = [
             path: '/section/input',
             component: () => import('../pecket/Element/Input/input.md'),
             meta: { title: 'Input' },
+          },
+          {
+            path: '/section/toggle',
+            component: () => import('../pecket/Element/Toggle/toggle.md'),
+            meta: { title: 'Toggle' },
           }
         ]
       },
       {
         path: '/section/',
-        redirect: '/section/dropdown',
-        component: () => import('../pecket/Section/Dropdown/dropdown.md'),
         meta: { title: 'Section' },
         children: [
           {
@@ -69,8 +69,6 @@ const route = [
       },
       {
         path: '/section/',
-        redirect: '/section/dropdown',
-        component: () => import('../pecket/Section/Dropdown/dropdown.md'),
         meta: { title: 'Pattern' },
         children: [
           {
@@ -87,8 +85,6 @@ const route = [
       },
       {
         path: '/section/',
-        redirect: '/section/dropdown',
-        component: () => import('../pecket/Section/Dropdown/dropdown.md'),
         meta: { title: 'Template' },
         children: [
           {
