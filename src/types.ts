@@ -7,9 +7,6 @@ export declare interface MdFrontmatter extends Frontmatter {
   twitter: string
   date: Date | string
   toc: MarkdownItHeader[]
-}
-
-export declare interface PostFrontmatter extends MdFrontmatter {
   categories: string[]
   tags: string[]
 }

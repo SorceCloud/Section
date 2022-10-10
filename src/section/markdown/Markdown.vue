@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { MdFrontmatter, } from '~/types'
-import type { PostFrontmatter } from '~/types'
 import Toc from './Tableofcontent.vue'
 defineProps({
   frontmatter: {
-    type: Object as PropType<PostFrontmatter>,
+    type: Object as PropType<MdFrontmatter>,
     default: () => { },
   },
 })
