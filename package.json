@@ -37,7 +37,7 @@
     "vite": "^3.1.4",
     "vite-plugin-md": "^0.20.4",
     "vite-plugin-windicss": "^1.8.8",
-    "windicss": "^3.5.6",
-    "vue-i18n": "^9.2.2"
+    "vue-i18n": "^9.2.2",
+    "windicss": "^3.5.6"
   }
 }

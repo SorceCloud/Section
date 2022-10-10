@@ -6,6 +6,8 @@
 
 ## Installation
 
+### install
+
 ```js
 npm i sectionui
 ```

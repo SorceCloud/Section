@@ -9,6 +9,7 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import LinkAttributes from 'markdown-it-link-attributes'
 import frontmatterToc from './src/plugin/markdown/frontmatter-toc'
 import WindiCSS from 'vite-plugin-windicss'
+import Shiki from 'markdown-it-shiki'
 
 export default defineConfig(({ mode }) => {
   return {
@@ -56,6 +57,13 @@ export default defineConfig(({ mode }) => {
           frontmatterToc(),
         ],
         markdownItUses: [
+          [Shiki,
+            {
+              theme: {
+                light: 'min-light',
+                dark: 'min-dark',
+              },
+            },],
           [
             LinkAttributes,
             {
