@@ -1,53 +1,139 @@
-<script setup>
-
-import demoHeadless from "./demo/dropdown/Headless.vue"
-import demoWithMenu from "./demo/dropdown/WithMenu.vue"
-import demoHover from "./demo/dropdown/Hover.vue"
-
-</script>
-
 # Dropdown component
 
+## Basic usage
 
----
-Basic usage
----
-
-```js
-import { WDropdown } from "vue-windi"
+```ts
+import Dropdown from "sectionui"
 ```
 
----
-Headless dropdown
----
+## Headless dropdown
 
+<div class="flex flex-wrap items-center gap-3">
+  <Dropdown placement="bottom-start">
+    <template #trigger="{ active }">
+      <btn :active="active">Bottom-start</btn>
+    </template>
+            test
+  </Dropdown>
+  <Dropdown placement="bottom-end">
+    <template #trigger="{ active }">
+      <btn :active="active">Bottom-end</btn>
+    </template>
+            test
+  </Dropdown>
+  <Dropdown placement="top-start">
+    <template #trigger="{ active }">
+      <btn :active="active">Top-start</btn>
+    </template>
+            test
+  </Dropdown>
+  <Dropdown placement="top-end">
+    <template #trigger="{ active }">
+      <btn :active="active">Top-end</btn>
+    </template>
+            test
+  </Dropdown>
+  <Dropdown placement="bottom-start">
+    <template #trigger="{ active }">
+      <div>Trigger with div</div>
+    </template>
+            test
+  </Dropdown>
+</div>
 
-<demoHeadless/>
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <Dropdown placement="bottom-start">
+    <template #trigger="{ active }">
+      <btn :active="active">Bottom-start</btn>
+    </template>
+            test
+  </Dropdown>
+  <Dropdown placement="bottom-end">
+    <template #trigger="{ active }">
+      <btn :active="active">Bottom-end</btn>
+    </template>
+            test
+  </Dropdown>
+  <Dropdown placement="top-start">
+    <template #trigger="{ active }">
+      <btn :active="active">Top-start</btn>
+    </template>
+            test
+  </Dropdown>
+  <Dropdown placement="top-end">
+    <template #trigger="{ active }">
+      <btn :active="active">Top-end</btn>
+    </template>
+            test
+  </Dropdown>
+  <Dropdown placement="bottom-start">
+    <template #trigger="{ active }">
+      <div>Trigger with div</div>
+    </template>
+            test
+  </Dropdown>
+</div>
+```
 
-<<< ./docs/demo/dropdown/Headless.vue#snippet
-
-
----
-With menu 
----
+## With menu 
 
 Make sure that you have imported <code>WMenu</code> and <code>WButton</code> to you vue file
 
-<br />
+<div class="flex flex-wrap items-center gap-3">
+  <Dropdown>
+    <template #trigger="{ active }">
+      <btn :active="active">With Menu</btn>
+    </template>
+    <Menu rounded padding>
+      <btn menu-item>Item 1</btn>
+      <btn menu-item>Item 2</btn>
+      <btn menu-item>Item 3</btn>
+    </Menu>
+  </Dropdown>
+</div>
 
-<demoWithMenu/>
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <Dropdown>
+    <template #trigger="{ active }">
+      <btn :active="active">With Menu</btn>
+    </template>
+    <Menu rounded padding>
+      <btn menu-item>Item 1</btn>
+      <btn menu-item>Item 2</btn>
+      <btn menu-item>Item 3</btn>
+    </Menu>
+  </Dropdown>
+</div>
+```
 
-<<< ./docs/demo/dropdown/WithMenu.vue#snippet
+## Hover
 
----
-Hover
----
+<div class="flex flex-wrap items-center gap-3">
+  <Dropdown hover>
+  <template #trigger="{ active }">
+    <btn :active="active">Hover</btn>
+  </template>
+    <Menu rounded padding>
+      <btn menu-item>Item 1</btn>
+      <btn menu-item>Item 2</btn>
+      <btn menu-item>Item 3</btn>
+    </Menu>
+  </Dropdown>
+</div>
 
-
-<demoHover/>
-
-<<< ./docs/demo/dropdown/Hover.vue#snippet
-
-
-
-
+```ts
+<div class="flex flex-wrap items-center gap-3">
+  <Dropdown>
+    <template #trigger="{ active }">
+      <btn :active="active">With Menu</btn>
+    </template>
+    <Menu rounded padding>
+      <btn menu-item>Item 1</btn>
+      <btn menu-item>Item 2</btn>
+      <btn menu-item>Item 3</btn>
+    </Menu>
+  </Dropdown>
+</div>
+```

@@ -61,7 +61,7 @@ export default {
 
 ## Section UI  CSS variables
 
-```js
+```ts
     "primary-100": "#2563eb",
     "primary-200": "#1d4ed8",
     "primary-300": "#1e40af",

@@ -1,11 +1,11 @@
-.w-menu {
+.menu {
   @apply w-56 select-none;
 
-  &.w-rounded {
+  &.rounded {
     @apply rounded-$rounded-box;
   }
 
-  &.w-padding {
+  &.padding {
     @apply p-2;
   }
 
@@ -14,7 +14,7 @@
 
   }
 
-  &.w-hover-border li>* {
+  &.hover-border li>* {
     @apply border-l-4 border-white/0 hover: (border-primary);
   }
 
@@ -22,7 +22,7 @@
     @apply flex items-center gap-3 hover: bg-black/7 dark:hover:bg-white/7 w-full text-left transition duration-200 ease-in-out text-base-text;
 
     &:active {
-      @apply  !bg-primary text-primary-content;
+      @apply !bg-primary text-primary-content;
     }
   }
 
@@ -46,147 +46,146 @@
     @apply border-tl-inherit border-tr-inherit border-bl-inherit border-br-inherit;
   }
 
-  &.w-padding li>* {
+  &.padding li>* {
     @apply rounded-$rounded-btn;
   }
 
-  &:not(.w-compact) li>* {
+  &:not(.compact) li>* {
     @apply text-base p-4 py-3;
   }
 
   /* Static compact */
-  &.w-compact li>* {
+  &.compact li>* {
     @apply text-sm py-2 px-4;
   }
 
   /* Responsive compact  */
-  &.w-compact-sm li>* {
+  &.compact-sm li>* {
     @apply <sm: (text-sm py-2 px-4);
   }
 
-  &.w-compact-md li>* {
+  &.compact-md li>* {
     @apply <md: (text-sm py-2 px-4);
   }
 
-  &.w-compact-lg li>* {
+  &.compact-lg li>* {
     @apply <lg: (text-sm py-2 px-4);
   }
 
-  &.w-compact-xl li>* {
+  &.compact-xl li>* {
     @apply <xl: (text-sm py-2 px-4);
   }
 
-  .w-menu:not(.w-horizontal) {
+  .menu:not(.w-horizontal) {
     @apply flex flex-col;
   }
 
   /* Static horizontal */
-  &.w-horizontal {
+  &.horizontal {
     @apply inline-flex flex-row;
   }
 
   /* Responsive horizontal  */
-  &.w-horizontal-sm {
+  &.horizontal-sm {
     @apply sm: (inline-flex flex-row);
   }
 
-  &.w-horizontal-md {
+  &.horizontal-md {
     @apply md: (inline-flex flex-row);
   }
 
-  &.w-horizontal-lg {
+  &.horizontal-lg {
     @apply lg: (inline-flex flex-row);
   }
 
-  &.w-horizontal-xl {
+  &.horizontal-xl {
     @apply xl: (inline-flex flex-row);
   }
 
 
-  &.w-horizontal>:where(li:first-child) {
+  &.horizontal>:where(li:first-child) {
     @apply border-tl-inherit border-tr-unset border-br-unset border-bl-inherit;
   }
 
-  &.w-horizontal>:where(li:first-child)>:where(*:not(ul)) {
+  &.horizontal>:where(li:first-child)>:where(*:not(ul)) {
     @apply border-tl-inherit border-tr-unset border-br-unset border-bl-inherit;
   }
 
-  &.w-horizontal>:where(li:last-child) {
+  &.horizontal>:where(li:last-child) {
     @apply border-tl-unset border-tr-inherit border-br-inherit border-bl-unset;
   }
 
-  &.w-horizontal>:where(li:last-child)>:where(*:not(ul)) {
+  &.horizontal>:where(li:last-child)>:where(*:not(ul)) {
     @apply border-tl-unset border-tr-inherit border-br-inherit border-bl-unset;
 
   }
 
-  &.w-horizontal-sm>:where(li:first-child) {
+  &.horizontal-sm>:where(li:first-child) {
     @apply sm: (border-tl-inherit border-tr-unset border-br-unset border-bl-inherit);
   }
 
-  &.w-horizontal-sm>:where(li:first-child)>:where(*:not(ul)) {
+  &.horizontal-sm>:where(li:first-child)>:where(*:not(ul)) {
     @apply sm: (border-tl-inherit border-tr-unset border-br-unset border-bl-inherit);
   }
 
-  &.w-horizontal-sm>:where(li:last-child) {
+  &.horizontal-sm>:where(li:last-child) {
     @apply sm: (border-tl-unset border-tr-inherit border-br-inherit border-bl-unset);
   }
 
-  &.w-horizontal-sm>:where(li:last-child)>:where(*:not(ul)) {
+  &.horizontal-sm>:where(li:last-child)>:where(*:not(ul)) {
     @apply sm: (border-tl-unset border-tr-inherit border-br-inherit border-bl-unset);
   }
 
-  &.w-horizontal-md>:where(li:first-child) {
+  &.horizontal-md>:where(li:first-child) {
     @apply md: (border-tl-inherit border-tr-unset border-br-unset border-bl-inherit);
   }
 
-  &.w-horizontal-md>:where(li:first-child)>:where(*:not(ul)) {
+  &.horizontal-md>:where(li:first-child)>:where(*:not(ul)) {
     @apply md: (border-tl-inherit border-tr-unset border-br-unset border-bl-inherit);
   }
 
-  &.w-horizontal-md>:where(li:last-child) {
+  &.horizontal-md>:where(li:last-child) {
     @apply md: (border-tl-unset border-tr-inherit border-br-inherit border-bl-unset);
   }
 
-  &.w-horizontal-md>:where(li:last-child)>:where(*:not(ul)) {
+  &.horizontal-md>:where(li:last-child)>:where(*:not(ul)) {
     @apply md: (border-tl-unset border-tr-inherit border-br-inherit border-bl-unset);
   }
 
-  &.w-horizontal-lg>:where(li:first-child) {
+  &.horizontal-lg>:where(li:first-child) {
     @apply lg: (border-tl-inherit border-tr-unset border-br-unset border-bl-inherit);
   }
 
-  &.w-horizontal-lg>:where(li:first-child)>:where(*:not(ul)) {
+  &.horizontal-lg>:where(li:first-child)>:where(*:not(ul)) {
     @apply lg: (border-tl-inherit border-tr-unset border-br-unset border-bl-inherit);
   }
 
-  &.w-horizontal-lg>:where(li:last-child) {
+  &.horizontal-lg>:where(li:last-child) {
     @apply lg: (border-tl-unset border-tr-inherit border-br-inherit border-bl-unset);
   }
 
-  &.w-horizontal-lg>:where(li:last-child)>:where(*:not(ul)) {
+  &.horizontal-lg>:where(li:last-child)>:where(*:not(ul)) {
     @apply lg: (border-tl-unset border-tr-inherit border-br-inherit border-bl-unset);
   }
 
-  &.w-horizontal-xl>:where(li:first-child) {
+  &.horizontal-xl>:where(li:first-child) {
     @apply xl: (border-tl-inherit border-tr-unset border-br-unset border-bl-inherit);
   }
 
-  &.w-horizontal-xl>:where(li:first-child)>:where(*:not(ul)) {
+  &.horizontal-xl>:where(li:first-child)>:where(*:not(ul)) {
     @apply xl: (border-tl-inherit border-tr-unset border-br-unset border-bl-inherit);
   }
 
-  &.w-horizontal-xl>:where(li:last-child) {
+  &.horizontal-xl>:where(li:last-child) {
     @apply xl: (border-tl-unset border-tr-inherit border-br-inherit border-bl-unset);
   }
 
-  &.w-horizontal-xl>:where(li:last-child)>:where(*:not(ul)) {
+  &.horizontal-xl>:where(li:last-child)>:where(*:not(ul)) {
     @apply xl: (border-tl-unset border-tr-inherit border-br-inherit border-bl-unset);
   }
 
   .menu-title {
     //  @apply font-semibold !text-sm text-gray-400/70 leading-normal !py-4;
     @apply py-1 !text-xl font-bold text-gray-700 text-opacity-70 dark: text-opacity-100;
-
   }
 }

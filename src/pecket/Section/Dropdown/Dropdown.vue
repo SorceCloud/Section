@@ -47,14 +47,14 @@ export default defineComponent({
 <template>
   <div ref="dropdownRef" class="w-dropdown" @mouseenter="mouseEnter" @mouseleave="mouseLeave"
     @pointerenter="mouseEnter">
-    <div class="w-dropdown-trigger" @click="toggle">
+    <div class="dropdown-trigger" @click="toggle">
       <slot name="trigger" :active="isActive" />
     </div>
-    <transition enter-active-class="w-transition-enter-active" enter-from-class="w-transition-enter-from"
-      enter-to-class="w-transition-enter-to" leave-active-class="w-transition-leave-active"
-      leave-from-class="w-transition-leave-from" leave-to-class="w-transition-leave-to">
-      <div v-show="isActive" class="w-dropdown-menu" :class="[
-        `w-dropdown-${placement}`,
+    <transition enter-active-class="transition-enter-active" enter-from-class="transition-enter-from"
+      enter-to-class="transition-enter-to" leave-active-class="transition-leave-active"
+      leave-from-class="transition-leave-from" leave-to-class="transition-leave-to">
+      <div v-show="isActive" class="dropdown-menu" :class="[
+        `dropdown-${placement}`,
       ]">
         <slot />
       </div>

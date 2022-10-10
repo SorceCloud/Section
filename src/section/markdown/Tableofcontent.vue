@@ -2,8 +2,8 @@
 import { PropType } from 'vue'
 import { computed } from 'vue'
 import type { MarkdownItHeader } from '@mdit-vue/types'
-import Menu from '~/pecket/Section/Menu/Menu.vue';
-import Button from '~/pecket/Element/Button/Button.vue';
+//import Menu from '~/pecket/Section/Menu/Menu.vue';
+import TocItem from './TocItem.vue'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n();
 
@@ -23,11 +23,13 @@ const hasHeadings = computed(() => props.toc.length > 0)
         <p class="mb-4 font-semibold tracking-tight">
           {{t("home.tableOfContent")}}
         </p>
-        <Menu v-for="heading in toc" :key="heading.slug" hover-border compacthover-border class="shadow-0 w-auto">
-          <Button tag="a" :href="`#${heading.slug}`" menu-item>{{
+        <!-- <Menu compact="md" v-for="heading in toc" :key="heading.slug" hover-border compacthover-border
+          class="shadow-0 w-auto">
+          <btn tag="a" :href="`#${heading.slug}`" menu-item class="btn-sm my-0">{{
           heading.title
-          }}</Button>
-        </Menu>
+          }}</btn>
+        </Menu> -->
+        <TocItem v-for="heading in toc" :key="heading.slug" v-bind="heading" />
       </ul>
     </div>
   </div>

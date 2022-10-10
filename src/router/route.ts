@@ -45,6 +45,11 @@ const route = [
             meta: { title: 'Input' },
           },
           {
+            path: '/section/checkbox',
+            component: () => import('../pecket/Element/Checkbox/checkbox.md'),
+            meta: { title: 'Checkbox' },
+          },
+          {
             path: '/section/toggle',
             component: () => import('../pecket/Element/Toggle/toggle.md'),
             meta: { title: 'Toggle' },
@@ -56,15 +61,20 @@ const route = [
         meta: { title: 'Section' },
         children: [
           {
+            path: '/section/menu',
+            component: () => import('../pecket/Section/Menu/menu.md'),
+            meta: { title: 'Menu' },
+          },
+          {
             path: '/section/dropdown',
             component: () => import('../pecket/Section/Dropdown/dropdown.md'),
             meta: { title: 'Dropdown' },
           },
           {
-            path: '/section/menu',
-            component: () => import('../pecket/Section/Dropdown/dropdown.md'),
-            meta: { title: 'Menu' },
-          }
+            path: '/section/modal',
+            component: () => import('../pecket/Section/Modal/modal.md'),
+            meta: { title: 'Modal' },
+          },
         ]
       },
       {

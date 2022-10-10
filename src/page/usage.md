@@ -10,7 +10,7 @@ Import components directly and use it.
 Import with composition API
 
 ```vue
-<script setup>
+<script setup lang="ts">
 import btn from "section";
 </script>
 
@@ -22,7 +22,7 @@ import btn from "section";
 import with options API 
 
 ```vue
-<script>
+<script lang="ts">
 import btn from "sectionui";
 
 export default {

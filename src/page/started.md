@@ -14,19 +14,11 @@ npm i sectionui
 
 ## Configuration
 
-```js
-import vueWindi from "vue-windi/plugin";
-
-export default {
-  darkMode: "class",
-  plugins: [vueWindi],
-};
-```
 
 <br />
 Import Section UI CSS to <code>main.js</code> above the windiCSS import
 
-```js
+```ts
 import "sectionui/css";
 import "virtual:windi.css";
 ```
