@@ -12,8 +12,8 @@ defineProps({
 </script>
 
 <template>
-  <article class="flex flex-row p-10 w-full flex-none ">
-    <div class="w-2/3">
+  <article class="flex flex-row p-10 w-full min-w-0 ">
+    <div class="w-5/6">
       <slot></slot>
     </div>
     <div v-if="(frontmatter as MdFrontmatter).toc?.length > 0" class="hidden border-l xl:block xl:row-span-3">

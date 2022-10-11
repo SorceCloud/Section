@@ -40,10 +40,10 @@ watchEffect(() => {
   <!-- Copied from Nextra Docs Theme with customizations -->
   <li ref="itemRef" class="scroll-my-6 scroll-py-6 leading-7" :class="headingOffsetCssClass">
     <Link :href="`#${slug}`" class="inline-block no-underline" :class="[
-      level === 2 && 'font-semibold',
+      level === 2,
       isActive
         ? 'text-primary-500 subpixel-antialiased'
-        : 'text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300',
+        : 'text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300',
     ]" :aria-selected="isActive">
     {{ title }}
     </Link>

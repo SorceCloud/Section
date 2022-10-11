@@ -23,7 +23,7 @@ const hasHeadings = computed(() => props.toc.length > 0)
         <p class="mb-4 font-semibold tracking-tight">
           {{t("home.tableOfContent")}}
         </p>
-        <!-- <Menu compact="md" v-for="heading in toc" :key="heading.slug" hover-border compacthover-border
+        <!-- <Menu compact="md" v-for="heading in toc" :key="heading.slug" hover-border compact
           class="shadow-0 w-auto">
           <btn tag="a" :href="`#${heading.slug}`" menu-item class="btn-sm my-0">{{
           heading.title
