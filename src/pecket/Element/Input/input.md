@@ -13,9 +13,7 @@ import { ipt } from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <ipt placeholder="Type here..." />
-</div>
 ```
 
 ## No Border
@@ -25,9 +23,7 @@ import { ipt } from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3 bg-base-gray-200/30 pl-2 py-3 rounded-$rounded-btn">
   <ipt :bordered="false" placeholder="No Border..." />
-</div>
 ```
 
 ## Ghost
@@ -37,9 +33,7 @@ import { ipt } from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3 bg-base-gray-200/20 pl-2 py-3 rounded-$rounded-btn">
   <ipt :bordered="false" ghost placeholder="Ghost..." />
-</div>
 ```
 
 ## Sizes
@@ -52,12 +46,10 @@ import { ipt } from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap gap-2 items-center">
   <ipt size="xs" placeholder="Type here..." />
   <ipt size="sm" placeholder="Type here..." />
   <ipt size="md" placeholder="Type here..." />
   <ipt size="lg" placeholder="Type here..." />
-</div>
 ```
 ## Colors
 
@@ -70,13 +62,11 @@ import { ipt } from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <ipt color="primary" placeholder="Type here..." />
   <ipt color="secondary" placeholder="Type here..." />
   <ipt color="success" placeholder="Type here..." />
   <ipt color="warning" placeholder="Type here..." />
   <ipt color="danger" placeholder="Type here..." />
-</div>
 ```
 
 ## Label
@@ -86,9 +76,7 @@ import { ipt } from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <ipt label="Your name" placeholder="With label here..."/>
-</div>
 ```
 ## Ghost
 
@@ -97,9 +85,7 @@ import { ipt } from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3 bg-base-gray-200/20 pl-2 py-3 rounded-$rounded-btn">
-    <ipt :bordered="false" ghost placeholder="Ghost..." />
-</div>
+  <ipt :bordered="false" ghost placeholder="Ghost..." />
 ```
 ## Disabled
 
@@ -109,8 +95,6 @@ import { ipt } from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <ipt disabled label="Disabled" placeholder="Type here..." />
   <ipt disabled label="Disabled" value="disabled with text" />
-</div>
 ```

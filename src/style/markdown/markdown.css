@@ -214,6 +214,10 @@
   font-size: 1em;
 }
 
+.markdown-body code-block {
+  background-color: #033a16;
+}
+
 .markdown-body figure {
   margin: 1em 40px;
 }

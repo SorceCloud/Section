@@ -20,14 +20,12 @@ import btn from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <btn>Primary</btn>
   <btn loading>Loading</btn>
   <btn disabled>Disabled</btn>
   <btn pills>Primary pills</btn>
   <btn variant="outline">Outline</btn>
   <btn variant="link">Link</btn>
-</div>
 ```
 
 ## Colors
@@ -41,14 +39,12 @@ import btn from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <btn>Primary</btn>
   <btn loading>Loading</btn>
   <btn disabled>Disabled</btn>
   <btn pills>Primary pills</btn>
   <btn variant="outline">Outline</btn>
   <btn variant="link">Link</btn>
-</div>
 ```
 
 ## Outline
@@ -62,13 +58,11 @@ import btn from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <btn color="primary" variant="outline">Primary </btn>
   <btn color="secondary" variant="outline">Secondary </btn>
   <btn color="success" variant="outline">Success </btn>
   <btn color="danger" variant="outline">Danger </btn>
   <btn color="warning" variant="outline">Warning </btn>
-</div>
 ```
 
 
@@ -83,13 +77,11 @@ import btn from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <btn color="primary" variant="transparent">Primary </btn>
   <btn color="secondary" variant="transparent">Secondary </btn>
   <btn color="success" variant="transparent">Success </btn>
   <btn color="danger" variant="transparent">Danger </btn>
   <btn color="warning" variant="transparent">Warning </btn>
-</div>
 ```
 
 ## Pills
@@ -103,18 +95,16 @@ import btn from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <btn color="primary" pills>Primary </btn>
   <btn color="secondary" pills>Secondary </btn>
   <btn color="success" pills>Success </btn>
   <btn color="danger" pills>Danger </btn>
   <btn color="warning" pills>Warning </btn>
-</div>
 ```
 
 ## Sizes
 
-<div class="flex flex-wrap items-center gap-8">
+<div class="flex flex-wrap items-center gap-3">
   <btn size="xs">Extra-small </btn>
   <btn size="sm">Small </btn>
   <btn>normal </btn>
@@ -123,13 +113,11 @@ import btn from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <btn size="xs">Extra-small </btn>
   <btn size="sm">Small </btn>
   <btn>normal </btn>
   <btn size="lg">Large </btn>
   <btn size="xl">Extra-large </btn>
-</div>
 ```
 
 
@@ -140,6 +128,10 @@ import btn from "sectionui"
   <btn size="lg" md="xs">Default(lg) md(xs)</btn>
 </div>
 
+```ts
+  <btn size="sm" md="lg">Default(sm) md(lg)</btn>
+  <btn size="lg" md="xs">Default(lg) md(xs)</btn>
+```
 
 
 
@@ -154,13 +146,11 @@ import btn from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <btn color="primary" variant="link">Primary </btn>
   <btn color="secondary" variant="link">Secondary </btn>
   <btn color="success" variant="link">Success </btn>
   <btn color="danger" variant="link">Danger </btn>
   <btn color="warning" variant="link">Warning </btn>
-</div>
 ```
 ## Circle
 
@@ -174,12 +164,10 @@ import btn from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <btn circle>
   </btn>
   <btn circle variant="outline">
   </btn>
-</div>
 ```
 
 ## Tag 
@@ -189,10 +177,8 @@ import btn from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <btn tag="a" href="/" variant="link" >Home </btn>
   <btn tag="RouterLink" to="/components/button">Secondary </btn>
-</div>
 ```
 
 ## API

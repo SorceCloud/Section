@@ -42,7 +42,6 @@ import Dropdown from "sectionui"
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <Dropdown placement="bottom-start">
     <template #trigger="{ active }">
       <btn :active="active">Bottom-start</btn>
@@ -73,7 +72,6 @@ import Dropdown from "sectionui"
     </template>
             test
   </Dropdown>
-</div>
 ```
 
 ## With menu 
@@ -94,7 +92,6 @@ Make sure that you have imported <code>WMenu</code> and <code>WButton</code> to 
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <Dropdown>
     <template #trigger="{ active }">
       <btn :active="active">With Menu</btn>
@@ -105,7 +102,6 @@ Make sure that you have imported <code>WMenu</code> and <code>WButton</code> to 
       <btn menu-item>Item 3</btn>
     </Menu>
   </Dropdown>
-</div>
 ```
 
 ## Hover
@@ -124,7 +120,6 @@ Make sure that you have imported <code>WMenu</code> and <code>WButton</code> to 
 </div>
 
 ```ts
-<div class="flex flex-wrap items-center gap-3">
   <Dropdown>
     <template #trigger="{ active }">
       <btn :active="active">With Menu</btn>
@@ -135,5 +130,4 @@ Make sure that you have imported <code>WMenu</code> and <code>WButton</code> to 
       <btn menu-item>Item 3</btn>
     </Menu>
   </Dropdown>
-</div>
 ```

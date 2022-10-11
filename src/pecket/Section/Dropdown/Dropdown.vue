@@ -45,8 +45,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div ref="dropdownRef" class="w-dropdown" @mouseenter="mouseEnter" @mouseleave="mouseLeave"
-    @pointerenter="mouseEnter">
+  <div ref="dropdownRef" class="dropdown" @mouseenter="mouseEnter" @mouseleave="mouseLeave" @pointerenter="mouseEnter">
     <div class="dropdown-trigger" @click="toggle">
       <slot name="trigger" :active="isActive" />
     </div>

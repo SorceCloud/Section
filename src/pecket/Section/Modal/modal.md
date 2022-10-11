@@ -1,11 +1,11 @@
 <script setup>
 
-import demoSizes from "./demo/modal/Sizes.vue"
-import demoCloseButton from "./demo/modal/CloseButton.vue"
-import demoNoBackdrop from "./demo/modal/NoBackdrop.vue"
-import demoNoOutside from "./demo/modal/NoOutside.vue"
-import demoHeadless from "./demo/modal/Headless.vue"
-import demoBackdropBlur from "./demo/modal/BackdropBlur.vue"
+import demoSizes from "./demo/Sizes.vue"
+import demoCloseButton from "./demo/CloseButton.vue"
+import demoNoBackdrop from "./demo/NoBackdrop.vue"
+import demoNoOutside from "./demo/NoOutside.vue"
+import demoHeadless from "./demo/Headless.vue"
+import demoBackdropBlur from "./demo/BackdropBlur.vue"
 </script>
 
 # Modal component
@@ -25,7 +25,6 @@ import Modal from "sectionui"
 
 <demoCloseButton/>
 
-<<< ./docs/demo/modal/CloseButton.vue#snippet
 
 
 ## No outside
