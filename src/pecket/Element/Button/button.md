@@ -27,7 +27,6 @@ import btn from "sectionui"
   <btn variant="outline">Outline</btn>
   <btn variant="link">Link</btn>
 ```
-
 ## Colors
 
 <div class="flex flex-wrap items-center gap-3">
@@ -46,7 +45,6 @@ import btn from "sectionui"
   <btn variant="outline">Outline</btn>
   <btn variant="link">Link</btn>
 ```
-
 ## Outline
 
 <div class="flex flex-wrap items-center gap-3">
@@ -64,8 +62,6 @@ import btn from "sectionui"
   <btn color="danger" variant="outline">Danger </btn>
   <btn color="warning" variant="outline">Warning </btn>
 ```
-
-
 ## Transparent
 
 <div class="flex flex-wrap items-center gap-3">
@@ -83,7 +79,6 @@ import btn from "sectionui"
   <btn color="danger" variant="transparent">Danger </btn>
   <btn color="warning" variant="transparent">Warning </btn>
 ```
-
 ## Pills
 
 <div class="flex flex-wrap items-center gap-3">
@@ -101,7 +96,6 @@ import btn from "sectionui"
   <btn color="danger" pills>Danger </btn>
   <btn color="warning" pills>Warning </btn>
 ```
-
 ## Sizes
 
 <div class="flex flex-wrap items-center gap-3">
@@ -119,8 +113,6 @@ import btn from "sectionui"
   <btn size="lg">Large </btn>
   <btn size="xl">Extra-large </btn>
 ```
-
-
 ## Responsive 
 
 <div class="flex flex-wrap items-center gap-3">

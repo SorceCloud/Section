@@ -1,17 +1,17 @@
 export default {
-  '.w-checkbox.w-checkbox-xs': {
+  '.checkbox.checkbox-xs': {
     width: '1rem',
     height: '1rem',
   },
-  '.w-checkbox.w-checkbox-sm': {
+  '.checkbox.checkbox-sm': {
     width: '1.25rem',
     height: '1.25rem',
   },
-  '.w-checkbox.w-checkbox-md': {
+  '.checkbox.checkbox-md': {
     width: '1.5rem',
     height: '1.5rem',
   },
-  '.w-checkbox.w-checkbox-lg': {
+  '.checkbox.checkbox-lg': {
     width: '2rem',
     height: '2rem',
   },

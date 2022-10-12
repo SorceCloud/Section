@@ -163,7 +163,7 @@ Horizontal by default and vertical on small screen (sm).
 
 <div class="flex flex-wrap items-center gap-3">
   <Menu horizontal="sm" rounded class="w-auto">
-    <btn menu-item> Responsive 1</btn>
+    <btn menu-item>Responsive 1</btn>
     <btn menu-item>Responsive 2</btn>
     <btn menu-item>Responsive 3</btn>
   </Menu>
@@ -171,7 +171,7 @@ Horizontal by default and vertical on small screen (sm).
 
 ```ts
   <Menu horizontal="sm" rounded class="w-auto">
-    <btn menu-item> Responsive 1</btn>
+    <btn menu-item>Responsive 1</btn>
     <btn menu-item>Responsive 2</btn>
     <btn menu-item>Responsive 3</btn>
   </Menu>

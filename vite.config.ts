@@ -41,7 +41,7 @@ export default defineConfig(({ mode }) => {
       Markdown({
         builders: [
           frontmatterToc(),
-          code()
+          code({ theme: 'base' })
         ],
         markdownItUses: [
           [

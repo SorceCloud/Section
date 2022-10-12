@@ -1,20 +1,20 @@
 export default {
-  '.w-toggle.w-toggle-xs': {
+  '.toggle.toggle-xs': {
     '--handleoffset': '0.5rem',
     'width': '1.5rem',
     'height': '1rem',
   },
-  '.w-toggle.w-toggle-sm': {
+  '.toggle.toggle-sm': {
     '--handleoffset': '0.75rem',
     'width': '2rem',
     'height': '1.25rem',
   },
-  '.w-toggle.w-toggle-md': {
+  '.toggle.toggle-md': {
     '--handleoffset': '1.5rem',
     'width': '3rem',
     'height': '1.5rem',
   },
-  '.w-toggle.w-toggle-lg': {
+  '.toggle.toggle-lg': {
     '--handleoffset': '2rem',
     'width': '4rem',
     'height': '2rem',

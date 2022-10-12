@@ -10,4 +10,5 @@ import './asset/icon.js'
 import './style/markdown/markdown.css'
 
 
+
 createApp(App).use(Router).use(Section).use(Markdown).use(I18n).mount('#app')
