@@ -1,46 +1,35 @@
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
+<script lang="ts" setup>
+import { ref } from 'vue'
 import { useClickOutside } from '~/store/useClickOutside'
 import './dropdown.css'
-export default defineComponent({
-  name: 'Dropdown',
-  props: {
-    placement: {
-      type: String,
-      default: 'bottom-start',
-      required: false,
-      validator: (value: string) => {
-        return ['bottom-start', 'bottom-end', 'top-start', 'top-end'].includes(value)
-      },
-    },
-    hover: {
-      type: Boolean,
-      default: false,
-      required: false,
-    },
-  },
-  setup(props) {
-    const dropdownRef = ref(null)
-    const isActive = ref(false)
 
-    function toggle() {
-      if (!props.hover)
-        isActive.value = !isActive.value
+const props = defineProps({
+  placement: {
+    type: String, default: 'bottom-start', required: false,
+    validator: (value: string) => {
+      return ['bottom-start', 'bottom-end', 'top-start', 'top-end'].includes(value)
     }
-    function mouseEnter() {
-      if (props.hover)
-        isActive.value = true
-    }
-    function mouseLeave() {
-      if (props.hover)
-        isActive.value = false
-    }
-    useClickOutside(dropdownRef, () => {
-      if (isActive.value)
-        isActive.value = false
-    })
-    return { isActive, dropdownRef, toggle, mouseEnter, mouseLeave }
   },
+  hover: { type: Boolean, default: false, required: false }
+})
+const dropdownRef = ref(null)
+const isActive = ref(false)
+
+function toggle() {
+  if (!props.hover)
+    isActive.value = !isActive.value
+}
+function mouseEnter() {
+  if (props.hover)
+    isActive.value = true
+}
+function mouseLeave() {
+  if (props.hover)
+    isActive.value = false
+}
+useClickOutside(dropdownRef, () => {
+  if (isActive.value)
+    isActive.value = false
 })
 </script>
 
@@ -53,7 +42,7 @@ export default defineComponent({
       enter-to-class="transition-enter-to" leave-active-class="transition-leave-active"
       leave-from-class="transition-leave-from" leave-to-class="transition-leave-to">
       <div v-show="isActive" class="dropdown-menu" :class="[
-        `dropdown-${placement}`,
+        `dropdown-${props.placement}`,
       ]">
         <slot />
       </div>

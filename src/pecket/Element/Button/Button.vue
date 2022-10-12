@@ -64,21 +64,21 @@ const responsive = computed(() => {
 })
 </script>
 <template>
-  <component :is="tag" :disabled="disabled || loading" :type="computedType" class="btn" :class="[
-    `btn-${color}`,
-    `btn-${variant}`,
-    `btn-${size}`,
+  <component :is="props.tag" :disabled="props.disabled || props.loading" :type="computedType" class="btn" :class="[
+    `btn-${props.color}`,
+    `btn-${props.variant}`,
+    `btn-${props.size}`,
     responsive ?? responsive,
     {
-      'btn-pills': pills,
-      'btn-disabled': disabled,
-      'btn-loading': loading,
-      'btn-circle': circle,
-      'btn-active': active,
-      'btn-clean': menuItem || clean
+      'btn-pills': props.pills,
+      'btn-disabled': props.disabled,
+      'btn-loading': props.loading,
+      'btn-circle': props.circle,
+      'btn-active': props.active,
+      'btn-clean': props.menuItem || props.clean
     }
   ]">
-    <svg v-if="loading" name="icon-loading" class="w-icon-loading" xmlns="http://www.w3.org/2000/svg" fill="none"
+    <svg v-if="props.loading" name="icon-loading" class="w-icon-loading" xmlns="http://www.w3.org/2000/svg" fill="none"
       viewBox="0 0 24 24">
       <circle class="w-icon-circle" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
       <path class="w-icon-path" fill="currentColor"

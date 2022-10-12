@@ -19,6 +19,6 @@ const props = defineProps({
 </script>
 
 <template>
-  <input type="checkbox" :checked="checked" :disabled="disabled" class="peer toggle"
-    :class="[`toggle-${color}`, `toggle-${size}`]">
+  <input type="checkbox" :checked="props.checked" :disabled="props.disabled" class="peer toggle"
+    :class="[`toggle-${props.color}`, `toggle-${props.size}`]">
 </template>

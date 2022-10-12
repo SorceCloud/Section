@@ -1,0 +1,19 @@
+.btn-group {
+    .btn:first-child {
+        @apply rounded-r-none;
+    }
+
+    .btn:not(:first-child) {
+        &.w-btn-outline {
+            @apply border-l-0;
+        }
+    }
+
+    .btn:not(:first-child):not(:last-child) {
+        @apply rounded-none;
+    }
+
+    .btn:last-child {
+        @apply rounded-l-none;
+    }
+}

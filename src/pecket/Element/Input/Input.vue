@@ -48,20 +48,20 @@ watch(text, () => {
 
 <template>
   <div class="form-control">
-    <label v-if="label" class="label" @click="setFocus">
-      <span class="label-text">{{ label }}</span>
+    <label v-if="props.label" class="label" @click="setFocus">
+      <span class="label-text">{{ props.label }}</span>
     </label>
 
-    <input ref="inputText" v-model="text" :name="name" :placeholder="placeholder" :type="type" :disabled="disabled"
-      class="input" :class="[
+    <input ref="inputText" v-model="text" :name="props.name" :placeholder="props.placeholder" :type="type"
+      :disabled="disabled" class="input" :class="[
         {
-          'input-bordered': bordered,
-          'input-ghost': ghost,
+          'input-bordered': props.bordered,
+          'input-ghost': props.ghost,
           'input-error': isError,
         },
-        `input-${size}`,
-        `input-${color}`,
+        `input-${props.size}`,
+        `input-${props.color}`,
       ]">
-    <div v-if="isError" class="validation-text" v-text="error" />
+    <div v-if="isError" class="validation-text" v-text="props.error" />
   </div>
 </template>

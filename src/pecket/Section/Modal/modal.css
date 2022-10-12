@@ -1,65 +1,65 @@
-
-.w-backdrop {
+.backdrop {
     @apply fixed inset-0 z-40 flex place-content-center h-screen backdrop-filter;
 }
+
 /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    .w-backdrop {
-         @apply bg-black/35
+    .backdrop {
+        @apply bg-black/35
     }
 }
 
-.w-modal-background {
-    @apply fixed inset-0  z-50 flex place-content-center h-full;
+.modal-background {
+    @apply fixed inset-0 z-50 flex place-content-center h-full;
 }
 
-.w-modal-outside{
-    @apply  pointer-events-none;
+.modal-outside {
+    @apply pointer-events-none;
 }
 
-.w-modal-box {
+.modal-box {
     @apply relative pointer-events-auto bg-base-100 m-auto w-full mx-4 rounded-$rounded-box shadow-xl overflow-hidden;
 }
 
-.w-modal-inner-box {
+.modal-inner-box {
     @apply overflow-auto block;
 }
 
-.w-modal-header {
+.modal-header {
     @apply font-semibold text-lg px-6 pt-6;
 }
 
-.w-modal-body {
+.modal-body {
     @apply px-6 py-4;
 }
 
-.w-modal-footer {
+.modal-footer {
     @apply px-6 pb-6 flex justify-end mt-1.5;
 }
 
-.w-modal-box.w-modal-sm,
-.w-modal-inner-box.w-modal-sm {
+.modal-box.w-modal-sm,
+.modal-inner-box.w-modal-sm {
     max-width: 32rem;
     max-height: 20rem;
 }
 
-.w-modal-box.w-modal-md,
-.w-modal-inner-box.w-modal-md {
+.modal-box.w-modal-md,
+.modal-inner-box.w-modal-md {
     max-width: 37rem;
     max-height: 25rem;
 }
 
-.w-modal-box.w-modal-lg,
-.w-modal-inner-box.w-modal-lg {
+.modal-box.w-modal-lg,
+.modal-inner-box.w-modal-lg {
     max-width: 42rem;
     max-height: 30rem;
 }
 
-.w-modal-bounce-enter-active {
+.modal-bounce-enter-active {
     animation: w-modal-bounce-in 0.15s ease-in-out;
 }
 
-.w-modal-bounce-leave-active {
+.modal-bounce-leave-active {
     animation: w-modal-bounce-in 0.15s reverse;
 }
 
@@ -73,18 +73,19 @@
     }
 }
 
-.w-modal-fade-enter-active,
-.w-modal-fade-leave-active {
+.modal-fade-enter-active,
+.modal-fade-leave-active {
     transition: opacity 0.25s ease;
 }
 
-.w-modal-fade-enter-from,
-.w-modal-fade-leave-to {
+.modal-fade-enter-from,
+.modal-fade-leave-to {
     opacity: 0;
 }
 
-.w-modal-btn-close {
-    @apply rounded-$rounded-btn h-8 w-8 flex items-center justify-center absolute bg-base-gray-500 hover:bg-opacity-30 bg-opacity-20 top-2 right-2;
+.modal-btn-close {
+    @apply rounded-$rounded-btn h-8 w-8 flex items-center justify-center absolute bg-base-gray-500 hover: bg-opacity-30 bg-opacity-20 top-2 right-2;
+
     svg {
         @apply h-5;
     }
