@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { WModal, WButton } from "vue-windi";
+import Modal from '../Modal.vue'
 
 const modal = ref({
   closeBtn: false,
@@ -9,15 +9,13 @@ const modal = ref({
 
 <template>
   <div class="flex flex-wrap items-center gap-3">
-    <!-- #region snippet -->
-    <WButton @click="modal.closeBtn = true">Close btn</WButton>
-    <WModal v-model:active="modal.closeBtn" close-btn>
+    <btn @click="modal.closeBtn = true">Close btn</btn>
+    <Modal v-model:active="modal.closeBtn" close-btn>
       <template #header> The important modal header </template>
       <template #body> The modal body </template>
       <template #footer="footerProps">
-        <WButton @click="modal.closeBtn = false">Dismiss!</WButton>
+        <btn @click="modal.closeBtn = false">Dismiss!</btn>
       </template>
-    </WModal>
-    <!-- #endregion snippet -->
+    </Modal>
   </div>
 </template>

@@ -1,5 +1,4 @@
 <template>
-
   <h1 class="antialiased font-extrabold text-4xl leading-8 sm:text-5xl lg:text-6xl tracking-tight sm:leading-16">
     Section UI
   </h1>

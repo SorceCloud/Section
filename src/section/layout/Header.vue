@@ -9,21 +9,20 @@
       </div>
       <div class="flex">
         <ThemeSelect />
-        <Button variant="transparent" color="secondary" @click="setDark" class="fill-base-text">
+        <btn variant="transparent" color="secondary" @click="setDark" class="fill-base-text">
           <span v-show="!isDark"><i class="fa-light fa-sun-bright fa-xl"></i></span>
           <span v-show="isDark"><i class="fa-light fa-moon-stars fa-xl"></i></span>
-        </Button>
+        </btn>
         <LanguageSelect />
-        <Button tag="a" :href="`https://github.com`" target="_blank" variant="transparent" color="secondary"
+        <btn tag="a" :href="`https://github.com`" target="_blank" variant="transparent" color="secondary"
           class="fill-base-text">
           <i class="fa-brands fa-github fa-xl"></i>
-        </Button>
+        </btn>
       </div>
     </div>
   </nav>
 </template>
 <script setup lang="ts">
-import Button from '../../pecket/Element/Button/Button.vue'
 import ThemeSelect from '../ThemeSelect.vue'
 import { useDark } from '../../store/dark'
 import LanguageSelect from '../LanguageSelect.vue';

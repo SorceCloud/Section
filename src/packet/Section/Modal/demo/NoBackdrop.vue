@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { WModal, WButton } from "vue-windi";
+import Modal from '../Modal.vue'
 
 const modal = ref({
   noBackdrop: false,
@@ -9,19 +9,13 @@ const modal = ref({
 
 <template>
   <div class="flex flex-wrap items-center gap-3">
-    <!-- #region snippet -->
-    <WButton @click="modal.noBackdrop = true">No backdrop</WButton>
-      <WModal
-            v-model:active="modal.noBackdrop"
-            :outside="false"
-            :backdrop="false"
-          >
-            <template #header> The important modal header </template>
-            <template #body> The noBackdrop modal body </template>
-            <template #footer="footerProps">
-              <WButton @click="modal.noBackdrop = false">Dismiss!</WButton>
-            </template>
-          </WModal>
-    <!-- #endregion snippet -->
+    <btn @click="modal.noBackdrop = true">No backdrop</btn>
+    <Modal v-model:active="modal.noBackdrop" :outside="false" :backdrop="false">
+      <template #header> The important modal header </template>
+      <template #body> The noBackdrop modal body </template>
+      <template #footer="footerProps">
+        <btn @click="modal.noBackdrop = false">Dismiss!</btn>
+      </template>
+    </Modal>
   </div>
 </template>

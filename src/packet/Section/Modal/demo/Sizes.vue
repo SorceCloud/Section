@@ -1,45 +1,41 @@
 
 <script setup lang="ts">
 import { ref } from "vue"
-import { WModal, WButton } from "vue-windi"
+import Modal from '../Modal.vue'
 
 const modal = ref({
-    small: false,
-    medium: false,
-    large: false
+  small: false,
+  medium: false,
+  large: false
 })
 
 </script>
 
-<template> 
-    <div class="flex flex-wrap items-center gap-3">
-     <!-- #region snippet -->
-         <WButton @click="modal.small = true">Modal sm</WButton>
-          <WButton @click="modal.medium = true">Modal md</WButton>
-          <WButton @click="modal.large = true">Modal lg</WButton>
-
-           <WModal v-model:active="modal.small">
-            <template #header> The important modal header </template>
-            <template #body> The modal body </template>
-            <template #footer="footerProps">
-              <WButton @click="modal.small = false">Dismiss!</WButton>
-            </template>
-          </WModal>
-          <WModal v-model:active="modal.medium" size="md">
-            <template #header> The important modal header </template>
-            <template #body> The modal body </template>
-            <template #footer="footerProps">
-              <WButton @click="modal.medium = false">Dismiss!</WButton>
-            </template>
-          </WModal>
-          <WModal v-model:active="modal.large" size="lg">
-            <template #header> The important modal header </template>
-            <template #body> The modal body</template>
-            <template #footer="footerProps">
-              <WButton @click="modal.large = false">Dismiss!</WButton>
-            </template>
-          </WModal>
-     <!-- #endregion snippet -->
-
-    </div>
+<template>
+  <div class="flex flex-wrap items-center gap-3">
+    <btn @click="modal.small = true">Modal sm</btn>
+    <btn @click="modal.medium = true">Modal md</btn>
+    <btn @click="modal.large = true">Modal lg</btn>
+    <Modal v-model:active="modal.small">
+      <template #header> The important modal header </template>
+      <template #body> The modal body </template>
+      <template #footer="footerProps">
+        <btn @click="modal.small = false">Dismiss!</btn>
+      </template>
+    </Modal>
+    <Modal v-model:active="modal.medium" size="md">
+      <template #header> The important modal header </template>
+      <template #body> The modal body </template>
+      <template #footer="footerProps">
+        <btn @click="modal.medium = false">Dismiss!</btn>
+      </template>
+    </Modal>
+    <Modal v-model:active="modal.large" size="lg">
+      <template #header> The important modal header </template>
+      <template #body> The modal body</template>
+      <template #footer="footerProps">
+        <btn @click="modal.large = false">Dismiss!</btn>
+      </template>
+    </Modal>
+  </div>
 </template>

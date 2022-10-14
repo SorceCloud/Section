@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { WModal, WButton } from "vue-windi";
+import Modal from '../Modal.vue'
 
 const modal = ref({
   noOutside: false,
@@ -9,15 +9,13 @@ const modal = ref({
 
 <template>
   <div class="flex flex-wrap items-center gap-3">
-    <!-- #region snippet -->
-    <WButton @click="modal.noOutside = true">No outside</WButton>
-    <WModal v-model:active="modal.noOutside" :outside="false">
+    <btn @click="modal.noOutside = true">No outside</btn>
+    <Modal v-model:active="modal.noOutside" :outside="false">
       <template #header> The important modal header </template>
       <template #body> The noOutside modal body </template>
       <template #footer="footerProps">
-        <WButton @click="modal.noOutside = false">Dismiss!</WButton>
+        <btn @click="modal.noOutside = false">Dismiss!</btn>
       </template>
-    </WModal>
-    <!-- #endregion snippet -->
+    </Modal>
   </div>
 </template>
