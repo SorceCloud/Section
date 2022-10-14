@@ -54,10 +54,10 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 
 ### Development
 
-Just run and visit http://localhost:3333
+Just run and visit http://localhost:8888
 
 ```bash
-pnpm dev
+pnpm run dev
 ```
 
 ### Build
