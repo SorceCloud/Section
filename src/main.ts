@@ -1,6 +1,6 @@
 import App from './App.vue'
 import { createApp } from 'vue'
-import Section from './pecket'
+import Section from './packet'
 import Markdown from './section/markdown'
 import Router from './router'
 import I18n from './locale'

@@ -1,5 +1,5 @@
 import { App } from 'vue';
-import Element from './Element/'
+import Element from './Element'
 import Section from './Section'
 
 const install = (app: App) => {
