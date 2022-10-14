@@ -14,7 +14,7 @@
   @apply text-danger text-xs mt-2 ml-1;
 }
 
-.input {
+.ipt {
   @apply border-0 border-base-gray-300 bg-base-100 rounded-$rounded-btn transition duration-200 ease-in-out h-12 px-4 text-sm leading-loose w-full;
 
   &:focus {
@@ -22,31 +22,31 @@
     outline-offset: 2px;
   }
 
-  &.input-bordered {
+  &.ipt-bordered {
     @apply border-1 border-opacity-60;
   }
 
-  &.input-ghost {
+  &.ipt-ghost {
     @apply bg-base-100/0;
   }
 
-  &.input-xs {
+  &.ipt-xs {
     @apply leading-relaxed;
   }
 
-  &.input-sm {
+  &.ipt-sm {
     @apply leading-8;
   }
 
-  &.input-md {
+  &.ipt-md {
     @apply leading-loose;
   }
 
-  &.input-lg {
+  &.ipt-lg {
     @apply leading-loose;
   }
 
-  &.input-primary {
+  &.ipt-primary {
     @apply !border-primary;
 
     &:focus {
@@ -55,7 +55,7 @@
     }
   }
 
-  &.input-secondary {
+  &.ipt-secondary {
     @apply !border-secondary;
 
     &:focus {
@@ -64,7 +64,7 @@
     }
   }
 
-  &.input-success {
+  &.ipt-success {
     @apply !border-success;
 
     &:focus {
@@ -73,7 +73,7 @@
     }
   }
 
-  &.input-warning {
+  &.ipt-warning {
     @apply !border-warning;
 
     &:focus {
@@ -82,7 +82,7 @@
     }
   }
 
-  &.input-danger {
+  &.ipt-danger {
     @apply !border-danger;
 
     &:focus {
@@ -91,7 +91,7 @@
     }
   }
 
-  &.input-error {
+  &.ipt-error {
     @apply !border-danger;
 
     &:focus {

@@ -53,14 +53,14 @@ watch(text, () => {
     </label>
 
     <input ref="inputText" v-model="text" :name="props.name" :placeholder="props.placeholder" :type="type"
-      :disabled="disabled" class="input" :class="[
+      :disabled="disabled" class="ipt" :class="[
         {
-          'input-bordered': props.bordered,
-          'input-ghost': props.ghost,
-          'input-error': isError,
+          'ipt-bordered': props.bordered,
+          'ipt-ghost': props.ghost,
+          'ipt-error': isError,
         },
-        `input-${props.size}`,
-        `input-${props.color}`,
+        `ipt-${props.size}`,
+        `ipt-${props.color}`,
       ]">
     <div v-if="isError" class="validation-text" v-text="props.error" />
   </div>

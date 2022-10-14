@@ -1,4 +1,4 @@
-.toggle {
+.tgl {
   --handleoffset: 1.5rem;
   @apply appearance-none cursor-pointer border border-base-gray-300 bg-base-gray-400/60 rounded-$rounded-badge duration-300 ease-in-out;
   transition: background, box-shadow var(--animation-input, 0.2s) ease-in-out;
@@ -17,7 +17,7 @@
       0 0 0 2px rgb(var(--base-100)) inset;
   }
 
-  &.toggle-primary {
+  &.tgl-primary {
     &:focus-visible {
       outline: 2px solid rgb(var(--primary));
       outline-offset: 2px;
@@ -31,7 +31,7 @@
     }
   }
 
-  &.toggle-secondary {
+  &.tgl-secondary {
     &:focus-visible {
       outline: 2px solid rgb(var(--secondary));
       outline-offset: 2px;
@@ -45,7 +45,7 @@
     }
   }
 
-  &.toggle-success {
+  &.tgl-success {
     &:focus-visible {
       outline: 2px solid rgb(var(--success));
       outline-offset: 2px;
@@ -59,7 +59,7 @@
     }
   }
 
-  &.toggle-danger {
+  &.tgl-danger {
     &:focus-visible {
       outline: 2px solid rgb(var(--danger));
       outline-offset: 2px;
@@ -73,7 +73,7 @@
     }
   }
 
-  &.toggle-warning {
+  &.tgl-warning {
     &:focus-visible {
       outline: 2px solid rgb(var(--warning));
       outline-offset: 2px;

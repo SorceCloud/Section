@@ -1,4 +1,4 @@
-.checkbox {
+.ckb {
   --chkfg: var(--primary-content);
   --chkbg: var(--primary);
   @apply h-6 w-6 cursor-pointer appearance-none border border-base-gray-500 border-opacity-20 rounded-$rounded-btn;
@@ -25,7 +25,7 @@
         rgb(var(--chkbg)) 50.99%);
   }
 
-  &.checkbox-primary {
+  &.ckb-primary {
     --chkbg: var(--primary);
     --chkfg: var(--primary-content);
     @apply border-primary hover: border-primary;
@@ -40,7 +40,7 @@
     }
   }
 
-  &.checkbox-secondary {
+  &.ckb-secondary {
     --chkbg: var(--secondary);
     --chkfg: var(--secondary-content);
     @apply border-secondary hover: border-secondary;
@@ -55,7 +55,7 @@
     }
   }
 
-  &.checkbox-success {
+  &.ckb-success {
     --chkbg: var(--success);
     --chkfg: var(--success-content);
     @apply border-success hover: border-success;
@@ -70,7 +70,7 @@
     }
   }
 
-  &.checkbox-warning {
+  &.ckb-warning {
     --chkbg: var(--warning);
     --chkfg: var(--warning-content);
     @apply border-warning hover: border-warning;
@@ -85,7 +85,7 @@
     }
   }
 
-  &.checkbox-danger {
+  &.ckb-danger {
     --chkbg: var(--danger);
     --chkfg: var(--danger-content);
     @apply border-danger hover: border-danger;

@@ -1,20 +1,20 @@
 export default {
-  '.toggle.toggle-xs': {
+  '.tgl.tgl-xs': {
     '--handleoffset': '0.5rem',
     'width': '1.5rem',
     'height': '1rem',
   },
-  '.toggle.toggle-sm': {
+  '.tgl.tgl-sm': {
     '--handleoffset': '0.75rem',
     'width': '2rem',
     'height': '1.25rem',
   },
-  '.toggle.toggle-md': {
+  '.tgl.tgl-md': {
     '--handleoffset': '1.5rem',
     'width': '3rem',
     'height': '1.5rem',
   },
-  '.toggle.toggle-lg': {
+  '.tgl.tgl-lg': {
     '--handleoffset': '2rem',
     'width': '4rem',
     'height': '2rem',

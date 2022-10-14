@@ -8,7 +8,7 @@
 
 ### install
 
-```js
+```shell
 npm i sectionui
 ```
 

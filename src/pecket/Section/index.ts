@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import ButtonGroup from './Button Group/ButtonGroup.vue'
+import ButtonGroup from './ButtonGroup/ButtonGroup.vue'
 import Menu from './Menu/Menu.vue'
 import Dropdown from './Dropdown/Dropdown.vue'
 import Modal from './Modal/Modal.vue'

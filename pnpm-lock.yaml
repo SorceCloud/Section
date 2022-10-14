@@ -7,6 +7,7 @@ specifiers:
   '@vitejs/plugin-vue': ^2.3.4
   '@vueuse/core': ^9.2.0
   '@yankeeinlondon/code-builder': ^1.0.7
+  '@yankeeinlondon/link-builder': ^1.0.5
   markdown-it-anchor: ^8.6.5
   markdown-it-link-attributes: ^4.0.1
   markdown-it-prism: ^2.3.0
@@ -31,6 +32,7 @@ devDependencies:
   '@types/node': 18.8.0
   '@vitejs/plugin-vue': 2.3.4_vite@3.1.4+vue@3.2.39
   '@yankeeinlondon/code-builder': 1.0.7_c22ifrankaqdkoir4fsb6meeia
+  '@yankeeinlondon/link-builder': 1.0.5_k3hrojci642c7437ufdk5wgkwm
   markdown-it-anchor: 8.6.5_ea7kj7wzjkld5jo2noyjqxi764
   markdown-it-link-attributes: 4.0.1
   typescript: 4.8.2
@@ -588,6 +590,32 @@ packages:
       - stylus
       - supports-color
       - terser
+    dev: true
+
+  /@yankeeinlondon/link-builder/1.0.5_k3hrojci642c7437ufdk5wgkwm:
+    resolution: {integrity: sha512-l67pbMn+YhEcAeeF2HKz3BxAlbWqDSMypeKQwnJqLiDTi91FcPf2z21DV3Wnxq3n2vAmzvpGA74nAk/M8KjwiA==}
+    peerDependencies:
+      markdown-it: '>=13'
+    dependencies:
+      '@yankeeinlondon/builder-api': 0.4.1_k3hrojci642c7437ufdk5wgkwm
+      '@yankeeinlondon/happy-wrapper': 2.6.0_happy-dom@6.0.4
+      markdown-it: 13.0.1
+      pathe: 0.3.5
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - c8
+      - fp-ts
+      - happy-dom
+      - inferred-types
+      - jsdom
+      - less
+      - sass
+      - stylus
+      - supports-color
+      - terser
+      - vite-plugin-md
     dev: true
 
   /acorn-jsx/5.3.2_acorn@7.4.1:

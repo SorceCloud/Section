@@ -28,6 +28,11 @@ const route = [
             component: () => import('../page/theme.md'),
             meta: { title: 'Theme' },
           },
+          {
+            path: '/section/color',
+            component: () => import('../page/color.md'),
+            meta: { title: 'Color' },
+          },
         ]
       },
       {
@@ -60,6 +65,11 @@ const route = [
         path: '/section/',
         meta: { title: 'Section' },
         children: [
+          {
+            path: '/section/buttongroup',
+            component: () => import('../pecket/Section/ButtonGroup/ButtonGroup.md'),
+            meta: { title: 'ButtonGroup' },
+          },
           {
             path: '/section/menu',
             component: () => import('../pecket/Section/Menu/menu.md'),
