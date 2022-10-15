@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useDark } from '../store/dark'
+
+const { isDark } = useDark()
 
 const themes = [
   'theme-blue',
@@ -11,8 +14,8 @@ const themes = [
 <template>
   <div class="my-14 ">
     <div class="flex flex-raw mt-10 gap-4">
-      <div v-for="theme in themes" :class="[theme]"
-        class="shadow-sm border rounded-lg flex flex-wrap gap-2 (w-40 px-12 py-9  )md:(w-48  px-6 py-7)">
+      <div v-for="theme in themes" :class="[theme,{'dark': isDark}]"
+        class="shadow-sm border rounded-lg flex flex-wrap gap-2 (w-40 px-12 py-9) md:(w-48  px-6 py-7)">
         <div class="flex items-center w-full justify-between">
           <btn circle size="xs"><i class="fa-regular fa-xmark"></i></btn>
           <tgl checked />

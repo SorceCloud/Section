@@ -35,5 +35,7 @@ import BackDrop from './BackDrop.vue'
 import { computed } from 'vue'
 const { isLgSize } = windowWidth();
 let router = useRoute()
-const isHome = computed(() => !!(router.name === 'Index'));
+const isHome = computed(() => router.meta.title === 'Index');
+console.log(isHome.value);
+
 </script>
