@@ -1,13 +1,13 @@
 {
   "name": "@sorce.cloud/section",
   "private": false,
-  "version": "0.0.1",
-  "main": "./dist/sectionui.umd.js",
-  "module": "./dist/sectionui.es.js",
+  "version": "0.0.2",
+  "main": "./dist/section.umd.js",
+  "module": "./dist/section.es.js",
   "exports": {
     ".": {
-      "import": "./dist/sectionui.es.js",
-      "require": "./dist/sectionui.umd.js"
+      "import": "./dist/section.es.js",
+      "require": "./dist/section.umd.js"
     }
   },
   "files": [
