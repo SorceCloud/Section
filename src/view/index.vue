@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-auto w-full px-50 pt-25 min-w-0 lg:static lg:max-h-full lg:overflow-visible">
+  <div class="flex-auto lg:px-36 w-full pt-25">
     <HomePage />
     <HomeExample />
     <Footer />
