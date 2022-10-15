@@ -34,7 +34,6 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [
       VuePlugin({
-        reactivityTransform: true,
         include: [/\.vue$/, /\.md$/],
       }),
 
@@ -59,8 +58,6 @@ export default defineConfig(({ mode }) => {
           [Anchor],
         ],
         wrapperComponent: 'Markdown',
-        excerpt: '<!-- more -->',
-        excerptExtract: true,
       }),
       VueI18n({
         runtimeOnly: true,
@@ -71,7 +68,7 @@ export default defineConfig(({ mode }) => {
         {
           scan: {
             dirs: ['.'], // all files in the cwd
-            fileExtensions: ['vue', 'js', 'ts'], // also enabled scanning for js/ts
+            fileExtensions: ['vue', 'js', 'ts', 'md'], // also enabled scanning for js/ts
           },
           config: path.resolve(__dirname, 'windi.config.ts'),
         }

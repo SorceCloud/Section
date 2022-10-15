@@ -14,7 +14,7 @@
           <template v-for="menu in routes">
             <Menu v-if="menu.children && menu.children.length>1" v-for="parent in menu.children" class="w-full pt-0">
               <span class="menu-title">{{parent.meta.title}}</span>
-              <btn size="sm" menu-item variant="transparent" v-for="child in parent.children" tag="RouterLink"
+              <btn size="sm" item variant="transparent" v-for="child in parent.children" tag="RouterLink"
                 :to="child.path"
                 :class="[router.meta.title === child.meta.title ? 'border-l-2 border-primary bg-base-gray-200 dark:bg-base-gray-600':'']">
                 {{child.meta.title}}
@@ -36,6 +36,4 @@ import { computed } from 'vue'
 const { isLgSize } = windowWidth();
 let router = useRoute()
 const isHome = computed(() => router.meta.title === 'Index');
-console.log(isHome.value);
-
 </script>

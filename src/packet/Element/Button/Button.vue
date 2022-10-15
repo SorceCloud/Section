@@ -34,7 +34,7 @@ const props = defineProps({
   active: { type: Boolean, default: false, required: false },
   // remove all styles from button
   clean: { type: Boolean, default: false, required: false },
-  menuItem: { type: Boolean, default: false, required: false },
+  item: { type: Boolean, default: false, required: false },
   // responsive sm
   sm: { type: String, required: false },
   // responsive md
@@ -75,7 +75,7 @@ const responsive = computed(() => {
       'btn-loading': props.loading,
       'btn-circle': props.circle,
       'btn-active': props.active,
-      'btn-clean': props.menuItem || props.clean
+      'btn-clean': props.item || props.clean
     }
   ]">
     <svg v-if="props.loading" name="icon-loading" class="icon-loading" xmlns="http://www.w3.org/2000/svg" fill="none"

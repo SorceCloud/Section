@@ -33,13 +33,13 @@ export default {
 };
 ```
 
-When there are no themes imported, VueWindi will use the default theme (blue).
+When there are no themes imported, Section UI will use the default theme (blue).
 
 <br />
 
 ## Customize an existing theme
 
-To customize an existing theme, you can pass an object to vueWindi.themes and replace existing variables.
+To customize an existing theme, you can pass an object to section.themes and replace existing variables.
 
 ```ts
 import  sectionTheme  from "./src/plugin";

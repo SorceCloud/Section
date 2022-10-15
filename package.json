@@ -2,6 +2,10 @@
   "name": "@sorce.cloud/section",
   "private": false,
   "version": "0.0.2",
+  "homepage": "section.run",
+  "author": {
+    "name": "Cesar.Studio"
+  },
   "main": "./dist/section.umd.js",
   "module": "./dist/section.es.js",
   "exports": {
@@ -13,6 +17,9 @@
   "files": [
     "dist/*"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "dev": "vite --port 8888 --open",
     "build": "vite build",

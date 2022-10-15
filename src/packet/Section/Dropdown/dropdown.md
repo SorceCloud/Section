@@ -41,7 +41,7 @@ import Dropdown from "sectionui"
   </Dropdown>
 </div>
 
-```ts
+```vue
   <Dropdown placement="bottom-start">
     <template #trigger="{ active }">
       <btn :active="active">Bottom-start</btn>
@@ -84,24 +84,24 @@ Make sure that you have imported <code>WMenu</code> and <code>WButton</code> to 
       <btn :active="active">With Menu</btn>
     </template>
     <Menu rounded padding>
-      <btn menu-item>Item 1</btn>
-      <btn menu-item>Item 2</btn>
-      <btn menu-item>Item 3</btn>
+      <btn item>Item 1</btn>
+      <btn item>Item 2</btn>
+      <btn item>Item 3</btn>
     </Menu>
   </Dropdown>
 </div>
 
-```ts
-  <Dropdown>
-    <template #trigger="{ active }">
-      <btn :active="active">With Menu</btn>
-    </template>
-    <Menu rounded padding>
-      <btn menu-item>Item 1</btn>
-      <btn menu-item>Item 2</btn>
-      <btn menu-item>Item 3</btn>
-    </Menu>
-  </Dropdown>
+```vue
+<Dropdown>
+  <template #trigger="{ active }">
+    <btn :active="active">With Menu</btn>
+  </template>
+  <Menu rounded padding>
+    <btn item>Item 1</btn>
+    <btn item>Item 2</btn>
+    <btn item>Item 3</btn>
+  </Menu>
+</Dropdown>
 ```
 
 ## Hover
@@ -112,22 +112,22 @@ Make sure that you have imported <code>WMenu</code> and <code>WButton</code> to 
     <btn :active="active">Hover</btn>
   </template>
     <Menu rounded padding>
-      <btn menu-item>Item 1</btn>
-      <btn menu-item>Item 2</btn>
-      <btn menu-item>Item 3</btn>
+      <btn item>Item 1</btn>
+      <btn item>Item 2</btn>
+      <btn item>Item 3</btn>
     </Menu>
   </Dropdown>
 </div>
 
-```ts
-  <Dropdown>
-    <template #trigger="{ active }">
-      <btn :active="active">With Menu</btn>
-    </template>
-    <Menu rounded padding>
-      <btn menu-item>Item 1</btn>
-      <btn menu-item>Item 2</btn>
-      <btn menu-item>Item 3</btn>
-    </Menu>
-  </Dropdown>
+```vue
+<Dropdown>
+  <template #trigger="{ active }">
+    <btn :active="active">With Menu</btn>
+  </template>
+  <Menu rounded padding>
+    <btn item>Item 1</btn>
+    <btn item>Item 2</btn>
+    <btn item>Item 3</btn>
+  </Menu>
+</Dropdown>
 ```
