@@ -1,17 +1,13 @@
 # Section UI
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
-- 🗂 [File based routing](./src/pages)
-- 📦 [Components auto importing](./src/components)
-- 📑 [Layout system](./src/layouts)
-- 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
-- 😃 [Use icons from any icon sets, with no compromise](./src/components)
-- 🌍 [I18n ready](./locales)
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), - born with fastness
+- 🗂 [File based routing](./src/page)
+- 😃 [Use icons from any icon sets, with no compromise](./src/packet)
+- 🌍 [I18n ready](./locale)
 - 🗒 [Markdown Support](https://github.com/antfu/vite-plugin-md)
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
-- 🖨 Static-site generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
 - 🦾 TypeScript, of course
 - ☁️ Deploy on Netlify, zero-config
 
@@ -19,13 +15,12 @@
 
 ### UI Frameworks
 
-- [TailwindCSS](https://tailwindcss.com) - A utility-first CSS framework.
+- [WindiCSS](https://windicss.com) - A utility-first CSS framework.
 
 ### Vite Plugins
 
 - [Vue Router](https://github.com/vuejs/router)
 - [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
-  - [`markdown-it-shiki`](https://github.com/antfu/markdown-it-shiki) - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
   - [`vite-plugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
 
@@ -38,15 +33,15 @@
 ### Template
 ## Try it now!
 
-> This source code requires Node >=14.18
+This source code requires Node >=14.18
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-git clone git@github.com:ansidev/blog.git my-blog
-cd my-blog
+git clone git@github.com:SorceCloud/Section.git
+cd section
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
