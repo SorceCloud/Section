@@ -10,10 +10,10 @@ import setLanguage from '../store/language'
       </btn>
     </template>
     <Menu class="w-20 !bg-base-200">
-      <btn menu-item @click="setLanguage('en-US')">
+      <btn item @click="setLanguage('en-US')">
         English
       </btn>
-      <btn menu-item @click="setLanguage('zh-CN')">
+      <btn item @click="setLanguage('zh-CN')">
         中文
       </btn>
     </Menu>

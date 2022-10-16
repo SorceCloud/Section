@@ -11,7 +11,7 @@ Import with composition API
 
 ```vue
 <script setup lang="ts">
-import btn from "section";
+import btn from 'section';
 </script>
 
 ```
@@ -23,7 +23,7 @@ import with options API
 
 ```vue
 <script lang="ts">
-import btn from "sectionui";
+import btn from 'sectionui';
 
 export default {
     components: {

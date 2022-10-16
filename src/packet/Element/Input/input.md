@@ -3,7 +3,7 @@
 ## Basic usage
 
 ```ts
-import { ipt } from "sectionui"
+import { ipt } from 'sectionui'
 ```
 
 ## Basic

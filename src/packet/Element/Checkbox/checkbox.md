@@ -3,7 +3,7 @@
 ## Basic usage
 
 ```ts
-import ckb from "sectionui"
+import ckb from 'sectionui'
 ```
 
 ## Basic

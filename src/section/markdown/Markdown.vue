@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { MdFrontmatter, } from '~/types'
+import { MdFrontmatter, } from '~/type'
 import Tableofcontent from './Tableofcontent.vue'
 defineProps({
   frontmatter: { type: Object as PropType<MdFrontmatter>, default: () => { } },

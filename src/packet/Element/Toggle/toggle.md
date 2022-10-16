@@ -3,7 +3,7 @@
 ## Basic usage
 
 ```ts
-import { tgl } from "sectionui"
+import { tgl } from 'sectionui'
 ```
 
 ## Basic

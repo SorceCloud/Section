@@ -2,7 +2,7 @@
 
 <br />
 
-<div class="bg-danger-200/10 rounded-$rounded-btn p-5 text-danger-200">
+<div class='bg-danger-200/10 rounded-$rounded-btn p-5 text-danger-200'>
     Themes are not defined yet, existing themes are for testing purposes only, they will be changed in the next versions.
 </div>
 
@@ -22,13 +22,13 @@ Blue, teal, rose, violet and orange.
 To import themes you need to add the code bellow in <code>windi.config.js</code> file.
 
 ```ts
-import sectionTheme from "./src/plugin";
+import sectionTheme from './src/plugin';
 
 export default {
   plugins: [sectionTheme],
 
   sectionThemes: {
-    themes: ["blue", "teal", "rose", "violet", "orange"],
+    themes: ['blue', 'teal', 'rose', 'violet', 'orange'],
   },
 };
 ```
@@ -42,18 +42,18 @@ When there are no themes imported, Section UI will use the default theme (blue).
 To customize an existing theme, you can pass an object to section.themes and replace existing variables.
 
 ```ts
-import  sectionTheme  from "./src/plugin";
+import  sectionTheme  from './src/plugin';
 
 export default {
   plugins: [sectionTheme],
 
   sectionThemes: {
      {
-        "primary-100": "#2563eb",
-        "primary-200": "#1d4ed8",
-        "primary-300": "#1e40af"
+        'primary-100': '#2563eb',
+        'primary-200': '#1d4ed8',
+        'primary-300': '#1e40af'
       },
-    themes: [ "teal"]
+    themes: [ 'teal']
   }
 };
 
@@ -62,38 +62,38 @@ export default {
 ## Section UI  CSS variables
 
 ```ts
-    "primary-100": "#2563eb",
-    "primary-200": "#1d4ed8",
-    "primary-300": "#1e40af",
+    'primary-100': '#2563eb',
+    'primary-200': '#1d4ed8',
+    'primary-300': '#1e40af',
 
-    "secondary-100": "#4b5563",
-    "secondary-200": "#374151",
-    "secondary-300": "#1f2937",
+    'secondary-100': '#4b5563',
+    'secondary-200': '#374151',
+    'secondary-300': '#1f2937',
 
-    "success-100": "#16a34a",
-    "success-200": "#15803d",
-    "success-300": "#166534",
+    'success-100': '#16a34a',
+    'success-200': '#15803d',
+    'success-300': '#166534',
 
-    "danger-100": "#dc2626",
-    "danger-200": "#b91c1c",
-    "danger-300": "#991b1b",
+    'danger-100': '#dc2626',
+    'danger-200': '#b91c1c',
+    'danger-300': '#991b1b',
 
-    "warning-100": "#ca8a04",
-    "warning-200": "#a16207",
-    "warning-300": "#854d0e",
+    'warning-100': '#ca8a04',
+    'warning-200': '#a16207',
+    'warning-300': '#854d0e',
 
-    "base-100": "#fcfcfc",
-    "base-200": "#fafafa",
-    "base-300": "#f8f9fa",
+    'base-100': '#fcfcfc',
+    'base-200': '#fafafa',
+    'base-300': '#f8f9fa',
 
-    "dark-base-100": "#181818",
-    "dark-base-200": "#151414",
-    "dark-base-300": "#0f0f0f",
+    'dark-base-100': '#181818',
+    'dark-base-200': '#151414',
+    'dark-base-300': '#0f0f0f',
 
-    "base-text": "#1f2937",
-    "dark-base-text": "#f3f4f6",
+    'base-text': '#1f2937',
+    'dark-base-text': '#f3f4f6',
 
-    "rounded-box": "1rem",
-    "rounded-btn": "0.5rem",
-    "rounded-badge": "1.9rem",
+    'rounded-box': '1rem',
+    'rounded-btn': '0.5rem',
+    'rounded-badge': '1.9rem',
 ```
