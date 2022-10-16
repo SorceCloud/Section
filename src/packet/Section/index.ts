@@ -8,6 +8,7 @@ import Modal from './Modal/Modal.vue'
 const install = (app: App) => {
   app.component('ButtonGroup', ButtonGroup)//组合按钮
   app.component('Menu', Menu);//菜单
+  app.component('mnu', Menu);//菜单
   app.component('Dropdown', Dropdown);//下拉菜单
   app.component('Modal', Modal);//弹窗
 }

@@ -83,11 +83,11 @@ Make sure that you have imported <code>WMenu</code> and <code>WButton</code> to 
     <template #trigger="{ active }">
       <btn :active="active">With Menu</btn>
     </template>
-    <Menu rounded padding>
+    <mnu rounded padding>
       <btn item>Item 1</btn>
       <btn item>Item 2</btn>
       <btn item>Item 3</btn>
-    </Menu>
+    </mnu>
   </Dropdown>
 </div>
 
@@ -111,11 +111,11 @@ Make sure that you have imported <code>WMenu</code> and <code>WButton</code> to 
   <template #trigger="{ active }">
     <btn :active="active">Hover</btn>
   </template>
-    <Menu rounded padding>
+    <mnu rounded padding>
       <btn item>Item 1</btn>
       <btn item>Item 2</btn>
       <btn item>Item 3</btn>
-    </Menu>
+    </mnu>
   </Dropdown>
 </div>
 
