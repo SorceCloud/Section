@@ -9,7 +9,7 @@ import Menu from 'sectionui'
 ## Basic
 
 <div class="flex flex-wrap items-center gap-3">
-  <mnu>
+  <mnu shadow>
     <btn item>Item 1</btn>
     <btn item>Item 2</btn>
     <btn item>Item 3</btn>
@@ -17,7 +17,7 @@ import Menu from 'sectionui'
 </div>
 
 ```
-  <Menu>
+  <Menu shadow>
     <btn item>Item 1</btn>
     <btn item>Item 2</btn>
     <btn item>Item 3</btn>
@@ -27,7 +27,7 @@ import Menu from 'sectionui'
 ## Hover border
 
 <div class="flex flex-wrap items-center gap-3">
-  <mnu hover-border rounded>
+  <mnu hover-border rounded shadow>
     <btn item>Item 1</btn>
     <btn item>Item 2</btn>
     <btn item>Item 3</btn>
@@ -35,7 +35,7 @@ import Menu from 'sectionui'
 </div>
 
 ```
-  <Menu hover-border rounded>
+  <Menu hover-border rounded shadow>
     <btn item>Item 1</btn>
     <btn item>Item 2</btn>
     <btn item>Item 3</btn>
@@ -45,7 +45,7 @@ import Menu from 'sectionui'
 ## Rounded & Padding
 
 <div class="flex flex-wrap items-center gap-3">
-  <mnu rounded padding>
+  <mnu rounded padding shadow>
     <btn item>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" > <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /> </svg>
         Item 1
@@ -62,7 +62,7 @@ import Menu from 'sectionui'
 </div>
 
 ```
-  <Menu rounded padding>
+  <Menu rounded padding shadow>
     <btn item>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" > <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /> </svg>
         Item 1
@@ -81,7 +81,7 @@ import Menu from 'sectionui'
 ## Compact
 
 <div class="flex flex-wrap items-center gap-3">
-  <mnu compact rounded padding>
+  <mnu compact rounded padding shadow>
     <btn item>Item 1</btn>
     <btn item>Item 2</btn>
     <btn item>Item 3</btn>
@@ -89,7 +89,7 @@ import Menu from 'sectionui'
 </div>
 
 ```
-  <Menu compact rounded padding>
+  <Menu compact rounded padding shadow>
     <btn item>Item 1</btn>
     <btn item>Item 2</btn>
     <btn item>Item 3</btn>
@@ -102,7 +102,7 @@ import Menu from 'sectionui'
 Compact if screen is smaller then large screen (lg).
 
 <div class="flex flex-wrap items-center gap-3">
-  <mnu compact="lg" rounded padding>
+  <mnu compact="lg" rounded padding shadow>
     <btn item>Responsive 1</btn>
     <btn item>Responsive 2</btn>
     <btn item>Responsive 3</btn>
@@ -110,7 +110,7 @@ Compact if screen is smaller then large screen (lg).
 </div>
 
 ```
-  <Menu compact="lg" rounded padding>
+  <Menu compact="lg" rounded padding shadow>
     <btn item>Responsive 1</btn>
     <btn item>Responsive 2</btn>
     <btn item>Responsive 3</btn>
@@ -129,7 +129,7 @@ Compact if screen is smaller then large screen (lg).
 </div>
 
 ```
-  <Menu rounded padding>
+  <Menu rounded padding shadow>
     <btn item class="disabled">Disabled 1</btn>
     <btn item class="disabled">Disabled 2</btn>
     <btn item class="disabled">Disabled 3</btn>
@@ -139,7 +139,7 @@ Compact if screen is smaller then large screen (lg).
 ## Horizontal
 
 <div class="flex flex-wrap items-center gap-3">
-  <mnu horizontal rounded class="auto">
+  <mnu horizontal rounded class="w-auto" shadow>
     <btn item>Item 1</btn>
     <btn item>Item 2</btn>
     <btn item>Item 3</btn>
@@ -147,7 +147,7 @@ Compact if screen is smaller then large screen (lg).
 </div>
 
 ```
-  <Menu horizontal rounded class="auto">
+  <Menu horizontal rounded class="w-auto">
     <btn item>Item 1</btn>
     <btn item>Item 2</btn>
     <btn item>Item 3</btn>
@@ -159,7 +159,7 @@ Compact if screen is smaller then large screen (lg).
 Horizontal by default and vertical on small screen (sm).
 
 <div class="flex flex-wrap items-center gap-3">
-  <mnu horizontal="sm" rounded class="auto">
+  <mnu horizontal="sm" rounded class="w-auto" shadow>
     <btn item>Responsive 1</btn>
     <btn item>Responsive 2</btn>
     <btn item>Responsive 3</btn>
@@ -167,7 +167,7 @@ Horizontal by default and vertical on small screen (sm).
 </div>
 
 ```
-  <Menu horizontal="sm" rounded class="auto">
+  <Menu horizontal="sm" rounded class="w-auto">
     <btn item>Responsive 1</btn>
     <btn item>Responsive 2</btn>
     <btn item>Responsive 3</btn>
@@ -177,7 +177,7 @@ Horizontal by default and vertical on small screen (sm).
 ## Only icons
 
 <div class="flex flex-wrap items-center gap-3">
-  <mnu rounded padding class="auto">
+  <mnu rounded padding class="w-auto" shadow>
     <btn item>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" > <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /> </svg>
     </btn>
@@ -191,7 +191,7 @@ Horizontal by default and vertical on small screen (sm).
 </div>
 
 ```
-  <Menu rounded padding class="auto">
+  <Menu rounded padding class="w-auto" shadow>
     <btn item>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" > <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /> </svg>
     </btn>
@@ -207,22 +207,22 @@ Horizontal by default and vertical on small screen (sm).
 ## Menu title
 
 <div class="flex flex-wrap items-center gap-3">
-  <mnu padding>
-    <span class="mnu-title">Category</span>
+  <mnu padding shadow>
+    <span class="menu-title">Category</span>
     <btn item>Item 1</btn>
     <btn item>Item 2</btn>
-    <span class="mnu-title">Other Category</span>
+    <span class="menu-title">Other Category</span>
     <btn item>Item 3</btn>
     <btn item>Item 4</btn>
   </mnu>
 </div>
 
 ```
-  <Menu padding>
-    <span class="mnu-title">Category</span>
+  <Menu padding shadow>
+    <span class="menu-title">Category</span>
     <btn item>Item 1</btn>
     <btn item>Item 2</btn>
-    <span class="mnu-title">Other Category</span>
+    <span class="menu-title">Other Category</span>
     <btn item>Item 3</btn>
     <btn item>Item 4</btn>
   </Menu>

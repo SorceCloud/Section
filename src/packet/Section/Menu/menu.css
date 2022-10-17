@@ -1,5 +1,9 @@
 .menu {
-  @apply bg-base-100 w-56 shadow shadow-md select-none;
+  @apply bg-base-100 w-56 select-none;
+
+  &.shadow {
+    @apply shadow shadow-md
+  }
 
   &.rounded {
     @apply rounded-$rounded-box;
@@ -76,7 +80,7 @@
     @apply <xl: (text-sm py-2 px-4);
   }
 
-  .menu:not(.w-horizontal) {
+  .menu:not(.horizontal) {
     @apply flex flex-col;
   }
 

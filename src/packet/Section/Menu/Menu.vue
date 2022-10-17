@@ -15,6 +15,7 @@ export default defineComponent({
         return ['sm', 'md', 'lg', 'xl', true, false].includes(value)
       },
     },
+    shadow: { type: Boolean, default: false, required: false },
     rounded: { type: Boolean, default: false, required: false }, // Menu with rounded borders
     padding: { type: Boolean, default: false, required: false },// Menu with padding and list with rounded border
     hoverBorder: { type: Boolean, default: false, required: false }, // List with left border colored on hover
@@ -28,7 +29,7 @@ export default defineComponent({
 <template>
   <ul class="menu" :class="[compact ? typeof compact === 'string' ? `compact-${compact}` : 'compact': '',
   horizontal ? typeof horizontal === 'string' ? `horizontal-${horizontal}` : 'horizontal' : '',
-  {'rounded': rounded, 'padding': padding,'hover-border': hoverBorder}]">
+  {'rounded': rounded, 'padding': padding,'hover-border': hoverBorder,'shadow':shadow}]">
     <template v-if="slots.default">
       <li v-for="(slot, key) in slots.default()" :key="key" class="menu-item">
         <component :is="slot" v-if="slots.default" />
