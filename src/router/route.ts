@@ -14,22 +14,22 @@ const route = [
         children: [
           {
             path: '/section/started',
-            component: () => import('../page/started.md'),
+            component: () => import('../packet/Intro/started.md'),
             meta: { title: 'Started' },
           },
           {
             path: '/section/usage',
-            component: () => import('../page/usage.md'),
+            component: () => import('../packet/Intro/usage.md'),
             meta: { title: 'Usage' },
           },
           {
             path: '/section/theme',
-            component: () => import('../page/theme.md'),
+            component: () => import('../packet/Intro/theme.md'),
             meta: { title: 'Theme' },
           },
           {
             path: '/section/color',
-            component: () => import('../page/color.md'),
+            component: () => import('../packet/Intro/color.md'),
             meta: { title: 'Color' },
           },
         ]
