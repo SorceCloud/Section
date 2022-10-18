@@ -1,7 +1,19 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { MdFrontmatter, } from '~/type'
+import type { MarkdownItHeader } from '@mdit-vue/plugin-headers'
+import type { Frontmatter } from 'vite-plugin-md'
 import Tableofcontent from './Tableofcontent.vue'
+
+interface MdFrontmatter extends Frontmatter {
+  type: string
+  author: string
+  gravatar: string
+  twitter: string
+  date: Date | string
+  toc: MarkdownItHeader[]
+  categories: string[]
+  tags: string[]
+}
 defineProps({
   frontmatter: { type: Object as PropType<MdFrontmatter>, default: () => { } },
 })

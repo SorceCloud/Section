@@ -25,7 +25,7 @@
     "src/locale"
   ],
   "scripts": {
-    "dev": "vite --port 8888 --open",
+    "dev": "vite --port 3000 --open",
     "build": "rimraf dist && vite build",
     "preview": "vite preview"
   },
