@@ -2,7 +2,7 @@
   "name": "@sorce.cloud/section",
   "sideEffects": false,
   "private": false,
-  "version": "0.0.8",
+  "version": "0.0.10",
   "homepage": "section.run",
   "author": {
     "name": "Cesar.Studio"
@@ -14,8 +14,7 @@
       "import": "./dist/section.mjs",
       "require": "./dist/section.umd.js"
     },
-    "./css": "./dist/style.css",
-    "./plugin": "./dist/plugin/index.ts"
+    "./dist/style.css": "./dist/style.css"
   },
   "files": [
     "dist",

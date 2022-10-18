@@ -28,7 +28,7 @@ export default defineConfig(({ mode }) => {
         },
       },
       lib: {
-        entry: './src/packet/index.ts',
+        entry: path.resolve(__dirname, './src/packet/index.ts'),
         name: 'Section',
       }
     },

@@ -1,8 +1,6 @@
 <template>
   <i :class="[
   `fa-${props.name}`,
-  `fa-${props.type}`,
-  `fa-${props.size}`,
   {
     'fa-beat':beat,
     'fa-xs':xs,
@@ -25,19 +23,6 @@
 import './Icon.js'
 const props = defineProps({
   name: { type: String, default: '', required: false },
-  type: {
-    type: String, default: 'regular', required: false,
-    validator: (value: string) => {
-      return ['thin', 'solid', 'regular', 'light', 'duotone', 'brand', 'kit'].includes(value)
-    },
-  },
-  size: {
-    type: String, default: '', required: false,
-    validator: (value: string) => {
-      return ['xs', 'sm', 'md', 'lg', 'xl'].includes(value)
-    },
-  },
-
   beat: { type: Boolean, default: false, required: false },
 
   xs: { type: Boolean, required: false }, // responsive xs
