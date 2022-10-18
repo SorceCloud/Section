@@ -2,7 +2,7 @@
   "name": "@sorce.cloud/section",
   "sideEffects": false,
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.8",
   "homepage": "section.run",
   "author": {
     "name": "Cesar.Studio"
@@ -15,13 +15,14 @@
       "require": "./dist/section.umd.js"
     },
     "./css": "./dist/style.css",
-    "./plugin": "./src/plugin/theme/index.ts"
+    "./plugin": "./dist/plugin/index.ts"
   },
   "files": [
     "dist",
     "src/plugin",
     "src/style",
-    "src/plugin"
+    "src/plugin",
+    "src/locale"
   ],
   "scripts": {
     "dev": "vite --port 8888 --open",
