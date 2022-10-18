@@ -17,7 +17,9 @@ const themes = [
       <div v-for="theme in themes" :class="[theme,{'dark': isDark}]"
         class="shadow-sm border rounded-lg flex flex-wrap gap-2 (w-40 px-12 py-9) md:(w-48  px-6 py-7)">
         <div class="flex items-center w-full justify-between">
-          <btn circle size="xs"><i class="fa-regular fa-xmark"></i></btn>
+          <btn circle size="xs">
+            <icn name="xmark" regular xl></icn>
+          </btn>
           <tgl checked />
           <ckb checked />
         </div>

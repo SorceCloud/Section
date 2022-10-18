@@ -10,10 +10,10 @@ const { changeTheme } = useTheme()
   <Dropdown placement="bottom-end">
     <template #trigger="{ active }">
       <btn variant="transparent" color="secondary" class="stroke-base-text">
-        <i class="fa-light fa-swatchbook fa-xl"></i>
+        <icn name="swatchbook" light xl></icn>
       </btn>
     </template>
-    <Menu class="w-32 !bg-base-200">
+    <Menu shadow class="w-32 !bg-base-200">
       <btn item @click="changeTheme('theme-default')">
         <span class="theme-blue rounded-[0.5rem] bg-blue-700 h-6 w-6"></span>{{ t("theme.blue") }}
       </btn>

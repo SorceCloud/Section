@@ -35,14 +35,11 @@ const props = defineProps({
   // remove all styles from button
   clean: { type: Boolean, default: false, required: false },
   item: { type: Boolean, default: false, required: false },
-  // responsive sm
-  sm: { type: String, required: false },
-  // responsive md
-  md: { type: String, required: false },
-  // responsive lg
-  lg: { type: String, required: false },
-  // responsive xl
-  xl: { type: String, required: false }
+
+  sm: { type: String, required: false }, // responsive sm
+  md: { type: String, required: false }, // responsive md
+  lg: { type: String, required: false }, // responsive lg
+  xl: { type: String, required: false }  // responsive xl
 })
 const computedType = computed(() => {
   if (props.tag === 'input' || props.tag === 'button')
@@ -56,9 +53,9 @@ const responsive = computed(() => {
   else if (props.md)
     rp.value = `${rp.value}md-${props.md}`
   else if (props.lg)
-    rp.value = `${rp.value}md-${props.lg}`
+    rp.value = `${rp.value}lg-${props.lg}`
   else if (props.xl)
-    rp.value = `${rp.value}md-${props.xl}`
+    rp.value = `${rp.value}xl-${props.xl}`
   else return null
   return rp.value
 })

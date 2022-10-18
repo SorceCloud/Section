@@ -44,6 +44,11 @@ const route = [
             meta: { title: 'Button' },
           },
           {
+            path: '/section/icon',
+            component: () => import('../packet/Element/Icon/Icon.md'),
+            meta: { title: 'Icon' },
+          },
+          {
             path: '/section/input',
             component: () => import('../packet/Element/Input/input.md'),
             meta: { title: 'Input' },

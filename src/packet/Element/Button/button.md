@@ -148,17 +148,19 @@ import btn from "sectionui"
 
 <div class="flex flex-wrap items-center gap-3">
   <btn circle>
-    <i class="fa-bell"/>
+    <icn name="bell" xl/>
   </btn>
   <btn circle variant="outline">
-    <i class="fa-bell"/>
+    <icn name="bell" xl/>
   </btn>
 </div>
 
 ```ts
   <btn circle>
+    <icn name="bell" xl/>
   </btn>
   <btn circle variant="outline">
+    <icn name="bell" xl/>
   </btn>
 ```
 

@@ -6,10 +6,10 @@ import setLanguage from '../store/language'
   <Dropdown placement="bottom-end">
     <template #trigger="{ active }">
       <btn variant="transparent" color="secondary" class="stroke-base-text">
-        <i class="fa-light fa-language fa-xl"></i>
+        <icn name="language" light xl></icn>
       </btn>
     </template>
-    <Menu class="w-20 !bg-base-200">
+    <Menu shadow class="w-20 !bg-base-200">
       <btn item @click="setLanguage('en-US')">
         English
       </btn>
