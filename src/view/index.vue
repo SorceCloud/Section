@@ -8,5 +8,5 @@
 <script lang="ts" setup>
 import HomePage from './HomePage.vue'
 import HomeExample from './HomeExample.vue';
-import Footer from '../section/layout/Footer.vue'
+import Footer from '../section/Footer.vue'
 </script>

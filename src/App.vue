@@ -8,6 +8,6 @@
   </div>
 </template>
 <script lang="ts" setup>
-import Header from './section/layout/Header.vue'
-import Sidebar from './section/layout/Sidebar.vue';
+import Header from './section/Header.vue'
+import Sidebar from './section/Sidebar.vue';
 </script>

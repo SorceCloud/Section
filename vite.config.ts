@@ -57,7 +57,7 @@ export default defineConfig(({ mode }) => {
           ],
           [Anchor],
         ],
-        wrapperComponent: 'Markdown',
+        wrapperComponent: 'Markdown'
       }),
       VueI18n({
         runtimeOnly: true,

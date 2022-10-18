@@ -1,9 +1,23 @@
 <script setup lang="ts">
-import { useTheme } from '../store/theme'
+import { onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n();
 
-const { changeTheme } = useTheme()
+const isTheme = ref<string>('theme-default')
+
+onMounted(() => {
+  const storaged = localStorage.getItem('theme')
+  if (storaged)
+    isTheme.value = storaged
+  document.documentElement.classList.add(isTheme.value);
+})
+
+function changeTheme(color: string) {
+  document.documentElement.classList.remove(isTheme.value);
+  isTheme.value = color;
+  document.documentElement.classList.add(isTheme.value);
+  localStorage.setItem("theme", isTheme.value);
+}
 
 </script>
 <template>

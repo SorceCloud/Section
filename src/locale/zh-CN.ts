@@ -10,8 +10,8 @@ export default {
     started: "从这里开始",
     components: "组件库",
     tableOfContent: "目录",
-    version: "version",
-    changelog: "changelog",
-    download: "download",
+    version: "版本",
+    changelog: "更新日志",
+    download: "下载",
   },
 };

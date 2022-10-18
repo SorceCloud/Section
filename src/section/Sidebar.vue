@@ -27,10 +27,10 @@
   </transition>
 </template>
 <script setup lang="ts">
-import routes from '../../router/route'
+import routes from '../router/route'
 import { useRoute } from 'vue-router'
-import { isOpen, toggleSidebar } from '../../store/sidebar'
-import { windowWidth } from '../../store/window-width'
+import { isOpen, toggleSidebar } from '../store/sidebar'
+import { windowWidth } from '../store/window-width'
 import BackDrop from './BackDrop.vue'
 import { computed } from 'vue'
 const { isLgSize } = windowWidth();

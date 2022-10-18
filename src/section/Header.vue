@@ -13,14 +13,7 @@
       </div>
       <div class="flex">
         <ThemeSelect />
-        <btn variant="transparent" color="secondary" @click="setDark" class="fill-base-text">
-          <span v-show="!isDark">
-            <icn name="sun-bright" light xl></icn>
-          </span>
-          <span v-show="isDark">
-            <icn name="moon-stars" light xl></icn>
-          </span>
-        </btn>
+        <DarkChange />
         <LanguageSelect />
         <btn tag="a" :href="`https://github.com/sorcecloud/sectionui`" variant="transparent" color="secondary"
           class="fill-base-text">
@@ -31,10 +24,5 @@
   </nav>
 </template>
 <script setup lang="ts">
-import ThemeSelect from '../ThemeSelect.vue'
-import { useDark } from '../../store/dark'
-import LanguageSelect from '../LanguageSelect.vue'
-import { toggleSidebar } from '../../store/sidebar'
-const { isDark, setDark } = useDark()
-
+import { toggleSidebar } from '../store/sidebar'
 </script>

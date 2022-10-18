@@ -9,18 +9,18 @@ Icon component with multiple name, type, sizes, colors, Spinner and Beat.
 <div class="flex flex-wrap items-center gap-3">
   <icn name="bell" solid></icn>
   <icn name="bell" regular ></icn>
-  <icn name="bell" type="light"></icn>
-  <icn name="bell" type="thin" ></icn>
-  <icn name="bell" type="duotone"></icn>
+  <icn name="bell" light></icn>
+  <icn name="bell" thin></icn>
+  <icn name="bell" duotone></icn>
 </div>
 
 ```ts
 <div class="flex flex-wrap items-center gap-3">
-  <icn name="bell" type="solid"></icn>
-  <icn name="bell" type="regular"></icn>
-  <icn name="bell" type="light"></icn>
-  <icn name="bell" type="thin"></icn>
-  <icn name="bell" type="duotone"></icn>
+  <icn name="bell" solid></icn>
+  <icn name="bell" regular ></icn>
+  <icn name="bell" light></icn>
+  <icn name="bell" thin></icn>
+  <icn name="bell" duotone></icn>
 </div>
 ```
 
@@ -28,28 +28,26 @@ Icon component with multiple name, type, sizes, colors, Spinner and Beat.
 ## Sizes
 
 <div class="flex flex-wrap items-center gap-3">
-  <icn name="bell" size="xl"></icn>
-  <icn name="bell" size="lg"></icn>
-  <icn name="bell" ></icn>
-  <icn name="bell" size="sm"></icn>
-  <icn name="bell" size="xs"></icn>
   <icn name="bell" xl></icn>
+  <icn name="bell" lg></icn>
+  <icn name="bell" ></icn>
+  <icn name="bell" sm></icn>
+  <icn name="bell" xs></icn>
 </div>
 
 ```ts
 <div class="flex flex-wrap items-center gap-3">
-  <icn name="bell" size="xl"></icn>
-  <icn name="bell" size="lg"></icn>
-  <icn name="bell"></icn>
-  <icn name="bell" size="sm"></icn>
-  <icn name="bell" size="xs"></icn>
   <icn name="bell" xl></icn>
+  <icn name="bell" lg></icn>
+  <icn name="bell" ></icn>
+  <icn name="bell" sm></icn>
+  <icn name="bell" xs></icn>
 </div>
 ```
 
 ## Beat
 
 <div class="flex flex-wrap items-center gap-3">
-  <icn name="bell" beat></icn>
+  <icn name="bell" beat xl></icn>
 </div>
 
