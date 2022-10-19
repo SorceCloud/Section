@@ -3,6 +3,7 @@ import type { PropType } from 'vue'
 import type { MarkdownItHeader } from '@mdit-vue/plugin-headers'
 import type { Frontmatter } from 'vite-plugin-md'
 import Tableofcontent from './Tableofcontent.vue'
+import './markdown.css'
 
 interface MdFrontmatter extends Frontmatter {
   type: string

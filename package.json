@@ -2,7 +2,12 @@
   "name": "@sorce.cloud/section",
   "sideEffects": false,
   "private": false,
-  "version": "0.0.10",
+  "version": "0.1.1",
+  "description": "更新Markdown css导入位置",
+  "keywords": [
+    "Vue3",
+    "WindiCSS"
+  ],
   "homepage": "section.run",
   "author": {
     "name": "Cesar.Studio"

@@ -9,7 +9,6 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import frontmatterToc from './src/plugin/markdown/frontmatter-toc'
 import WindiCSS from 'vite-plugin-windicss'
 import code from '@yankeeinlondon/code-builder'
-import link from '@yankeeinlondon/link-builder'
 
 export default defineConfig(({ mode }) => {
   return {
@@ -42,19 +41,9 @@ export default defineConfig(({ mode }) => {
         builders: [
           frontmatterToc(),
           code({ theme: 'base' }),
-          link()
         ],
         markdownItUses: [
-          [
-            LinkAttributes,
-            {
-              matcher: (link: string) => /^https?:\/\//.test(link),
-              attrs: {
-                target: '_blank',
-                rel: 'noopener',
-              },
-            },
-          ],
+          [LinkAttributes],
           [Anchor],
         ],
         wrapperComponent: 'Markdown'
