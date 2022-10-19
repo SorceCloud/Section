@@ -21,7 +21,7 @@
     },
     "./dist/style.css": "./dist/style.css",
     "./src/plugin/theme/index.ts": "./src/plugin/theme/index.ts",
-    "./src/plugin/theme/frontmatter-toc.ts": "./src/plugin/theme/frontmatter-toc.ts"
+    "./src/plugin/markdown/frontmatter-toc.ts": "./src/plugin/markdown/frontmatter-toc.ts"
   },
   "files": [
     "dist",
