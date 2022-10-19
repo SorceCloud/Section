@@ -19,14 +19,14 @@
       "import": "./dist/section.mjs",
       "require": "./dist/section.umd.js"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./dist/style.css": "./dist/style.css",
+    "./src/plugin/theme/index.ts": "./src/plugin/theme/index.ts",
+    "./src/plugin/theme/frontmatter-toc.ts": "./src/plugin/theme/frontmatter-toc.ts"
   },
   "files": [
     "dist",
     "src/plugin",
-    "src/style",
-    "src/plugin",
-    "src/locale"
+    "src/style"
   ],
   "scripts": {
     "dev": "vite --port 3000 --open",
