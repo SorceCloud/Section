@@ -1,6 +1,7 @@
 <template>
-  <btn variant="transparent" color="secondary" @click="setDark" class="fill-base-text">
-    <span v-show="!isDark">
+  <btn variant="transparent" color="secondary" @click="setDark" class="fill-base-text" :class="[
+  {'btn-clean': props.item || props.clean}]">
+    <span v-show=" !isDark">
       <icn name="sun-bright" light xl></icn>
     </span>
     <span v-show="isDark">
@@ -9,7 +10,13 @@
   </btn>
 </template>
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref } from 'vue'
+
+const props = defineProps({
+  // remove all styles from button
+  clean: { type: Boolean, default: false, required: false },
+  item: { type: Boolean, default: false, required: false },
+})
 
 const isDark = ref<boolean>(false)
 onMounted(() => {

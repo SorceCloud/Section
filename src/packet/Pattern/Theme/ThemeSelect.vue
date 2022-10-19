@@ -29,7 +29,7 @@ function changeTheme(color: string) {
     </template>
     <Menu shadow class="w-32 !bg-base-200">
       <btn item @click="changeTheme('theme-default')">
-        <span class="theme-blue rounded-[0.5rem] bg-blue-700 h-6 w-6"></span>{{ t("theme.blue") }}
+        <span class="theme-blue rounded-$rounded-btn bg-blue-700 h-6 w-6"></span>{{ t("theme.blue") }}
       </btn>
       <btn item @click="changeTheme('theme-teal')">
         <span class="theme-teal rounded-$rounded-btn bg-teal-700 h-6 w-6"></span>{{ t("theme.teal") }}

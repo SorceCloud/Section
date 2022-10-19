@@ -2,8 +2,8 @@
   "name": "@sorce.cloud/section",
   "sideEffects": false,
   "private": false,
-  "version": "0.1.1",
-  "description": "更新Markdown css导入位置",
+  "version": "0.1.2",
+  "description": "更新Markdown 插件导出路径",
   "keywords": [
     "Vue3",
     "WindiCSS"
