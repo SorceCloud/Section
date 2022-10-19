@@ -8,8 +8,6 @@ import './markdown.css'
 interface MdFrontmatter extends Frontmatter {
   type: string
   author: string
-  gravatar: string
-  twitter: string
   date: Date | string
   toc: MarkdownItHeader[]
   categories: string[]
@@ -25,8 +23,8 @@ defineProps({
     <div class="lg:w-5/6 w-full">
       <slot></slot>
     </div>
-    <div v-if="(frontmatter as MdFrontmatter).toc?.length > 0" class="hidden border-l xl:block xl:row-span-3">
-      <Tableofcontent :toc="(frontmatter as MdFrontmatter).toc"
+    <div v-if="frontmatter.toc?.length > 0" class="hidden border-l xl:block xl:row-span-3">
+      <Tableofcontent :toc="frontmatter.toc"
         class="max-h-[calc(100vh-4rem-env(safe-area-inset-bottom))] overflow-y-auto fixed" />
     </div>
   </article>

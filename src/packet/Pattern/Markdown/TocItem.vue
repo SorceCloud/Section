@@ -2,15 +2,15 @@
 import { computed, PropType, ref, watchEffect } from 'vue'
 import type { MarkdownItHeader } from '@mdit-vue/types'
 import { useRoute } from 'vue-router'
-import Link from './Link.vue'
+import TocLink from './TocLink.vue'
 
 const headingCssClassMap: Record<number, string> = {
   1: '',
   2: '',
-  3: 'ml-4',
-  4: 'ml-8',
-  5: 'ml-12',
-  6: 'ml-16',
+  3: 'ml-2',
+  4: 'ml-4',
+  5: 'ml-6',
+  6: 'ml-8',
 }
 const props = defineProps({
   title: { type: String, default: '' },//Section title
@@ -37,16 +37,17 @@ watchEffect(() => {
 </script>
 
 <template>
-  <!-- Copied from Nextra Docs Theme with customizations -->
-  <li ref="itemRef" class="scroll-my-6 scroll-py-6 leading-7" :class="headingOffsetCssClass">
-    <Link :href="`#${slug}`" class="inline-block no-underline" :class="[
-      level === 2,
-      isActive
-        ? 'text-primary-500 subpixel-antialiased border-l-2 border-primary bg-base-gray-200 dark:bg-base-gray-600 px-3.5'
-        : 'text-gray-700 hover:bg-base-gray-200 dark:text-gray-400 dark:hover:text-gray-400 dark:hover:bg-base-gray-600 px-4',
-    ]" :aria-selected="isActive">
-    {{ title }}
-    </Link>
-  </li>
-  <TocItem v-for="item in children" :key="item.slug" v-bind="item" />
+  <div>
+    <li ref="itemRef" class="scroll-my-6 scroll-py-6 leading-7" :class="headingOffsetCssClass">
+      <TocLink :href="`#${slug}`" class="inline-block no-underline" :class="[
+        level === 2,
+        isActive
+          ? 'text-primary-500 subpixel-antialiased border-l-2 border-primary bg-base-gray-200 dark:bg-base-gray-600 px-3.5'
+          : 'text-gray-700 hover:bg-base-gray-200 dark:text-gray-400 dark:hover:text-gray-400 dark:hover:bg-base-gray-600 px-4',
+      ]" :aria-selected="isActive">
+        {{ title }}
+      </TocLink>
+      <TocItem v-for="item in children" :key="item.slug" v-bind="item" />
+    </li>
+  </div>
 </template>
