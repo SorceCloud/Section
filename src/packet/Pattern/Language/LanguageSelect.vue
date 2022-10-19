@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import I18n from '../../../locale'
+import I18n from './locale'
 
 const setLanguage = (locale: 'zh-CN' | 'en-US') => {
   if (locale !== I18n.global.locale.value) {
