@@ -19,13 +19,13 @@ defineProps({
 </script>
 
 <template>
-  <article class="flex flex-row px-10 pt-10 w-full min-w-0 h-max ">
+  <article class="flex flex-row px-10 pt-10 w-full min-w-0 h-screen overflow-y-scroll">
     <div class="lg:w-5/6 w-full pr-10">
       <slot></slot>
     </div>
-    <div v-if="frontmatter.toc?.length > 0" class="hidden border-l xl:block xl:row-span-3">
+    <div v-if="frontmatter.toc?.length > 0" class="hidden  xl:block xl:row-span-3 ">
       <Tableofcontent :toc="frontmatter.toc"
-        class="max-h-[calc(100vh-4rem-env(safe-area-inset-bottom))] overflow-y-auto fixed" />
+        class="max-h-[calc(100vh-4rem-env(safe-area-inset-bottom))] overflow-y-auto fixed border-l h-screen" />
     </div>
   </article>
 </template>
