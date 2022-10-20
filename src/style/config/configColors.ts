@@ -1,5 +1,5 @@
 import colors from 'windicss/colors'
-import { varToRgba } from '../functions'
+import { varToRgba } from './functions'
 
 export default {
   'neutral': varToRgba('--neutral'),

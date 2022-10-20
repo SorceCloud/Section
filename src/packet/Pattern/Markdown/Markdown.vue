@@ -19,8 +19,8 @@ defineProps({
 </script>
 
 <template>
-  <article class="flex flex-row lg:p-10 p-0 w-full min-w-0 ">
-    <div class="lg:w-5/6 w-full">
+  <article class="flex flex-row lg:px-10 lg:pt-10 w-full min-w-0 h-max ">
+    <div class="lg:w-5/6 w-full pr-10">
       <slot></slot>
     </div>
     <div v-if="frontmatter.toc?.length > 0" class="hidden border-l xl:block xl:row-span-3">

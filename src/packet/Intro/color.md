@@ -81,16 +81,32 @@ Button component with multiple styles, colors and sizes.
   </div>
 </div>
 
-## Color List
+## Primary Color
 
-| Name      | Hex     | RGB      | Code     |
-| --------- | ------- | -------- | -------- |
-| primary   | #1d4ed8 |          | blue-700 |
-| secondary | #374151 |
-| accent    | #ffe999 |
-| neutral   | #3d4451 | 61,68,81 |          |
-| info      |
-| success   | #15803d |
-| warning   | #a16207 |
-| error     | #b91c1c |
-| base-100  |         |
+| Name         | Blue             | Teal | Rose | Violet | Orange |
+| ------------ | ---------------- | ---- | ---- | ------ | ------ |
+| primary      | #1d4ed8/blue-700 |
+| secondary    | #374151          |
+| accent       | #ffe999          |
+| neutral      | #3d4451          |
+| info         |                  |
+| success      | #15803d          |
+| warning      | #a16207          |
+| error        | #b91c1c          |
+| base-100     |                  |
+| base-content |                  |
+
+## Color System
+
+color
+color-focus
+color-content
+
+base-100
+dark-base-100
+base-content
+dark-base-content
+
+rounded-box
+rounded-btn
+rounded-badge

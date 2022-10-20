@@ -1,4 +1,4 @@
-import { brighten, hexToRgb, mostReadable } from '../../style/functions'
+import { brighten, hexToRgb, mostReadable } from '../../style/config/functions'
 import { baseTheme, colorNames, themes } from '../../style/theme'
 import { getConfig, isObjKey } from './getconfig'
 
