@@ -1,8 +1,8 @@
 {
-  "name": "section",
+  "name": "@sorce.cloud/section",
   "sideEffects": false,
   "private": false,
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "更新DarkChange item属性",
   "keywords": [
     "Vue3",
