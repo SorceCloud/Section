@@ -13,7 +13,7 @@ import ckb from 'sectionui'
   <ckb checked color="secondary" />
   <ckb checked color="success" />
   <ckb checked color="warning" />
-  <ckb checked color="danger" />
+  <ckb checked color="error" />
 </div>
 
 ```ts
@@ -21,7 +21,7 @@ import ckb from 'sectionui'
   <ckb checked color="secondary" />
   <ckb checked color="success" />
   <ckb checked color="warning" />
-  <ckb checked color="danger" />
+  <ckb checked color="error" />
 ```
 
 ## Sizes

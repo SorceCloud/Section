@@ -15,9 +15,9 @@ const baseTheme = [
   'success', // required
   'success-focus',
   'success-content',
-  'danger', // required
-  'danger-focus',
-  'danger-content',
+  'error', // required
+  'error-focus',
+  'error-content',
   'warning', // required
   'warning-focus',
   'warning-content',
@@ -42,9 +42,9 @@ const baseTheme = [
   'dark-success',
   'dark-success-focus',
   'dark-success-content',
-  'dark-danger',
-  'dark-danger-focus',
-  'dark-danger-content',
+  'dark-error',
+  'dark-error-focus',
+  'dark-error-content',
   'dark-warning',
   'dark-warning-focus',
   'dark-warning-content',
@@ -75,9 +75,9 @@ const colorNames = [
   'success',
   'success-focus',
   'success-content',
-  'danger',
-  'danger-focus',
-  'danger-content',
+  'error',
+  'error-focus',
+  'error-content',
   'warning',
   'warning-focus',
   'warning-content',

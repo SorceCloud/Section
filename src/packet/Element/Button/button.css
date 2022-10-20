@@ -117,37 +117,37 @@
     }
   }
 
-  &.btn-danger {
+  &.btn-error {
     &:focus-visible {
-      @apply outline-danger;
+      @apply outline-error;
     }
 
     &.btn-default {
-      @apply bg-danger text-danger-content hover: bg-danger-focus shadow;
+      @apply bg-error text-error-content hover: bg-error-focus shadow;
 
       &.btn-active {
-        @apply bg-danger-focus;
+        @apply bg-error-focus;
       }
     }
 
     &.btn-outline {
-      @apply text-danger hover: (bg-danger text-danger-content) border-2 border-danger;
+      @apply text-error hover: (bg-error text-error-content) border-2 border-error;
 
       &.btn-active {
-        @apply bg-danger text-danger-content;
+        @apply bg-error text-error-content;
       }
     }
 
     &.btn-transparent {
-      @apply text-danger hover: (bg-danger/10);
+      @apply text-error hover: (bg-error/10);
 
       &.btn-active {
-        @apply bg-danger/10;
+        @apply bg-error/10;
       }
     }
 
     &.btn-link {
-      @apply text-danger hover: underline;
+      @apply text-error hover: underline;
 
       &.btn-active {
         @apply underline;

@@ -19,7 +19,7 @@ const props = defineProps({
   color: {
     type: String, default: 'neutral', required: false,
     validator: (value: string) => {
-      return ['neutral', 'primary', 'secondary', 'danger', 'warning'].includes(value)
+      return ['neutral', 'primary', 'secondary', 'error', 'warning'].includes(value)
     }
   },
   error: { type: String, required: false }

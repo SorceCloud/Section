@@ -13,7 +13,7 @@ import { tgl } from 'sectionui'
   <tgl checked color="secondary" />
   <tgl checked color="success" />
   <tgl checked color="warning" />
-  <tgl checked color="danger" />
+  <tgl checked color="error" />
 </div>
 
 ```ts
@@ -21,7 +21,7 @@ import { tgl } from 'sectionui'
   <tgl checked color="secondary" />
   <tgl checked color="success" />
   <tgl checked color="warning" />
-  <tgl checked color="danger" />
+  <tgl checked color="error" />
 ```
 
 ## Sizes

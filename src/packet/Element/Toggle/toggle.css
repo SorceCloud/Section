@@ -59,17 +59,17 @@
     }
   }
 
-  &.tgl-danger {
+  &.tgl-error {
     &:focus-visible {
-      outline: 2px solid rgb(var(--danger));
+      outline: 2px solid rgb(var(--error));
       outline-offset: 2px;
     }
 
     &:checked,
     &[checked="true"] {
-      --chkbg: rgb(var(--danger));
-      @apply border-danger;
-      @apply border-danger border-opacity-10 bg-danger text-danger;
+      --chkbg: rgb(var(--error));
+      @apply border-error;
+      @apply border-error border-opacity-10 bg-error text-error;
     }
   }
 

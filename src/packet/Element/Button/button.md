@@ -33,7 +33,7 @@ import btn from "sectionui"
   <btn color="primary">Primary </btn>
   <btn color="secondary">Secondary </btn>
   <btn color="success">Success </btn>
-  <btn color="danger">Danger </btn>
+  <btn color="error">Error </btn>
   <btn color="warning">Warning </btn>
 </div>
 
@@ -51,7 +51,8 @@ import btn from "sectionui"
   <btn color="primary" variant="outline">Primary </btn>
   <btn color="secondary" variant="outline">Secondary </btn>
   <btn color="success" variant="outline">Success </btn>
-  <btn color="danger" variant="outline">Danger </btn>
+  <btn color="error" variant="outline">
+   </btn>
   <btn color="warning" variant="outline">Warning </btn>
 </div>
 
@@ -59,7 +60,7 @@ import btn from "sectionui"
   <btn color="primary" variant="outline">Primary </btn>
   <btn color="secondary" variant="outline">Secondary </btn>
   <btn color="success" variant="outline">Success </btn>
-  <btn color="danger" variant="outline">Danger </btn>
+  <btn color="error" variant="outline">Error </btn>
   <btn color="warning" variant="outline">Warning </btn>
 ```
 ## Transparent
@@ -68,7 +69,7 @@ import btn from "sectionui"
   <btn color="primary" variant="transparent">Primary </btn>
   <btn color="secondary" variant="transparent">Secondary </btn>
   <btn color="success" variant="transparent">Success </btn>
-  <btn color="danger" variant="transparent">Danger </btn>
+  <btn color="error" variant="transparent">Error </btn>
   <btn color="warning" variant="transparent">Warning </btn>
 </div>
 
@@ -76,7 +77,7 @@ import btn from "sectionui"
   <btn color="primary" variant="transparent">Primary </btn>
   <btn color="secondary" variant="transparent">Secondary </btn>
   <btn color="success" variant="transparent">Success </btn>
-  <btn color="danger" variant="transparent">Danger </btn>
+  <btn color="error" variant="transparent">Error </btn>
   <btn color="warning" variant="transparent">Warning </btn>
 ```
 ## Pills
@@ -85,7 +86,7 @@ import btn from "sectionui"
   <btn color="primary" pills>Primary </btn>
   <btn color="secondary" pills>Secondary </btn>
   <btn color="success" pills>Success </btn>
-  <btn color="danger" pills>Danger </btn>
+  <btn color="error" pills>Error </btn>
   <btn color="warning" pills>Warning </btn>
 </div>
 
@@ -93,7 +94,7 @@ import btn from "sectionui"
   <btn color="primary" pills>Primary </btn>
   <btn color="secondary" pills>Secondary </btn>
   <btn color="success" pills>Success </btn>
-  <btn color="danger" pills>Danger </btn>
+  <btn color="error" pills>Error </btn>
   <btn color="warning" pills>Warning </btn>
 ```
 ## Sizes
@@ -133,7 +134,7 @@ import btn from "sectionui"
   <btn color="primary" variant="link">Primary </btn>
   <btn color="secondary" variant="link">Secondary </btn>
   <btn color="success" variant="link">Success </btn>
-  <btn color="danger" variant="link">Danger </btn>
+  <btn color="error" variant="link">Error </btn>
   <btn color="warning" variant="link">Warning </btn>
 </div>
 
@@ -141,7 +142,7 @@ import btn from "sectionui"
   <btn color="primary" variant="link">Primary </btn>
   <btn color="secondary" variant="link">Secondary </btn>
   <btn color="success" variant="link">Success </btn>
-  <btn color="danger" variant="link">Danger </btn>
+  <btn color="error" variant="link">Error </btn>
   <btn color="warning" variant="link">Warning </btn>
 ```
 ## Circle

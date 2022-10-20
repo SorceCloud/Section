@@ -58,7 +58,7 @@ import { ipt } from 'sectionui'
   <ipt color="secondary" placeholder="Type here..." />
   <ipt color="success" placeholder="Type here..." />
   <ipt color="warning" placeholder="Type here..." />
-  <ipt color="danger" placeholder="Type here..." />
+  <ipt color="error" placeholder="Type here..." />
 </div>
 
 ```ts
@@ -66,7 +66,7 @@ import { ipt } from 'sectionui'
   <ipt color="secondary" placeholder="Type here..." />
   <ipt color="success" placeholder="Type here..." />
   <ipt color="warning" placeholder="Type here..." />
-  <ipt color="danger" placeholder="Type here..." />
+  <ipt color="error" placeholder="Type here..." />
 ```
 
 ## Label

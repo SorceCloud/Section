@@ -11,7 +11,7 @@
 }
 
 .validation-text {
-  @apply text-danger text-xs mt-2 ml-1;
+  @apply text-error text-xs mt-2 ml-1;
 }
 
 .ipt {
@@ -82,20 +82,20 @@
     }
   }
 
-  &.ipt-danger {
-    @apply !border-danger;
+  &.ipt-error {
+    @apply !border-error;
 
     &:focus {
-      outline: 2px solid rgb(var(--danger));
+      outline: 2px solid rgb(var(--error));
       outline-offset: 2px;
     }
   }
 
   &.ipt-error {
-    @apply !border-danger;
+    @apply !border-error;
 
     &:focus {
-      outline: 2px solid rgb(var(--danger));
+      outline: 2px solid rgb(var(--error));
       outline-offset: 2px;
     }
   }

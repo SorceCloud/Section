@@ -22,9 +22,9 @@ export default {
   'success-focus': varToRgba('--success-focus'),
   'success-content': varToRgba('--success-content'),
 
-  'danger': varToRgba('--danger'),
-  'danger-focus': varToRgba('--danger-focus'),
-  'danger-content': varToRgba('--danger-content'),
+  'error': varToRgba('--error'),
+  'error-focus': varToRgba('--error-focus'),
+  'error-content': varToRgba('--error-content'),
 
   'warning': varToRgba('--warning'),
   'warning-focus': varToRgba('--warning-focus'),

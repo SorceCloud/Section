@@ -2,7 +2,7 @@
 
 <br />
 
-<div class='bg-danger-200/10 rounded-$rounded-btn p-5 text-danger-200'>
+<div class='bg-error-200/10 rounded-$rounded-btn p-5 text-error-200'>
     Themes are not defined yet, existing themes are for testing purposes only, they will be changed in the next versions.
 </div>
 
@@ -74,9 +74,9 @@ export default {
     'success-200': '#15803d',
     'success-300': '#166534',
 
-    'danger-100': '#dc2626',
-    'danger-200': '#b91c1c',
-    'danger-300': '#991b1b',
+    'error-100': '#dc2626',
+    'error-200': '#b91c1c',
+    'error-300': '#991b1b',
 
     'warning-100': '#ca8a04',
     'warning-200': '#a16207',

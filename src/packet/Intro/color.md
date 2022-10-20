@@ -51,11 +51,11 @@ Button component with multiple styles, colors and sizes.
       </div>
     </div>
       <div>
-        <div class="h-15 w-30 bg-danger flex justify-center items-center rounded-t-$rounded-btn">
-          <div class="text-danger-content text-sm">danger</div>
+        <div class="h-15 w-30 bg-error flex justify-center items-center rounded-t-$rounded-btn">
+          <div class="text-error-content text-sm">error</div>
         </div>
-        <div class="h-15 w-30 bg-danger-focus flex justify-center items-center rounded-b-$rounded-btn">
-          <div class="text-danger-content text-sm">danger-focus</div>
+        <div class="h-15 w-30 bg-error-focus flex justify-center items-center rounded-b-$rounded-btn">
+          <div class="text-error-content text-sm">error-focus</div>
         </div>
       </div>
       <div>

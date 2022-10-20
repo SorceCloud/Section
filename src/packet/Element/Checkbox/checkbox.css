@@ -85,10 +85,10 @@
     }
   }
 
-  &.ckb-danger {
-    --chkbg: var(--danger);
-    --chkfg: var(--danger-content);
-    @apply border-danger hover: border-danger;
+  &.ckb-error {
+    --chkbg: var(--error);
+    --chkfg: var(--error-content);
+    @apply border-error hover: border-error;
 
     &:focus-visible {
       outline: 2px solid rgb(var(--chkbg));
@@ -96,7 +96,7 @@
 
     &:checked,
     &[checked="true"] {
-      @apply border-danger bg-danger text-danger;
+      @apply border-error bg-error text-error;
     }
   }
 
