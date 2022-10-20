@@ -1,6 +1,6 @@
 <template>
   <nav class="flex sticky top-0 z-40 flex-none py-3 mx-auto w-full border-b bg-base-100 h-18">
-    <div class="flex justify-between items-center px-3 mx-auto w-full max-w-7xl lg:px-4">
+    <div class="flex justify-between items-center px-3 mx-auto w-full max-w-8xl">
       <div class="flex items-center">
         <btn @click.prevent="toggleSidebar" clean type="button" size="xl"
           class="items-center text-sm text-zinc-500 rounded-lg lg:hidden hover:bg-zinc-300/10 focus:outline-none focus:ring-2 focus:ring-zinc-300/10 active:bg-zinc-300/10">
