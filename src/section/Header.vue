@@ -7,7 +7,7 @@
           <icn name="bars" regular xl />
         </btn>
         <a href="/"
-          class="inline-flex items-center text-2xl font-bold text-gray-700 transition-colors duration-200 transform hover:text-primary">
+          class="inline-flex items-center text-2xl font-bold transition-colors duration-200 transform hover:text-primary">
           <icn name="section" solid xl class="px-3"></icn>Section<span class="text-primary"> UI</span>
         </a>
       </div>
@@ -15,8 +15,7 @@
         <ThemeSelect />
         <DarkChange />
         <LanguageSelect />
-        <btn tag="a" :href="`https://github.com/sorcecloud/sectionui`" variant="transparent" color="secondary"
-          class="fill-base-text">
+        <btn tag="a" :href="`https://github.com/sorcecloud/sectionui`" color="base-content">
           <icn name="github" brand xl></icn>
         </btn>
       </div>

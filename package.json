@@ -1,9 +1,9 @@
 {
-  "name": "@sorce.cloud/section",
+  "name": "section",
   "sideEffects": false,
   "private": false,
-  "version": "0.1.2",
-  "description": "更新Markdown 插件导出路径",
+  "version": "0.1.3",
+  "description": "更新DarkChange item属性",
   "keywords": [
     "Vue3",
     "WindiCSS"

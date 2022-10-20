@@ -1,5 +1,5 @@
 <template>
-  <btn variant="transparent" color="secondary" @click="setDark" class="fill-base-text" :class="[
+  <btn color="base-content" @click="setDark" :class="[
   {'btn-clean': props.item || props.clean}]">
     <span v-show=" !isDark">
       <icn name="sun-bright" light xl></icn>

@@ -1,5 +1,5 @@
 <template>
-  <div class="antialiased text-base-content">
+  <div class="antialiased text-base-content bg-base-300">
     <Header />
     <div class="flex px-6 mx-auto max-w-8xl pt-$navbar-height">
       <Sidebar />

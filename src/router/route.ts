@@ -1,7 +1,7 @@
 const route = [
   {
     path: '/',
-    component: () => import('../view/index.vue'),
+    component: () => import('~/view/index.vue'),
     meta: { title: 'Index' },
   },
   {
@@ -14,22 +14,22 @@ const route = [
         children: [
           {
             path: '/section/started',
-            component: () => import('../packet/Intro/started.md'),
+            component: () => import('~/packet/Intro/started.md'),
             meta: { title: 'Started' },
           },
           {
             path: '/section/usage',
-            component: () => import('../packet/Intro/usage.md'),
+            component: () => import('~/packet/Intro/usage.md'),
             meta: { title: 'Usage' },
           },
           {
             path: '/section/theme',
-            component: () => import('../packet/Intro/theme.md'),
+            component: () => import('~/packet/Intro/theme.md'),
             meta: { title: 'Theme' },
           },
           {
             path: '/section/color',
-            component: () => import('../packet/Intro/color.md'),
+            component: () => import('~/packet/Intro/color.md'),
             meta: { title: 'Color' },
           },
         ]
@@ -40,27 +40,27 @@ const route = [
         children: [
           {
             path: '/section/button',
-            component: () => import('../packet/Element/Button/button.md'),
+            component: () => import('~/packet/Element/Button/button.md'),
             meta: { title: 'Button' },
           },
           {
             path: '/section/icon',
-            component: () => import('../packet/Element/Icon/Icon.md'),
+            component: () => import('~/packet/Element/Icon/Icon.md'),
             meta: { title: 'Icon' },
           },
           {
             path: '/section/input',
-            component: () => import('../packet/Element/Input/input.md'),
+            component: () => import('~/packet/Element/Input/input.md'),
             meta: { title: 'Input' },
           },
           {
             path: '/section/checkbox',
-            component: () => import('../packet/Element/Checkbox/checkbox.md'),
+            component: () => import('~/packet/Element/Checkbox/checkbox.md'),
             meta: { title: 'Checkbox' },
           },
           {
             path: '/section/toggle',
-            component: () => import('../packet/Element/Toggle/toggle.md'),
+            component: () => import('~/packet/Element/Toggle/toggle.md'),
             meta: { title: 'Toggle' },
           }
         ]
@@ -71,22 +71,22 @@ const route = [
         children: [
           {
             path: '/section/buttongroup',
-            component: () => import('../packet/Section/ButtonGroup/ButtonGroup.md'),
+            component: () => import('~/packet/Section/ButtonGroup/ButtonGroup.md'),
             meta: { title: 'ButtonGroup' },
           },
           {
             path: '/section/menu',
-            component: () => import('../packet/Section/Menu/menu.md'),
+            component: () => import('~/packet/Section/Menu/menu.md'),
             meta: { title: 'Menu' },
           },
           {
             path: '/section/dropdown',
-            component: () => import('../packet/Section/Dropdown/dropdown.md'),
+            component: () => import('~/packet/Section/Dropdown/dropdown.md'),
             meta: { title: 'Dropdown' },
           },
           {
             path: '/section/modal',
-            component: () => import('../packet/Section/Modal/modal.md'),
+            component: () => import('~/packet/Section/Modal/modal.md'),
             meta: { title: 'Modal' },
           },
         ]
@@ -97,12 +97,12 @@ const route = [
         children: [
           {
             path: '/section/dropdown',
-            component: () => import('../packet/Section/Dropdown/dropdown.md'),
+            component: () => import('~/packet/Section/Dropdown/dropdown.md'),
             meta: { title: 'Form' },
           },
           {
             path: '/section/menu',
-            component: () => import('../packet/Section/Dropdown/dropdown.md'),
+            component: () => import('~/packet/Section/Dropdown/dropdown.md'),
             meta: { title: 'Drawer' },
           }
         ]
@@ -113,12 +113,12 @@ const route = [
         children: [
           {
             path: '/section/dropdown',
-            component: () => import('../packet/Section/Dropdown/dropdown.md'),
+            component: () => import('~/packet/Section/Dropdown/dropdown.md'),
             meta: { title: 'Blog' },
           },
           {
             path: '/section/menu',
-            component: () => import('../packet/Section/Dropdown/dropdown.md'),
+            component: () => import('~/packet/Section/Dropdown/dropdown.md'),
             meta: { title: 'Document' },
           }
         ]

@@ -15,7 +15,7 @@ const setLanguage = (locale: 'zh-CN' | 'en-US') => {
 <template>
   <Dropdown placement="bottom-end">
     <template #trigger="{ active }">
-      <btn variant="transparent" color="secondary" class="stroke-base-text">
+      <btn color="base-content">
         <icn name="language" light xl></icn>
       </btn>
     </template>

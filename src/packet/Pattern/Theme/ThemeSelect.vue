@@ -23,7 +23,7 @@ function changeTheme(color: string) {
 <template>
   <Dropdown placement="bottom-end">
     <template #trigger="{ active }">
-      <btn variant="transparent" color="secondary" class="stroke-base-text">
+      <btn color="base-content">
         <icn name="swatchbook" light xl></icn>
       </btn>
     </template>

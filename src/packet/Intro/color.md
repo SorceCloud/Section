@@ -14,7 +14,7 @@ Button component with multiple styles, colors and sizes.
         <div class="h-15 w-30 bg-neutral flex justify-center items-center rounded-t-$rounded-btn">
         <div class="text-neutral-content text-sm">neutral</div>
       </div>
-      <div class="h-15 w-30 bg-neutral flex justify-center items-center rounded-b-$rounded-btn">
+      <div class="h-15 w-30 bg-neutral-focus flex justify-center items-center rounded-b-$rounded-btn">
         <div class="text-neutral-content text-sm">neutral-focus</div>
       </div>
     </div>
@@ -22,7 +22,7 @@ Button component with multiple styles, colors and sizes.
       <div class="h-15 w-30 bg-primary flex justify-center items-center rounded-t-$rounded-btn">
         <div class="text-primary-content text-sm">primary</div>
       </div>
-      <div class="h-15 w-30 bg-primary flex justify-center items-center rounded-b-$rounded-btn">
+      <div class="h-15 w-30 bg-primary-focus flex justify-center items-center rounded-b-$rounded-btn">
         <div class="text-primary-content text-sm">primary-focus</div>
       </div>
     </div>
@@ -30,7 +30,7 @@ Button component with multiple styles, colors and sizes.
       <div class="h-15 w-30 bg-secondary flex justify-center items-center rounded-t-$rounded-btn">
         <div class="text-secondary-content text-sm">secondary</div>
       </div>
-      <div class="h-15 w-30 bg-secondary flex justify-center items-center rounded-b-$rounded-btn">
+      <div class="h-15 w-30 bg-secondary-focus flex justify-center items-center rounded-b-$rounded-btn">
         <div class="text-secondary-content text-sm">secondary-focus</div>
       </div>
     </div>
@@ -38,7 +38,7 @@ Button component with multiple styles, colors and sizes.
       <div class="h-15 w-30 bg-accent flex justify-center items-center rounded-t-$rounded-btn">
         <div class="text-accent-content text-sm">accent</div>
       </div>
-      <div class="h-15 w-30 bg-accent flex justify-center items-center rounded-b-$rounded-btn">
+      <div class="h-15 w-30 bg-accent-focus flex justify-center items-center rounded-b-$rounded-btn">
         <div class="text-accent-content text-sm">accent-focus</div>
       </div>
     </div>
@@ -46,7 +46,7 @@ Button component with multiple styles, colors and sizes.
       <div class="h-15 w-30 bg-success flex justify-center items-center rounded-t-$rounded-btn">
         <div class="text-success-content text-sm">success</div>
       </div>
-      <div class="h-15 w-30 bg-success flex justify-center items-center rounded-b-$rounded-btn">
+      <div class="h-15 w-30 bg-success-focus flex justify-center items-center rounded-b-$rounded-btn">
         <div class="text-success-content text-sm">success-focus</div>
       </div>
     </div>
@@ -54,7 +54,7 @@ Button component with multiple styles, colors and sizes.
         <div class="h-15 w-30 bg-danger flex justify-center items-center rounded-t-$rounded-btn">
           <div class="text-danger-content text-sm">danger</div>
         </div>
-        <div class="h-15 w-30 bg-danger flex justify-center items-center rounded-b-$rounded-btn">
+        <div class="h-15 w-30 bg-danger-focus flex justify-center items-center rounded-b-$rounded-btn">
           <div class="text-danger-content text-sm">danger-focus</div>
         </div>
       </div>
@@ -62,7 +62,7 @@ Button component with multiple styles, colors and sizes.
         <div class="h-15 w-30 bg-warning flex justify-center items-center rounded-t-$rounded-btn">
           <div class="text-warning-content text-sm">warning</div>
         </div>
-        <div class="h-15 w-30 bg-warning flex justify-center items-center rounded-b-$rounded-btn">
+        <div class="h-15 w-30 bg-warning-focus flex justify-center items-center rounded-b-$rounded-btn">
           <div class="text-warning-content text-sm">warning-focus</div>
         </div>
       </div>
@@ -80,3 +80,17 @@ Button component with multiple styles, colors and sizes.
     </div>
   </div>
 </div>
+
+## Color List
+
+| Name      | Hex     | RGB      | Code     |
+| --------- | ------- | -------- | -------- |
+| primary   | #1d4ed8 |          | blue-700 |
+| secondary | #374151 |
+| accent    | #ffe999 |
+| neutral   | #3d4451 | 61,68,81 |          |
+| info      |
+| success   | #15803d |
+| warning   | #a16207 |
+| error     | #b91c1c |
+| base-100  |         |
