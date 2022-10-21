@@ -5,10 +5,10 @@ export default {
   },
   // border color (light and dark)
   '*, ::before, ::after ': {
-    'border-color': 'rgb(229 231 235)',
+    'border-color': 'rgb(209 213 219)',//#9ca3af/gray-400
   },
   '.dark *, ::before, ::after ': {
-    'border-color': 'rgb(45 45 45)',
+    'border-color': 'rgb(75 85 99)',//#4b5563/gray-600
   },
   '.dark': {
     'color-scheme': 'dark',

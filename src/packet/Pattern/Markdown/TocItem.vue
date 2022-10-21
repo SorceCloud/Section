@@ -38,7 +38,7 @@ watchEffect(() => {
 
 <template>
   <div>
-    <li ref="itemRef" class="scroll-my-6 scroll-py-6 leading-7" :class="headingOffsetCssClass">
+    <li ref="itemRef" :class="headingOffsetCssClass">
       <TocLink :href="`#${slug}`" class="inline-block no-underline" :class="[
         level === 2,
         isActive

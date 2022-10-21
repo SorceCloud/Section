@@ -1,7 +1,37 @@
 <script lang="ts" setup>
-import { nextTick, onMounted, ref, watch, } from 'vue'
-import { useHideScroll } from '../../../store/useHideScroll'
+import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import './modal.css'
+
+const scrollbarWidth = ref<number>(0)
+const isScrollHidden = ref(false)
+
+function useHideScroll() {
+  onMounted(() => {
+    nextTick(() => {
+      scrollbarWidth.value = window.innerWidth - document.body.scrollWidth
+    })
+  })
+
+  const showScroll = () => {
+    isScrollHidden.value = false
+    document.body.style.overflowY = ''
+    document.body.style.paddingRight = ''
+  }
+
+  const hideScroll = () => {
+    isScrollHidden.value = true
+    document.body.style.overflowY = 'hidden'
+    if (scrollbarWidth.value > 0)
+      document.body.style.paddingRight = `${scrollbarWidth.value}px`
+  }
+
+  onBeforeUnmount(() => {
+    showScroll()
+  })
+
+  return { showScroll, hideScroll, isScrollHidden }
+}
+
 const props = defineProps({
   active: { type: Boolean, required: true },// use v-model:active for two way binding
   size: {
@@ -59,9 +89,9 @@ watch(() => props.active, async () => {
     <div v-show="isShow && props.backdrop" class="backdrop" :class="props.backdropClass" />
   </transition>
   <transition name="modal-bounce" appear>
-    <div v-if="isShow" class="modal-background" :class="[{ 'modal-outside': !outside }]" @click.self="clickOutside">
+    <div v-if="isShow" class="modal-background" :class="[{ 'modal-outside': !outside }]" :click.self="clickOutside">
       <div class="modal-box" :class="[`modal-${size}`]">
-        <button v-show="closeBtn" class="modal-btn-close btn" @click="dismiss">
+        <button v-show="closeBtn" class="modal-btn-close btn" :click="dismiss">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
             <path
               d="M289.94 256l95-95A24 24 0 0 0 351 127l-95 95l-95-95a24 24 0 0 0-34 34l95 95l-95 95a24 24 0 1 0 34 34l95-95l95 95a24 24 0 0 0 34-34z"

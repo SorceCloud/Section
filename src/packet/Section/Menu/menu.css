@@ -189,7 +189,6 @@
   }
 
   .menu-title {
-    //  @apply font-semibold !text-sm text-gray-400/70 leading-normal !py-4;
-    @apply py-1 !text-xl font-bold text-gray-700 text-opacity-70 dark: text-opacity-100;
+    @apply py-1 !text-xl font-bold text-gray-500 text-opacity-100;
   }
 }

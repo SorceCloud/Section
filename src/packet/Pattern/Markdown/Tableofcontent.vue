@@ -18,7 +18,7 @@ const hasHeadings = computed(() => props.toc.length > 0)
 </script>
 <template>
   <div class="site-toc order-last hidden flex-shrink-0 px-4 text-sm xl:block">
-    <div ref="tocContent" class="max-h-[calc(100vh-4rem-env(safe-area-inset-bottom))] overflow-y-auto">
+    <div ref="tocContent" class="max-h-[calc(100vh-4rem-env(safe-area-inset-bottom))]">
       <ul v-if="hasHeadings">
         <p class="mb-4 font-semibold tracking-tight">
           {{t("home.tableOfContent")}}

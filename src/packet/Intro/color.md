@@ -83,52 +83,76 @@ Button component with multiple styles, colors and sizes.
 
 ## Primary Color
 
-| Name              | Blue               | Teal    | Rose    | Violet  | Orange  |
-| ----------------- | ------------------ | ------- | ------- | ------- | ------- |
-| primary           | #1d4ed8/blue-700   | #0f766e | #e11d48 | #7c3aed | #ea580c |
-| primary-focus     | #1e40af/blue-800   | #115e59 |
-| primary-content   | #ffffff            | #ffffff |
-| secondary         | #374151/gray-700   | #374151 |
-| secondary-focus   |                    |         |
-| seconfary-content | #ffffff            | #ffffff |
-| accent            | #fef3c7/yellow-100 | #ffe99  |
-| accent-focus      |                    |         |
-| accent-content    |                    |         |
-| neutral           | #1f2937/gray-800   |         |
-| neutral-focus     |                    |         |
-| neutral-content   | #ffffff            |         |
-| success           | #059669/green-600  |         |
-| success-focus     |                    |         |
-| success-content   | #ffffff            |         |
-| warning           | #f97316/orange-500 |         |
-| warning-focus     |                    |         |
-| warning-content   | #ffffff            |         |
-| error             | #b91c1c/red-700    |         |
-| error-focus       |                    |         |
-| error-content     | #ffffff            |         |
-| base-100          | #fcfcfc            |         |         |         | #f8fafc |
-| base-200          | #fafafa            |         |
-| base-300          | #f8f9fa            |         |
-| base-content      | #1f2937            |         |         |         | #1f2937 |
-| dark-base-100     | #181818            |         |         |         | #111827 |
-| dark-base-200     | #151414            |         |
-| dark-base-300     | #0f0f0f            |         |
-| dark-base-content | #f3f4f6            |         |         |         | #f3f4f6 |
-| rounded-box       | 1rem               | 0rem    | 1rem    |
-| rounded-btn       | 0.5rem             | 0.15rem | 0.5rem  |
-| rounded-badge     | 1.9rem             | 0rem    | 1.9rem  |
+| Name              | Blue               | Teal             | Rose             | Violet             | Orange             |
+| ----------------- | ------------------ | ---------------- | ---------------- | ------------------ | ------------------ |
+| primary           | #0284c7/sky-600    | #0d9488/teal-600 | #e11d48/rose-600 | #7c3aed/violet-600 | #ea580c/orange-600 |
+| primary-focus     | #1e40af/sky-700    | #0f766e/teal-700 | #be123c/rose-700 | #6d28d9/violet-700 | #c2410c/orange-700 |
+| primary-content   | #ffffff            | #ffffff          |                  |                    |                    |
+| secondary         | #374151/gray-700   | #374151/gray-700 | #374151/gray-700 | #374151/gray-700   | #374151/gray-700   |
+| secondary-focus   | #1f2937/gray-800   | #1f2937/gray-800 | #1f2937/gray-800 | #1f2937/gray-800   | #1f2937/gray-800   |
+| seconfary-content | #ffffff            | #ffffff          |
+| accent            | #fef3c7/yellow-100 | #ffe99           |
+| accent-focus      | #fde68a/yellow-200 |                  |
+| accent-content    |                    |                  |
+| neutral           | #1f2937/gray-800   |                  |
+| neutral-focus     | #111827/gray-900   |                  |
+| neutral-content   | #ffffff            |                  |
+| success           | #059669/green-600  |                  |
+| success-focus     | #047857/green-700  |                  |
+| success-content   | #ffffff            |                  |
+| warning           | #f97316/orange-500 |                  |
+| warning-focus     |                    |                  |
+| warning-content   | #ffffff            |                  |
+| error             | #b91c1c/red-700    |                  |
+| error-focus       |                    |                  |
+| error-content     | #ffffff            |                  |
+| base-100          | #fcfcfc            |                  |                  |                    | #f8fafc            |
+| base-200          | #f8f8f8            |                  |
+| base-300          | #e8e8e8            |                  |
+| base-content      | #1f2937            |                  |                  |                    | #1f2937            |
+| dark-base-100     | #2A303C            |                  |                  |                    | #111827            |
+| dark-base-200     | #242933            |                  |
+| dark-base-300     | #20252E            |                  |
+| dark-base-content | #A6ADBB            |                  |                  |                    | #f3f4f6            |
+| rounded-box       | 1rem               | 0rem             | 1rem             |
+| rounded-btn       | 0.5rem             | 0.15rem          | 0.5rem           |
+| rounded-badge     | 1.9rem             | 0rem             | 1.9rem           |
 
-## Color System
 
-color
-color-focus
-color-content
 
-base-100
-dark-base-100
-base-content
-dark-base-content
 
-rounded-box
-rounded-btn
-rounded-badge
+
+| Name              | Blue               | Teal             |
+| ----------------- | ------------------ | ---------------- |
+| primary           | #0284c7/sky-600    | #0d9488/teal-600 |
+| primary-focus     | #0369a1/sky-700    | #0f766e/teal-700 |
+| primary-content   | #ffffff            | #ffffff          |
+| secondary         | #374151/gray-700   | #374151/gray-700 |
+| secondary-focus   | #1f2937/gray-800   | #1f2937/gray-800 |
+| seconfary-content | #ffffff            | #ffffff          |
+| accent            | #fef3c7/yellow-100 | #ffe99           |
+| accent-focus      | #fde68a/yellow-200 |                  |
+| accent-content    |                    |                  |
+| neutral           | #1f2937/gray-800   |                  |
+| neutral-focus     | #111827/gray-900   |                  |
+| neutral-content   | #ffffff            |                  |
+| success           | #059669/green-600  |                  |
+| success-focus     | #047857/green-700  |                  |
+| success-content   | #ffffff            |                  |
+| warning           | #f97316/orange-500 |                  |
+| warning-focus     |                    |                  |
+| warning-content   | #ffffff            |                  |
+| error             | #b91c1c/red-700    |                  |
+| error-focus       |                    |                  |
+| error-content     | #ffffff            |                  |
+| base-100          | #fcfcfc            |                  |
+| base-200          | #f8f8f8            |                  |
+| base-300          | #e8e8e8            |                  |
+| base-content      | #1f2937            |                  |
+| dark-base-100     | #2A303C            |                  |
+| dark-base-200     | #242933            |                  |
+| dark-base-300     | #20252E            |                  |
+| dark-base-content | #A6ADBB            |                  |
+| rounded-box       | 1rem               | 0rem             |
+| rounded-btn       | 0.5rem             | 0.15rem          |
+| rounded-badge     | 1.9rem             | 0rem             |

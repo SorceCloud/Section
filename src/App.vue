@@ -1,7 +1,7 @@
 <template>
-  <div class="antialiased text-base-content bg-base-200">
+  <div class="text-base-content bg-base-300 ">
     <Header />
-    <div class="flex mx-auto h-max">
+    <div class="flex">
       <Sidebar />
       <RouterView />
     </div>
