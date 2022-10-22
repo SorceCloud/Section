@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-auto lg:px-36 w-full pt-25">
+  <div class="flex-auto px-8 lg:px-36 w-full pt-25">
     <HomePage />
     <HomeExample />
     <Footer />

@@ -1,5 +1,5 @@
 <template>
-  <div class="text-base-content bg-base-300 ">
+  <div class="antialiased text-base-content bg-base-300 ">
     <Header />
     <div class="flex">
       <Sidebar />
