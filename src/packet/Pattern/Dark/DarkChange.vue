@@ -1,6 +1,5 @@
 <template>
-  <btn color="base-content" @click="setDark" :class="[
-  {'btn-clean': props.item || props.clean}]">
+  <btn item @click="setDark" class="hover:bg-base-300 rounded-$rounded-btn dark:hover:bg-base-100">
     <span v-show=" !isDark">
       <icn name="sun-bright" light xl></icn>
     </span>
@@ -11,12 +10,6 @@
 </template>
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
-
-const props = defineProps({
-  // remove all styles from button
-  clean: { type: Boolean, default: false, required: false },
-  item: { type: Boolean, default: false, required: false },
-})
 
 const isDark = ref<boolean>(false)
 onMounted(() => {

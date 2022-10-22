@@ -39,11 +39,11 @@ watchEffect(() => {
 <template>
   <div>
     <li ref="itemRef" :class="headingOffsetCssClass">
-      <TocLink :href="`#${slug}`" class="inline-block no-underline" :class="[
+      <TocLink :href="`#${slug}`" class="inline-block no-underline py-1" :class="[
         level === 2,
         isActive
-          ? 'text-primary-500 subpixel-antialiased border-l-2 border-primary bg-base-gray-200 dark:bg-base-gray-600 px-3.5'
-          : 'text-gray-700 hover:bg-base-gray-200 dark:text-gray-400 dark:hover:text-gray-400 dark:hover:bg-base-gray-600 px-4',
+          ? 'text-primary-500 subpixel-antialiased border-l-2 border-primary bg-base-gray-300 dark:bg-base-gray-600 px-3.5'
+          : 'text-gray-700 hover:bg-base-gray-300 dark:text-gray-400 dark:hover:text-gray-400 dark:hover:bg-base-gray-600 px-4',
       ]" :aria-selected="isActive">
         {{ title }}
       </TocLink>

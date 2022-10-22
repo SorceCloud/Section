@@ -20,7 +20,7 @@ defineProps({
 
 <template>
   <article class="flex flex-row px-10 w-full min-w-0 h-screen">
-    <div class="lg:w-5/6 w-full overflow-y-auto pt-10">
+    <div class="lg:w-5/6 w-full overflow-y-auto pt-10 lg:pr-10">
       <slot></slot>
     </div>
     <div v-if="frontmatter.toc?.length > 0" class="hidden pt-10  xl:block xl:row-span-3 ">

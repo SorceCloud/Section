@@ -13,17 +13,17 @@ const setLanguage = (locale: 'zh-CN' | 'en-US') => {
 
 </script>
 <template>
-  <Dropdown placement="bottom-end">
+  <Dropdown placement="bottom-end" hover>
     <template #trigger="{ active }">
-      <btn color="base-content">
+      <btn item class="hover:bg-base-300 rounded-$rounded-btn dark:hover:bg-base-100">
         <icn name="language" light xl></icn>
       </btn>
     </template>
-    <Menu shadow class="w-20 !bg-base-200">
-      <btn item @click="setLanguage('en-US')">
+    <Menu rounded shadow class="w-20 bg-base-300 dark:bg-base-100">
+      <btn clean @click="setLanguage('en-US')">
         English
       </btn>
-      <btn item @click="setLanguage('zh-CN')">
+      <btn clean @click="setLanguage('zh-CN')">
         中文
       </btn>
     </Menu>

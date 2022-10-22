@@ -15,8 +15,10 @@
         <ThemeSelect />
         <DarkChange />
         <LanguageSelect />
-        <btn tag="a" :href="`https://github.com/sorcecloud/sectionui`" color="base-content">
-          <icn name="github" brand xl></icn>
+        <btn clean class="hover:bg-base-300 rounded-$rounded-btn dark:hover:bg-base-100">
+          <a :href="`https://github.com/sorcecloud/sectionui`">
+            <icn name="github" brand xl></icn>
+          </a>
         </btn>
       </div>
     </div>

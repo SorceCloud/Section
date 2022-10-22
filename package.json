@@ -2,8 +2,8 @@
   "name": "@sorce.cloud/section",
   "sideEffects": false,
   "private": false,
-  "version": "0.1.5",
-  "description": "更新DarkChange item属性",
+  "version": "0.1.6",
+  "description": "更新Markdown页面结构和网页样式",
   "keywords": [
     "Vue3",
     "WindiCSS"
