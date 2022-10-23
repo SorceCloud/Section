@@ -9,15 +9,15 @@
         </btn>
       </div>
       <div class="overflow-y-auto h-full max-w-2xs h-screen lg:fixed lg:mx-2 lg:w-62">
-        <nav class="px-1 pl-3 text-base lg:(pl-10 pt-9 text-sm pb-10 h-(screen-18))" aria-label="Docs navigation">
+        <nav class="px-1 pl-3 text-base lg:( text-sm pb-10 h-(screen-18))" aria-label="Docs navigation">
           <template v-for="menu in routes">
-            <Menu v-if="menu.children && menu.children.length>1" v-for="parent in menu.children"
+            <Menu v-if="menu.children && menu.children.length > 1" v-for="parent in menu.children"
               class="w-full bg-base-200">
-              <span class="menu-title">{{parent.meta.title}}</span>
+              <span class="menu-title">{{ parent.meta.title }}</span>
               <btn size="sm" clean variant="transparent" v-for="child in parent.children" tag="RouterLink"
                 :to="child.path"
-                :class="[router.meta.title === child.meta.title ? 'border-l-2 border-primary bg-base-300 dark:bg-base-100':'']">
-                {{child.meta.title}}
+                :class="[router.meta.title === child.meta.title ? 'border-l-2 border-primary bg-base-300 dark:bg-base-100' : '']">
+                {{ child.meta.title }}
               </btn>
             </Menu>
           </template>
