@@ -2,8 +2,8 @@
   "name": "@sorce.cloud/section",
   "sideEffects": false,
   "private": false,
-  "version": "0.1.7",
-  "description": "去除翻译组件",
+  "version": "0.1.9",
+  "description": "修改Menu宽度为auto",
   "keywords": [
     "Vue3",
     "WindiCSS"

@@ -1,5 +1,5 @@
 .menu {
-  @apply bg-base-200 select-none;
+  @apply bg-base-200 w-auto select-none;
 
   &.shadow {
     @apply shadow shadow-md
