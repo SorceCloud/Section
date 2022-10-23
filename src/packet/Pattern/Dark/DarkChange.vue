@@ -1,5 +1,5 @@
 <template>
-  <btn item @click="setDark" class="hover:bg-base-300 rounded-$rounded-btn dark:hover:bg-base-100">
+  <btn item @click="setDark" class="hover:text-primary">
     <span v-show=" !isDark">
       <icn name="sun-bright" light xl></icn>
     </span>

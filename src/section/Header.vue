@@ -11,11 +11,11 @@
           <icn name="section" solid xl class="px-3"></icn>Section<span class="text-primary"> UI</span>
         </a>
       </div>
-      <div class="flex inline-flex space-x-5">
+      <div class="flex space-x-5">
         <ThemeSelect />
         <DarkChange />
         <LanguageSelect />
-        <btn clean class="hover:bg-base-300 rounded-$rounded-btn dark:hover:bg-base-100 ">
+        <btn clean class="hover:text-primary">
           <a :href="`https://github.com/sorcecloud/sectionui`">
             <icn name="github" brand xl></icn>
           </a>

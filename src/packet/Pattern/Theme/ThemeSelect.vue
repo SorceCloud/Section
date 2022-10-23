@@ -23,7 +23,7 @@ function changeTheme(color: string) {
 <template>
   <Dropdown placement="bottom-end" hover>
     <template #trigger="{ active }">
-      <btn item class="hover:bg-base-300 rounded-$rounded-btn dark:hover:bg-base-100">
+      <btn item class="hover:text-primary">
         <icn name="swatchbook" light xl></icn>
       </btn>
     </template>
