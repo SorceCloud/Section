@@ -11,7 +11,7 @@
           <icn name="section" solid xl class="px-3"></icn>Section<span class="text-primary"> UI</span>
         </a>
       </div>
-      <div class="flex space-x-5">
+      <div class="flex space-x-7">
         <ThemeSelect />
         <DarkChange />
         <LanguageSelect />
