@@ -86,7 +86,7 @@
 
   /* Static horizontal */
   &.horizontal {
-    @apply inline-flex flex-row;
+    @apply inline-flex flex-row text-center;
   }
 
   /* Responsive horizontal  */
