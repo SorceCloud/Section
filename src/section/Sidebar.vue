@@ -16,7 +16,7 @@
               <span class="menu-title">{{parent.meta.title}}</span>
               <btn size="sm" clean variant="transparent" v-for="child in parent.children" tag="RouterLink"
                 :to="child.path"
-                :class="[router.meta.title === child.meta.title ? 'border-l-2 border-primary bg-base-gray-200 dark:bg-base-gray-600':'']">
+                :class="[router.meta.title === child.meta.title ? 'border-l-2 border-primary bg-base-300 dark:bg-base-100':'']">
                 {{child.meta.title}}
               </btn>
             </Menu>
