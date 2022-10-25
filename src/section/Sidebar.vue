@@ -36,3 +36,26 @@ const { isLgSize } = windowWidth();
 let router = useRoute()
 const isHome = computed(() => router.meta.title === 'Index');
 </script>
+<style>
+@media (max-width: 1024px) {
+  .sidebar-slide-enter-active {
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .sidebar-slide-leave-active {
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .sidebar-slide-enter-from.right,
+  .sidebar-slide-leave-to.right {
+    transform: translate(100%);
+    opacity: 0;
+  }
+
+  .sidebar-slide-enter-from,
+  .sidebar-slide-leave-to {
+    transform: translate(-100%);
+    opacity: 0;
+  }
+}
+</style>
