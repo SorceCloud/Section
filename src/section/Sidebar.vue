@@ -1,8 +1,8 @@
 <template>
-  <BackDrop @click="toggleSidebar" :show="isOpen" />
+  <Backdrop @click="toggleSidebar" :show="isOpen" />
   <transition name="sidebar-slide">
     <aside v-show="isOpen || isLgSize" :class="{ '!lg:hidden': isHome }"
-      class="fixed inset-0 z-30 flex-none w-72 h-screen bg-base-200 border-r lg:(z-30 static h-auto overflow-y-visible w-62 block)">
+      class="fixed inset-0 z-10 flex-none w-72 h-screen bg-base-200 border-r lg:(z-0 static h-auto overflow-y-visible w-62 block)">
       <div class="lg:hidden flex items-center justify-between h-$navbar-height bg-primary-200/10 px-2">
         <btn @click="toggleSidebar" variant="transparent" color="secondary" class="!fill-base-text">
           <icn name="arrow-left" regular xl />
@@ -31,7 +31,6 @@ import routes from '../router/route'
 import { useRoute } from 'vue-router'
 import { isOpen, toggleSidebar } from '../store/sidebar'
 import { windowWidth } from '../store/window-width'
-import BackDrop from './BackDrop.vue'
 import { computed } from 'vue'
 const { isLgSize } = windowWidth();
 let router = useRoute()

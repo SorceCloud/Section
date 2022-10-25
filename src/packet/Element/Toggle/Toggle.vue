@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import './toggle.css'
-const props = defineProps({
+defineProps({
   checked: { type: Boolean, default: false, required: true },
   color: {
     type: String, default: 'primary',
@@ -19,6 +19,6 @@ const props = defineProps({
 </script>
 
 <template>
-  <input type="checkbox" :checked="props.checked" :disabled="props.disabled" class="peer tgl"
-    :class="[`tgl-${props.color}`, `tgl-${props.size}`]">
+  <input type="checkbox" :checked="checked" :disabled="disabled" class="peer tgl"
+    :class="[`tgl-${color}`, `tgl-${size}`]">
 </template>

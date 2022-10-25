@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import './checkbox.css'
-const props = defineProps({
+defineProps({
   checked: { type: Boolean, default: false, required: false },
   color: {
     type: String, default: 'primary',
@@ -14,15 +14,13 @@ const props = defineProps({
       return ['xs', 'sm', 'md', 'lg', 'xl'].includes(value)
     }
   },
-  disabled: {
-    type: Boolean, default: false, required: false
-  }
+  disabled: { type: Boolean, default: false, required: false }
 })
 </script>
 
 <template>
-  <input type="checkbox" :checked="props.checked" :disabled="props.disabled" class="ckb" :class="[
-    `ckb-${props.color}`,
-    `ckb-${props.size}`,
+  <input type="checkbox" :checked="checked" :disabled="disabled" class="ckb" :class="[
+    `ckb-${color}`,
+    `ckb-${size}`,
   ]">
 </template>

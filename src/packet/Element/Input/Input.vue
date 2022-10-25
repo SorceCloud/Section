@@ -48,7 +48,7 @@ watch(text, () => {
 
 <template>
   <div class="form-control">
-    <label v-if="props.label" class="label" @click="setFocus">
+    <label v-if="props.label" class="label" :click="setFocus">
       <span class="label-text">{{ props.label }}</span>
     </label>
 

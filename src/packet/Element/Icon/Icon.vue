@@ -1,27 +1,27 @@
 <template>
   <i :class="[
-  `fa-${props.name}`,
+  `fa-${name}`,
   {
-    'fa-beat':beat,
-    'fa-xs':xs,
-    'fa-sm':sm,
-    'fa-lg':lg,
-    'fa-xl':xl,
+    'fa-beat': beat,
+    'fa-xs': xs,
+    'fa-sm': sm,
+    'fa-lg': lg,
+    'fa-xl': xl,
 
-    'fa-solid':solid,
-    'fa-regular':regular,
-    'fa-light':light,
-    'fa-thin':thin,
-    'fa-duotone':duotone,
-    'fa-brands':brand,
-    'fa-kit':kit,
+    'fa-solid': solid,
+    'fa-regular': regular,
+    'fa-light': light,
+    'fa-thin': thin,
+    'fa-duotone': duotone,
+    'fa-brands': brand,
+    'fa-kit': kit,
   }]">
   </i>
 </template>
 
 <script lang="ts" setup>
 import './Icon.js'
-const props = defineProps({
+defineProps({
   name: { type: String, default: '', required: false },
   beat: { type: Boolean, default: false, required: false },
 
