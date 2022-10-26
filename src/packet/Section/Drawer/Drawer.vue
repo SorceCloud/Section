@@ -1,14 +1,14 @@
 <template>
-  <!-- <Backdrop @click="toggleDrawer" :show="isShow" /> -->
+  <!-- <Backdrop :show="isShow" /> -->
   <transition name="drawer-slide">
-    <div v-show="isShow" class="fixed right-0 z-40 flex-none w-72 h-screen bg-base-200 border-l">
-      <div class="flex items-center justify-between h-$navbar-height bg-primary-200/10 px-2">
-        <span>{{ title }}</span>
-        <btn variant="transparent" color="secondary" class="!fill-base-text">
+    <div v-show="isShow" class="fixed z-10 flex-none w-72 h-screen bg-base-200 border-l">
+      <div class="flex items-center justify-between bg-base-100 px-2 border-b">
+        <span class="base-content font-medium text-lg">{{ title }}</span>
+        <btn item class="hover:text-primary" @click="closeDrawer">
           <icn name="xmark" regular xl />
         </btn>
       </div>
-      <div class="max-w-2xs h-screen fixed mx-2 w-62">
+      <div class="p-3">
         <slot></slot>
       </div>
     </div>
@@ -19,27 +19,29 @@ defineProps({
   isShow: { type: Boolean, default: false },
   title: { type: String, default: "Title" }
 })
+const emit = defineEmits(['update:isShow'])
+function closeDrawer() {
+  emit('update:isShow', false)
+}
 </script>
 <style>
-@media (max-width: 1024px) {
-  .drawer-slide-enter-active {
-    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  }
+.drawer-slide-enter-active {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
 
-  .drawer-slide-leave-active {
-    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  }
+.drawer-slide-leave-active {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
 
-  .drawer-slide-enter-from.right,
-  .drawer-slide-leave-to.right {
-    transform: translate(100%);
-    opacity: 0;
-  }
+.drawer-slide-enter-from.right,
+.drawer-slide-leave-to.right {
+  transform: translate(-100%);
+  opacity: 0;
+}
 
-  .drawer-slide-enter-from,
-  .drawer-slide-leave-to {
-    transform: translate(-100%);
-    opacity: 0;
-  }
+.drawer-slide-enter-from,
+.drawer-slide-leave-to {
+  transform: translate(100%);
+  opacity: 0;
 }
 </style>
