@@ -2,8 +2,8 @@
   "name": "@sorce.cloud/section",
   "sideEffects": false,
   "private": false,
-  "version": "0.1.11",
-  "description": "增加Backdrop遮罩组件",
+  "version": "0.1.12",
+  "description": "增加Table组件和若干Icon",
   "keywords": [
     "Vue3",
     "WindiCSS"
