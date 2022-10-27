@@ -22,7 +22,7 @@
 <script lang="ts" setup>
 import './Icon.js'
 defineProps({
-  name: { type: String, default: '', required: false },
+  name: { type: String, default: '', required: true },
   beat: { type: Boolean, default: false, required: false },
 
   xs: { type: Boolean, required: false }, // responsive xs
