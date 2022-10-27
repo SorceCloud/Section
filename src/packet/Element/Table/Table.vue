@@ -18,7 +18,6 @@
 </template>
 <script setup lang="ts">
 import { createApp, toRefs, reactive, App } from 'vue'
-import './table.css'
 import EditInput from './EditInput.vue'
 let editInputApp: App<Element> | null = null
 const state = reactive({
